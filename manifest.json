@@ -1,0 +1,23 @@
+{
+  "name": "중등보카필수",
+  "short_name": "보카학습",
+  "description": "중등보카필수 단어 학습 앱",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fef9e7",
+  "theme_color": "#fee500",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
+

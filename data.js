@@ -1,0 +1,7611 @@
+// 단어 데이터
+const VOCABULARY_DATA = {
+  "metadata": {
+    "title": "능률보카 중등 1권 (기본)",
+    "total_days": 100,
+    "total_words": 1000,
+    "version": "1.0.0"
+  },
+  "days": [
+    {
+      "day": 1,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 1,
+          "word": "tall",
+          "meaning": "1. 키가 큰 2. 높은",
+          "pos": "형",
+          "raw": "0001 tall 형 1. 키가 큰 2. 높은"
+        },
+        {
+          "id": 2,
+          "word": "cut",
+          "meaning": "1. 베다 2. 자르다",
+          "pos": "동",
+          "raw": "0002 cut 동 1. 베다 2. 자르다"
+        },
+        {
+          "id": 3,
+          "word": "have",
+          "meaning": "1. 가지다 2. 먹다, 마시다",
+          "pos": "동",
+          "raw": "0003 have 동 1. 가지다 2. 먹다, 마시다"
+        },
+        {
+          "id": 4,
+          "word": "meet",
+          "meaning": "만나다",
+          "pos": "동",
+          "raw": "0004 meet 동 만나다"
+        },
+        {
+          "id": 5,
+          "word": "see",
+          "meaning": "1. 보다 2. 알다, 이해하다",
+          "pos": "동",
+          "raw": "0005 see 동 1. 보다 2. 알다, 이해하다"
+        },
+        {
+          "id": 6,
+          "word": "from",
+          "meaning": "1. [장소] …에서(부터) 2. [시각] …부터",
+          "pos": "전",
+          "raw": "0006 from 전 1. [장소] …에서(부터) 2. [시각] …부터"
+        },
+        {
+          "id": 7,
+          "word": "what",
+          "meaning": "무엇, 어떤 것 형 무슨, 어떤",
+          "pos": "대",
+          "raw": "0007 what 대 무엇, 어떤 것 형 무슨, 어떤"
+        },
+        {
+          "id": 8,
+          "word": "actor",
+          "meaning": "배우",
+          "pos": "명",
+          "raw": "0008 actor 명 배우"
+        },
+        {
+          "id": 9,
+          "word": "make",
+          "meaning": "만들다",
+          "pos": "동",
+          "raw": "0009 make 동 만들다"
+        },
+        {
+          "id": 10,
+          "word": "friend",
+          "meaning": "친구, 벗",
+          "pos": "명",
+          "raw": "0010 friend 명 친구, 벗"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 11,
+          "word": "large",
+          "meaning": "1. 큰, 넓은 2. 많은",
+          "pos": "형",
+          "raw": "0011 large 형 1. 큰, 넓은 2. 많은"
+        },
+        {
+          "id": 12,
+          "word": "heavy",
+          "meaning": "1. 무거운 2. (양 · 정도가) 많은, 심한",
+          "pos": "형",
+          "raw": "0012 heavy 형 1. 무거운 2. (양 · 정도가) 많은, 심한"
+        },
+        {
+          "id": 13,
+          "word": "school",
+          "meaning": "학교",
+          "pos": "명",
+          "raw": "0013 school 명 학교"
+        },
+        {
+          "id": 14,
+          "word": "room",
+          "meaning": "방",
+          "pos": "명",
+          "raw": "0014 room 명 방"
+        },
+        {
+          "id": 15,
+          "word": "dance",
+          "meaning": "춤추다 명 춤, 댄스",
+          "pos": "동",
+          "raw": "0015 dance 동 춤추다 명 춤, 댄스"
+        },
+        {
+          "id": 16,
+          "word": "clean",
+          "meaning": "깨끗한 동 청소하다",
+          "pos": "형",
+          "raw": "0016 clean 형 깨끗한 동 청소하다"
+        },
+        {
+          "id": 17,
+          "word": "bean",
+          "meaning": "콩",
+          "pos": "명",
+          "raw": "0017 bean 명 콩"
+        },
+        {
+          "id": 18,
+          "word": "soap",
+          "meaning": "비누",
+          "pos": "명",
+          "raw": "0018 soap 명 비누"
+        },
+        {
+          "id": 19,
+          "word": "come[be] from …",
+          "meaning": "출신이다, …에서 오다",
+          "pos": "",
+          "raw": "0019 come[be] from … 출신이다, …에서 오다"
+        },
+        {
+          "id": 20,
+          "word": "be going to-v …",
+          "meaning": "것이다, …할 예정이다",
+          "pos": "할",
+          "raw": "0020 be going to-v …할 것이다, …할 예정이다"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 21,
+          "word": "light",
+          "meaning": "1. 빛 2. (전깃)불, 전등 형 가벼운",
+          "pos": "명",
+          "raw": "0021 light 명 1. 빛 2. (전깃)불, 전등 형 가벼운"
+        },
+        {
+          "id": 22,
+          "word": "for",
+          "meaning": "1. [목적] …을 위해 2. [시간] … 동안",
+          "pos": "전",
+          "raw": "0022 for 전 1. [목적] …을 위해 2. [시간] … 동안"
+        },
+        {
+          "id": 23,
+          "word": "eat",
+          "meaning": "먹다",
+          "pos": "동",
+          "raw": "0023 eat 동 먹다"
+        },
+        {
+          "id": 24,
+          "word": "too",
+          "meaning": "1. 너무 2. 또한, 게다가",
+          "pos": "부",
+          "raw": "0024 too 부 1. 너무 2. 또한, 게다가"
+        },
+        {
+          "id": 25,
+          "word": "lunch",
+          "meaning": "점심 (식사)",
+          "pos": "명",
+          "raw": "0025 lunch 명 점심 (식사)"
+        },
+        {
+          "id": 26,
+          "word": "wait",
+          "meaning": "기다리다",
+          "pos": "동",
+          "raw": "0026 wait 동 기다리다"
+        },
+        {
+          "id": 27,
+          "word": "student",
+          "meaning": "학생",
+          "pos": "명",
+          "raw": "0027 student 명 학생"
+        },
+        {
+          "id": 28,
+          "word": "model",
+          "meaning": "1. 모형 2. 모델",
+          "pos": "명",
+          "raw": "0028 model 명 1. 모형 2. 모델"
+        },
+        {
+          "id": 29,
+          "word": "young",
+          "meaning": "어린, 젊은",
+          "pos": "형",
+          "raw": "0029 young 형 어린, 젊은"
+        },
+        {
+          "id": 30,
+          "word": "city",
+          "meaning": "도시",
+          "pos": "명",
+          "raw": "0030 city 명 도시"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 31,
+          "word": "watch",
+          "meaning": "보다 명 손목시계",
+          "pos": "동",
+          "raw": "0031 watch 동 보다 명 손목시계"
+        },
+        {
+          "id": 32,
+          "word": "hobby",
+          "meaning": "취미",
+          "pos": "명",
+          "raw": "0032 hobby 명 취미"
+        },
+        {
+          "id": 33,
+          "word": "ago",
+          "meaning": "… 전에, 이전에",
+          "pos": "부",
+          "raw": "0033 ago 부 … 전에, 이전에"
+        },
+        {
+          "id": 34,
+          "word": "classmate",
+          "meaning": "급우, 반 친구",
+          "pos": "명",
+          "raw": "0034 classmate 명 급우, 반 친구"
+        },
+        {
+          "id": 35,
+          "word": "dancer",
+          "meaning": "춤추는 사람, 무용수",
+          "pos": "명",
+          "raw": "0035 dancer 명 춤추는 사람, 무용수"
+        },
+        {
+          "id": 36,
+          "word": "dirt",
+          "meaning": "1. 먼지, 때 2. 흙",
+          "pos": "명",
+          "raw": "0036 dirt 명 1. 먼지, 때 2. 흙"
+        },
+        {
+          "id": 37,
+          "word": "body",
+          "meaning": "몸, 신체",
+          "pos": "명",
+          "raw": "0037 body 명 몸, 신체"
+        },
+        {
+          "id": 38,
+          "word": "classroom",
+          "meaning": "교실, 강의실",
+          "pos": "명",
+          "raw": "0038 classroom 명 교실, 강의실"
+        },
+        {
+          "id": 39,
+          "word": "go to school",
+          "meaning": "학교에 다니다",
+          "pos": "",
+          "raw": "0039 go to school 학교에 다니다"
+        },
+        {
+          "id": 40,
+          "word": "make friends",
+          "meaning": "친구가 되다, 친해지다",
+          "pos": "",
+          "raw": "0040 make friends 친구가 되다, 친해지다"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 41,
+          "word": "dinner",
+          "meaning": "저녁 (식사)",
+          "pos": "명",
+          "raw": "0041 dinner 명 저녁 (식사)"
+        },
+        {
+          "id": 42,
+          "word": "dirty",
+          "meaning": "더러운",
+          "pos": "형",
+          "raw": "0042 dirty 형 더러운"
+        },
+        {
+          "id": 43,
+          "word": "study",
+          "meaning": "",
+          "pos": "",
+          "raw": "0043 study"
+        },
+        {
+          "id": 44,
+          "word": "enter",
+          "meaning": "1. 들어가다 2. 입학하다",
+          "pos": "동",
+          "raw": "0044 enter 동 1. 들어가다 2. 입학하다"
+        },
+        {
+          "id": 45,
+          "word": "minute",
+          "meaning": "1. [시간의 단위] 분 2. 잠깐",
+          "pos": "명",
+          "raw": "0045 minute 명 1. [시간의 단위] 분 2. 잠깐"
+        },
+        {
+          "id": 46,
+          "word": "sand",
+          "meaning": "모래",
+          "pos": "명",
+          "raw": "0046 sand 명 모래"
+        },
+        {
+          "id": 47,
+          "word": "wet",
+          "meaning": "젖은, 축축한",
+          "pos": "형",
+          "raw": "0047 wet 형 젖은, 축축한"
+        },
+        {
+          "id": 48,
+          "word": "hot",
+          "meaning": "1. 뜨거운, 더운 2. 매운",
+          "pos": "형",
+          "raw": "0048 hot 형 1. 뜨거운, 더운 2. 매운"
+        },
+        {
+          "id": 49,
+          "word": "beach",
+          "meaning": "해변, 바닷가",
+          "pos": "명",
+          "raw": "0049 beach 명 해변, 바닷가"
+        },
+        {
+          "id": 50,
+          "word": "feel",
+          "meaning": "",
+          "pos": "",
+          "raw": "0050 feel"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 51,
+          "word": "bake",
+          "meaning": "(빵 · 과자를) 굽다",
+          "pos": "동",
+          "raw": "0051 bake 동 (빵 · 과자를) 굽다"
+        },
+        {
+          "id": 52,
+          "word": "really",
+          "meaning": "1. 실제로, 진짜로 2. [강조] 아주, 정말로",
+          "pos": "부",
+          "raw": "0052 really 부 1. 실제로, 진짜로 2. [강조] 아주, 정말로"
+        },
+        {
+          "id": 53,
+          "word": "root",
+          "meaning": "1. (식물의) 뿌리 2. 근원, 원인",
+          "pos": "명",
+          "raw": "0053 root 명 1. (식물의) 뿌리 2. 근원, 원인"
+        },
+        {
+          "id": 54,
+          "word": "dry",
+          "meaning": "마른, 건조한 동 마르다, 말리다",
+          "pos": "형",
+          "raw": "0054 dry 형 마른, 건조한 동 마르다, 말리다"
+        },
+        {
+          "id": 55,
+          "word": "last",
+          "meaning": "1. 마지막의 2. 지난",
+          "pos": "형",
+          "raw": "0055 last 형 1. 마지막의 2. 지난"
+        },
+        {
+          "id": 56,
+          "word": "lake",
+          "meaning": "호수",
+          "pos": "명",
+          "raw": "0056 lake 명 호수"
+        },
+        {
+          "id": 57,
+          "word": "again",
+          "meaning": "다시, 또",
+          "pos": "부",
+          "raw": "0057 again 부 다시, 또"
+        },
+        {
+          "id": 58,
+          "word": "word",
+          "meaning": "단어, 낱말, 말",
+          "pos": "명",
+          "raw": "0058 word 명 단어, 낱말, 말"
+        },
+        {
+          "id": 59,
+          "word": "have fun",
+          "meaning": "즐기다, 재미있게 놀다",
+          "pos": "",
+          "raw": "0059 have fun 즐기다, 재미있게 놀다"
+        },
+        {
+          "id": 60,
+          "word": "eat out",
+          "meaning": "외식하다",
+          "pos": "",
+          "raw": "0060 eat out 외식하다"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 61,
+          "word": "kid",
+          "meaning": "아이, 어린이",
+          "pos": "명",
+          "raw": "0061 kid 명 아이, 어린이"
+        },
+        {
+          "id": 62,
+          "word": "hour",
+          "meaning": "[시간의 단위] 시간",
+          "pos": "명",
+          "raw": "0062 hour 명 [시간의 단위] 시간"
+        },
+        {
+          "id": 63,
+          "word": "clock",
+          "meaning": "시계",
+          "pos": "명",
+          "raw": "0063 clock 명 시계"
+        },
+        {
+          "id": 64,
+          "word": "breakfast",
+          "meaning": "아침 (식사)",
+          "pos": "명",
+          "raw": "0064 breakfast 명 아침 (식사)"
+        },
+        {
+          "id": 65,
+          "word": "morning",
+          "meaning": "아침, 오전",
+          "pos": "명",
+          "raw": "0065 morning 명 아침, 오전"
+        },
+        {
+          "id": 66,
+          "word": "live",
+          "meaning": "살다 형 살아있는",
+          "pos": "동",
+          "raw": "0066 live 동 살다 형 살아있는"
+        },
+        {
+          "id": 67,
+          "word": "sour",
+          "meaning": "1. 신, 시큼한 2. (우유 등이) 상한",
+          "pos": "형",
+          "raw": "0067 sour 형 1. 신, 시큼한 2. (우유 등이) 상한"
+        },
+        {
+          "id": 68,
+          "word": "meat",
+          "meaning": "고기",
+          "pos": "명",
+          "raw": "0068 meat 명 고기"
+        },
+        {
+          "id": 69,
+          "word": "ready",
+          "meaning": "준비가 된",
+          "pos": "형",
+          "raw": "0069 ready 형 준비가 된"
+        },
+        {
+          "id": 70,
+          "word": "with",
+          "meaning": "1. …와 함께 2. …로, …을 이용하여",
+          "pos": "전",
+          "raw": "0070 with 전 1. …와 함께 2. …로, …을 이용하여"
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 71,
+          "word": "week",
+          "meaning": "(월요일부터 일요일까지) 주, 일주일",
+          "pos": "명",
+          "raw": "0071 week 명 (월요일부터 일요일까지) 주, 일주일"
+        },
+        {
+          "id": 72,
+          "word": "far",
+          "meaning": "멀리 형 먼",
+          "pos": "부",
+          "raw": "0072 far 부 멀리 형 먼"
+        },
+        {
+          "id": 73,
+          "word": "son",
+          "meaning": "아들",
+          "pos": "명",
+          "raw": "0073 son 명 아들"
+        },
+        {
+          "id": 74,
+          "word": "soil",
+          "meaning": "흙, 토양",
+          "pos": "명",
+          "raw": "0074 soil 명 흙, 토양"
+        },
+        {
+          "id": 75,
+          "word": "rainy",
+          "meaning": "비가 오는",
+          "pos": "형",
+          "raw": "0075 rainy 형 비가 오는"
+        },
+        {
+          "id": 76,
+          "word": "hair",
+          "meaning": "머리(카락)",
+          "pos": "명",
+          "raw": "0076 hair 명 머리(카락)"
+        },
+        {
+          "id": 77,
+          "word": "funny",
+          "meaning": "우스운, 웃기는",
+          "pos": "형",
+          "raw": "0077 funny 형 우스운, 웃기는"
+        },
+        {
+          "id": 78,
+          "word": "night",
+          "meaning": "밤, 야간",
+          "pos": "명",
+          "raw": "0078 night 명 밤, 야간"
+        },
+        {
+          "id": 79,
+          "word": "look like 1. …",
+          "meaning": "보이다 2. …할 것 같다",
+          "pos": "처럼",
+          "raw": "0079 look like 1. …처럼 보이다 2. …할 것 같다"
+        },
+        {
+          "id": 80,
+          "word": "all day (long)",
+          "meaning": "종일",
+          "pos": "하루",
+          "raw": "0080 all day (long) 하루 종일"
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 81,
+          "word": "where",
+          "meaning": "[의문문] 어디에, 어디로",
+          "pos": "부",
+          "raw": "0081 where 부 [의문문] 어디에, 어디로"
+        },
+        {
+          "id": 82,
+          "word": "town",
+          "meaning": "(소)도시, 마을",
+          "pos": "명",
+          "raw": "0082 town 명 (소)도시, 마을"
+        },
+        {
+          "id": 83,
+          "word": "spicy",
+          "meaning": "매콤한, 자극적인",
+          "pos": "형",
+          "raw": "0083 spicy 형 매콤한, 자극적인"
+        },
+        {
+          "id": 84,
+          "word": "near",
+          "meaning": "가까이 형 가까운 전 … 가까이에",
+          "pos": "부",
+          "raw": "0084 near 부 가까이 형 가까운 전 … 가까이에"
+        },
+        {
+          "id": 85,
+          "word": "smart",
+          "meaning": "영리한, 똑똑한",
+          "pos": "형",
+          "raw": "0085 smart 형 영리한, 똑똑한"
+        },
+        {
+          "id": 86,
+          "word": "real",
+          "meaning": "",
+          "pos": "",
+          "raw": "0086 real"
+        },
+        {
+          "id": 87,
+          "word": "bakery",
+          "meaning": "제과점, 베이커리",
+          "pos": "명",
+          "raw": "0087 bakery 명 제과점, 베이커리"
+        },
+        {
+          "id": 88,
+          "word": "child",
+          "meaning": "1. 아이, 어린이 2. 자식, 자녀",
+          "pos": "명",
+          "raw": "0088 child 명 1. 아이, 어린이 2. 자식, 자녀"
+        },
+        {
+          "id": 89,
+          "word": "cute",
+          "meaning": "귀여운, 예쁜",
+          "pos": "형",
+          "raw": "0089 cute 형 귀여운, 예쁜"
+        },
+        {
+          "id": 90,
+          "word": "start",
+          "meaning": "1. 시작하다 2. 출발하다",
+          "pos": "동",
+          "raw": "0090 start 동 1. 시작하다 2. 출발하다"
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 91,
+          "word": "floor",
+          "meaning": "1. (실내의) 바닥 2. (건물의) 층",
+          "pos": "명",
+          "raw": "0091 floor 명 1. (실내의) 바닥 2. (건물의) 층"
+        },
+        {
+          "id": 92,
+          "word": "evening",
+          "meaning": "저녁",
+          "pos": "명",
+          "raw": "0092 evening 명 저녁"
+        },
+        {
+          "id": 93,
+          "word": "bin",
+          "meaning": "1. 쓰레기통 2. 통",
+          "pos": "명",
+          "raw": "0093 bin 명 1. 쓰레기통 2. 통"
+        },
+        {
+          "id": 94,
+          "word": "pool",
+          "meaning": "1. 수영장 2. 웅덩이",
+          "pos": "명",
+          "raw": "0094 pool 명 1. 수영장 2. 웅덩이"
+        },
+        {
+          "id": 95,
+          "word": "open",
+          "meaning": "열린 동 열다",
+          "pos": "형",
+          "raw": "0095 open 형 열린 동 열다"
+        },
+        {
+          "id": 96,
+          "word": "every",
+          "meaning": "1. 모든 2. 매…, …마다",
+          "pos": "형",
+          "raw": "0096 every 형 1. 모든 2. 매…, …마다"
+        },
+        {
+          "id": 97,
+          "word": "fill",
+          "meaning": "채우다",
+          "pos": "동",
+          "raw": "0097 fill 동 채우다"
+        },
+        {
+          "id": 98,
+          "word": "dark",
+          "meaning": "어두운",
+          "pos": "형",
+          "raw": "0098 dark 형 어두운"
+        },
+        {
+          "id": 99,
+          "word": "look for …",
+          "meaning": "찾다",
+          "pos": "을",
+          "raw": "0099 look for …을 찾다"
+        },
+        {
+          "id": 100,
+          "word": "feel like 1. …",
+          "meaning": "갖고[하고] 싶다 2. …처럼 느끼다",
+          "pos": "을",
+          "raw": "0100 feel like 1. …을 갖고[하고] 싶다 2. …처럼 느끼다"
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 101,
+          "word": "knife",
+          "meaning": "칼, 나이프",
+          "pos": "명",
+          "raw": "0101 knife 명 칼, 나이프"
+        },
+        {
+          "id": 102,
+          "word": "easy",
+          "meaning": "쉬운",
+          "pos": "형",
+          "raw": "0102 easy 형 쉬운"
+        },
+        {
+          "id": 103,
+          "word": "know",
+          "meaning": "알다, 알고 있다",
+          "pos": "동",
+          "raw": "0103 know 동 알다, 알고 있다"
+        },
+        {
+          "id": 104,
+          "word": "daughter",
+          "meaning": "딸",
+          "pos": "명",
+          "raw": "0104 daughter 명 딸"
+        },
+        {
+          "id": 105,
+          "word": "player",
+          "meaning": "1. (게임 · 경기 등의) 참가자, 선수 2. 연주자",
+          "pos": "명",
+          "raw": "0105 player 명 1. (게임 · 경기 등의) 참가자, 선수 2. 연주자"
+        },
+        {
+          "id": 106,
+          "word": "window",
+          "meaning": "창문",
+          "pos": "명",
+          "raw": "0106 window 명 창문"
+        },
+        {
+          "id": 107,
+          "word": "of",
+          "meaning": "1. [소속 · 소유] …의 2. [부분] …의, … 중의",
+          "pos": "전",
+          "raw": "0107 of 전 1. [소속 · 소유] …의 2. [부분] …의, … 중의"
+        },
+        {
+          "id": 108,
+          "word": "then",
+          "meaning": "1. (과거 · 미래의) 그 당시, 그때 2. 그 다음에",
+          "pos": "부",
+          "raw": "0108 then 부 1. (과거 · 미래의) 그 당시, 그때 2. 그 다음에"
+        },
+        {
+          "id": 109,
+          "word": "fat",
+          "meaning": "살찐, 뚱뚱한 명 지방",
+          "pos": "형",
+          "raw": "0109 fat 형 살찐, 뚱뚱한 명 지방"
+        },
+        {
+          "id": 110,
+          "word": "handsome",
+          "meaning": "잘생긴",
+          "pos": "형",
+          "raw": "0110 handsome 형 잘생긴"
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 111,
+          "word": "sick",
+          "meaning": "아픈, 병든",
+          "pos": "형",
+          "raw": "0111 sick 형 아픈, 병든"
+        },
+        {
+          "id": 112,
+          "word": "month",
+          "meaning": "달, 월, 개월",
+          "pos": "명",
+          "raw": "0112 month 명 달, 월, 개월"
+        },
+        {
+          "id": 113,
+          "word": "afternoon",
+          "meaning": "오후",
+          "pos": "명",
+          "raw": "0113 afternoon 명 오후"
+        },
+        {
+          "id": 114,
+          "word": "without",
+          "meaning": "… 없이",
+          "pos": "전",
+          "raw": "0114 without 전 … 없이"
+        },
+        {
+          "id": 115,
+          "word": "thin",
+          "meaning": "1. 얇은, 가는 2. 마른, 야윈",
+          "pos": "형",
+          "raw": "0115 thin 형 1. 얇은, 가는 2. 마른, 야윈"
+        },
+        {
+          "id": 116,
+          "word": "begin",
+          "meaning": "시작하다",
+          "pos": "동",
+          "raw": "0116 begin 동 시작하다"
+        },
+        {
+          "id": 117,
+          "word": "next",
+          "meaning": "다음의 부 다음에(는), 다음으로",
+          "pos": "형",
+          "raw": "0117 next 형 다음의 부 다음에(는), 다음으로"
+        },
+        {
+          "id": 118,
+          "word": "group",
+          "meaning": "무리, 집단",
+          "pos": "명",
+          "raw": "0118 group 명 무리, 집단"
+        },
+        {
+          "id": 119,
+          "word": "be good at …",
+          "meaning": "잘하다",
+          "pos": "을",
+          "raw": "0119 be good at …을 잘하다"
+        },
+        {
+          "id": 120,
+          "word": "watch out (for) (…",
+          "meaning": "을) 주의[조심]하다",
+          "pos": "",
+          "raw": "0120 watch out (for) (…을) 주의[조심]하다"
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 121,
+          "word": "theater",
+          "meaning": "극장",
+          "pos": "명",
+          "raw": "0121 theater 명 극장"
+        },
+        {
+          "id": 122,
+          "word": "end",
+          "meaning": "끝나다, 끝내다 명 끝, 마지막",
+          "pos": "동",
+          "raw": "0122 end 동 끝나다, 끝내다 명 끝, 마지막"
+        },
+        {
+          "id": 123,
+          "word": "dead",
+          "meaning": "죽은",
+          "pos": "형",
+          "raw": "0123 dead 형 죽은"
+        },
+        {
+          "id": 124,
+          "word": "village",
+          "meaning": "(시골) 마을",
+          "pos": "명",
+          "raw": "0124 village 명 (시골) 마을"
+        },
+        {
+          "id": 125,
+          "word": "people",
+          "meaning": "1. 사람들 2. 국민",
+          "pos": "명",
+          "raw": "0125 people 명 1. 사람들 2. 국민"
+        },
+        {
+          "id": 126,
+          "word": "baker",
+          "meaning": "제빵사",
+          "pos": "명",
+          "raw": "0126 baker 명 제빵사"
+        },
+        {
+          "id": 127,
+          "word": "wear",
+          "meaning": "입고[신고, 쓰고, 끼고] 있다",
+          "pos": "동",
+          "raw": "0127 wear 동 입고[신고, 쓰고, 끼고] 있다"
+        },
+        {
+          "id": 128,
+          "word": "hear",
+          "meaning": "들리다, 듣다",
+          "pos": "동",
+          "raw": "0128 hear 동 들리다, 듣다"
+        },
+        {
+          "id": 129,
+          "word": "listen",
+          "meaning": "듣다",
+          "pos": "동",
+          "raw": "0129 listen 동 듣다"
+        },
+        {
+          "id": 130,
+          "word": "story",
+          "meaning": "이야기",
+          "pos": "명",
+          "raw": "0130 story 명 이야기"
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 131,
+          "word": "sound",
+          "meaning": "소리, 음성 동 (…하게) 들리다",
+          "pos": "명",
+          "raw": "0131 sound 명 소리, 음성 동 (…하게) 들리다"
+        },
+        {
+          "id": 132,
+          "word": "hungry",
+          "meaning": "배고픈",
+          "pos": "형",
+          "raw": "0132 hungry 형 배고픈"
+        },
+        {
+          "id": 133,
+          "word": "run",
+          "meaning": "1. 달리다, 뛰다 2. 경영[운영]하다",
+          "pos": "동",
+          "raw": "0133 run 동 1. 달리다, 뛰다 2. 경영[운영]하다"
+        },
+        {
+          "id": 134,
+          "word": "round",
+          "meaning": "둥근",
+          "pos": "형",
+          "raw": "0134 round 형 둥근"
+        },
+        {
+          "id": 135,
+          "word": "loud",
+          "meaning": "큰 소리의, 시끄러운",
+          "pos": "형",
+          "raw": "0135 loud 형 큰 소리의, 시끄러운"
+        },
+        {
+          "id": 136,
+          "word": "push",
+          "meaning": "밀다",
+          "pos": "동",
+          "raw": "0136 push 동 밀다"
+        },
+        {
+          "id": 137,
+          "word": "bright",
+          "meaning": "1. 빛나는, 밝은 2. 영리한",
+          "pos": "형",
+          "raw": "0137 bright 형 1. 빛나는, 밝은 2. 영리한"
+        },
+        {
+          "id": 138,
+          "word": "air",
+          "meaning": "1. 공기, 대기 2. 공중",
+          "pos": "명",
+          "raw": "0138 air 명 1. 공기, 대기 2. 공중"
+        },
+        {
+          "id": 139,
+          "word": "again and again",
+          "meaning": "번이고, 되풀이해서",
+          "pos": "몇",
+          "raw": "0139 again and again 몇 번이고, 되풀이해서"
+        },
+        {
+          "id": 140,
+          "word": "be happy with …",
+          "meaning": "기뻐하다, …에 만족하다",
+          "pos": "에",
+          "raw": "0140 be happy with …에 기뻐하다, …에 만족하다"
+        }
+      ]
+    },
+    {
+      "day": 15,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 141,
+          "word": "mask",
+          "meaning": "1. (보호용) 마스크 2. 가면",
+          "pos": "명",
+          "raw": "0141 mask 명 1. (보호용) 마스크 2. 가면"
+        },
+        {
+          "id": 142,
+          "word": "hard",
+          "meaning": "1. 어려운 2. 단단한, 딱딱한 부 열심히",
+          "pos": "형",
+          "raw": "0142 hard 형 1. 어려운 2. 단단한, 딱딱한 부 열심히"
+        },
+        {
+          "id": 143,
+          "word": "difficult",
+          "meaning": "어려운",
+          "pos": "형",
+          "raw": "0143 difficult 형 어려운"
+        },
+        {
+          "id": 144,
+          "word": "full",
+          "meaning": "1. 가득 찬 2. 배가 부른",
+          "pos": "형",
+          "raw": "0144 full 형 1. 가득 찬 2. 배가 부른"
+        },
+        {
+          "id": 145,
+          "word": "animal",
+          "meaning": "동물, 짐승",
+          "pos": "명",
+          "raw": "0145 animal 명 동물, 짐승"
+        },
+        {
+          "id": 146,
+          "word": "beautiful",
+          "meaning": "아름다운",
+          "pos": "형",
+          "raw": "0146 beautiful 형 아름다운"
+        },
+        {
+          "id": 147,
+          "word": "weekend",
+          "meaning": "주말",
+          "pos": "명",
+          "raw": "0147 weekend 명 주말"
+        },
+        {
+          "id": 148,
+          "word": "warm",
+          "meaning": "따뜻한",
+          "pos": "형",
+          "raw": "0148 warm 형 따뜻한"
+        },
+        {
+          "id": 149,
+          "word": "pull",
+          "meaning": "끌다, 잡아당기다",
+          "pos": "동",
+          "raw": "0149 pull 동 끌다, 잡아당기다"
+        },
+        {
+          "id": 150,
+          "word": "north",
+          "meaning": "북쪽 형 북쪽의",
+          "pos": "명",
+          "raw": "0150 north 명 북쪽 형 북쪽의"
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 151,
+          "word": "noise",
+          "meaning": "(시끄러운) 소리, 소음",
+          "pos": "명",
+          "raw": "0151 noise 명 (시끄러운) 소리, 소음"
+        },
+        {
+          "id": 152,
+          "word": "healthy",
+          "meaning": "1. 건강한 2. 건강에 좋은",
+          "pos": "형",
+          "raw": "0152 healthy 형 1. 건강한 2. 건강에 좋은"
+        },
+        {
+          "id": 153,
+          "word": "there",
+          "meaning": "거기에(서), 그곳으로",
+          "pos": "부",
+          "raw": "0153 there 부 거기에(서), 그곳으로"
+        },
+        {
+          "id": 154,
+          "word": "fast",
+          "meaning": "(움직임이) 빠른 부 빨리",
+          "pos": "형",
+          "raw": "0154 fast 형 (움직임이) 빠른 부 빨리"
+        },
+        {
+          "id": 155,
+          "word": "voice",
+          "meaning": "목소리, 음성",
+          "pos": "명",
+          "raw": "0155 voice 명 목소리, 음성"
+        },
+        {
+          "id": 156,
+          "word": "thick",
+          "meaning": "굵은, 두꺼운",
+          "pos": "형",
+          "raw": "0156 thick 형 굵은, 두꺼운"
+        },
+        {
+          "id": 157,
+          "word": "mountain",
+          "meaning": "1. 산 2. 산맥",
+          "pos": "명",
+          "raw": "0157 mountain 명 1. 산 2. 산맥"
+        },
+        {
+          "id": 158,
+          "word": "down",
+          "meaning": "아래로, 낮은 쪽으로",
+          "pos": "부",
+          "raw": "0158 down 부 아래로, 낮은 쪽으로"
+        },
+        {
+          "id": 159,
+          "word": "after school",
+          "meaning": "후에",
+          "pos": "방과",
+          "raw": "0159 after school 방과 후에"
+        },
+        {
+          "id": 160,
+          "word": "say hello to …",
+          "meaning": "안부를 전하다, …에게 인사하다",
+          "pos": "에게",
+          "raw": "0160 say hello to …에게 안부를 전하다, …에게 인사하다"
+        }
+      ]
+    },
+    {
+      "day": 17,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 161,
+          "word": "bar",
+          "meaning": "",
+          "pos": "",
+          "raw": "0161 bar"
+        },
+        {
+          "id": 162,
+          "word": "size",
+          "meaning": "1. 크기, 규모 2. (옷 · 신발 등의) 치수, 사이즈",
+          "pos": "명",
+          "raw": "0162 size 명 1. 크기, 규모 2. (옷 · 신발 등의) 치수, 사이즈"
+        },
+        {
+          "id": 163,
+          "word": "way",
+          "meaning": "1. 길 2. 방법, 방식",
+          "pos": "명",
+          "raw": "0163 way 명 1. 길 2. 방법, 방식"
+        },
+        {
+          "id": 164,
+          "word": "earth",
+          "meaning": "1. 지구 2. 땅, 지면",
+          "pos": "명",
+          "raw": "0164 earth 명 1. 지구 2. 땅, 지면"
+        },
+        {
+          "id": 165,
+          "word": "pretty",
+          "meaning": "예쁜 부 1. 꽤, 상당히 2. 매우",
+          "pos": "형",
+          "raw": "0165 pretty 형 예쁜 부 1. 꽤, 상당히 2. 매우"
+        },
+        {
+          "id": 166,
+          "word": "noisy",
+          "meaning": "시끄러운",
+          "pos": "형",
+          "raw": "0166 noisy 형 시끄러운"
+        },
+        {
+          "id": 167,
+          "word": "empty",
+          "meaning": "비어 있는, 빈",
+          "pos": "형",
+          "raw": "0167 empty 형 비어 있는, 빈"
+        },
+        {
+          "id": 168,
+          "word": "after",
+          "meaning": "(시간 · 순서상) 뒤[후]에 접 …한 뒤[후]에",
+          "pos": "전",
+          "raw": "0168 after 전 (시간 · 순서상) 뒤[후]에 접 …한 뒤[후]에"
+        },
+        {
+          "id": 169,
+          "word": "painter",
+          "meaning": "화가",
+          "pos": "명",
+          "raw": "0169 painter 명 화가"
+        },
+        {
+          "id": 170,
+          "word": "loudly",
+          "meaning": "큰 소리로, 시끄럽게",
+          "pos": "부",
+          "raw": "0170 loudly 부 큰 소리로, 시끄럽게"
+        }
+      ]
+    },
+    {
+      "day": 18,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 171,
+          "word": "easily",
+          "meaning": "쉽게, 수월하게",
+          "pos": "부",
+          "raw": "0171 easily 부 쉽게, 수월하게"
+        },
+        {
+          "id": 172,
+          "word": "slow",
+          "meaning": "느린, 더딘",
+          "pos": "형",
+          "raw": "0172 slow 형 느린, 더딘"
+        },
+        {
+          "id": 173,
+          "word": "today",
+          "meaning": "오늘 명 오늘",
+          "pos": "부",
+          "raw": "0173 today 부 오늘 명 오늘"
+        },
+        {
+          "id": 174,
+          "word": "bicycle",
+          "meaning": "자전거",
+          "pos": "명",
+          "raw": "0174 bicycle 명 자전거"
+        },
+        {
+          "id": 175,
+          "word": "pocket",
+          "meaning": "주머니",
+          "pos": "명",
+          "raw": "0175 pocket 명 주머니"
+        },
+        {
+          "id": 176,
+          "word": "person",
+          "meaning": "사람, 인간",
+          "pos": "명",
+          "raw": "0176 person 명 사람, 인간"
+        },
+        {
+          "id": 177,
+          "word": "cry",
+          "meaning": "1. 울다 2. 외치다",
+          "pos": "동",
+          "raw": "0177 cry 동 1. 울다 2. 외치다"
+        },
+        {
+          "id": 178,
+          "word": "deep",
+          "meaning": "깊은 부 깊이, 깊게",
+          "pos": "형",
+          "raw": "0178 deep 형 깊은 부 깊이, 깊게"
+        },
+        {
+          "id": 179,
+          "word": "next to …",
+          "meaning": "",
+          "pos": "옆에",
+          "raw": "0179 next to … 옆에"
+        },
+        {
+          "id": 180,
+          "word": "fill in 1. …",
+          "meaning": "채우다[써넣다] 2. …을 메우다",
+          "pos": "을",
+          "raw": "0180 fill in 1. …을 채우다[써넣다] 2. …을 메우다"
+        }
+      ]
+    },
+    {
+      "day": 19,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 181,
+          "word": "jog",
+          "meaning": "조깅하다 명 조깅",
+          "pos": "동",
+          "raw": "0181 jog 동 조깅하다 명 조깅"
+        },
+        {
+          "id": 182,
+          "word": "fight",
+          "meaning": "싸우다 명 싸움",
+          "pos": "동",
+          "raw": "0182 fight 동 싸우다 명 싸움"
+        },
+        {
+          "id": 183,
+          "word": "drive",
+          "meaning": "운전하다",
+          "pos": "동",
+          "raw": "0183 drive 동 운전하다"
+        },
+        {
+          "id": 184,
+          "word": "ride",
+          "meaning": "(말 · 탈것 등을) 타다 명 (말 · 탈것 등에) 타기",
+          "pos": "동",
+          "raw": "0184 ride 동 (말 · 탈것 등을) 타다 명 (말 · 탈것 등에) 타기"
+        },
+        {
+          "id": 185,
+          "word": "yesterday",
+          "meaning": "어제 명 어제",
+          "pos": "부",
+          "raw": "0185 yesterday 부 어제 명 어제"
+        },
+        {
+          "id": 186,
+          "word": "low",
+          "meaning": "1. (높이가) 낮은 2. (양 · 정도가) 낮은, 적은",
+          "pos": "형",
+          "raw": "0186 low 형 1. (높이가) 낮은 2. (양 · 정도가) 낮은, 적은"
+        },
+        {
+          "id": 187,
+          "word": "hit",
+          "meaning": "때리다, 치다",
+          "pos": "동",
+          "raw": "0187 hit 동 때리다, 치다"
+        },
+        {
+          "id": 188,
+          "word": "talk",
+          "meaning": "말하다, 이야기하다",
+          "pos": "동",
+          "raw": "0188 talk 동 말하다, 이야기하다"
+        },
+        {
+          "id": 189,
+          "word": "parent",
+          "meaning": "부모, 어버이",
+          "pos": "명",
+          "raw": "0189 parent 명 부모, 어버이"
+        },
+        {
+          "id": 190,
+          "word": "often",
+          "meaning": "흔히, 자주",
+          "pos": "부",
+          "raw": "0190 often 부 흔히, 자주"
+        }
+      ]
+    },
+    {
+      "day": 20,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 191,
+          "word": "here",
+          "meaning": "여기에(서), 이곳으로",
+          "pos": "부",
+          "raw": "0191 here 부 여기에(서), 이곳으로"
+        },
+        {
+          "id": 192,
+          "word": "beauty",
+          "meaning": "1. 아름다움, 미(美) 2. 미인",
+          "pos": "명",
+          "raw": "0192 beauty 명 1. 아름다움, 미(美) 2. 미인"
+        },
+        {
+          "id": 193,
+          "word": "price",
+          "meaning": "값, 가격",
+          "pos": "명",
+          "raw": "0193 price 명 값, 가격"
+        },
+        {
+          "id": 194,
+          "word": "by",
+          "meaning": "1. [위치] … 옆에 2. [수단] …에 의해, …으로",
+          "pos": "전",
+          "raw": "0194 by 전 1. [위치] … 옆에 2. [수단] …에 의해, …으로"
+        },
+        {
+          "id": 195,
+          "word": "soft",
+          "meaning": "부드러운",
+          "pos": "형",
+          "raw": "0195 soft 형 부드러운"
+        },
+        {
+          "id": 196,
+          "word": "south",
+          "meaning": "남쪽 형 남쪽의",
+          "pos": "명",
+          "raw": "0196 south 명 남쪽 형 남쪽의"
+        },
+        {
+          "id": 197,
+          "word": "draw",
+          "meaning": "1. (연필 등으로) 그리다 2. (마차 등을) 끌다",
+          "pos": "동",
+          "raw": "0197 draw 동 1. (연필 등으로) 그리다 2. (마차 등을) 끌다"
+        },
+        {
+          "id": 198,
+          "word": "health",
+          "meaning": "건강 (상태)",
+          "pos": "명",
+          "raw": "0198 health 명 건강 (상태)"
+        },
+        {
+          "id": 199,
+          "word": "go on (",
+          "meaning": "상황이) 계속되다",
+          "pos": "어떤",
+          "raw": "0199 go on (어떤 상황이) 계속되다"
+        },
+        {
+          "id": 200,
+          "word": "in the end",
+          "meaning": "마침내",
+          "pos": "",
+          "raw": "0200 in the end 마침내"
+        }
+      ]
+    },
+    {
+      "day": 21,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 201,
+          "word": "knock",
+          "meaning": "(문을) 두드리다, 노크하다",
+          "pos": "동",
+          "raw": "0201 knock 동 (문을) 두드리다, 노크하다"
+        },
+        {
+          "id": 202,
+          "word": "driver",
+          "meaning": "운전자, 기사",
+          "pos": "명",
+          "raw": "0202 driver 명 운전자, 기사"
+        },
+        {
+          "id": 203,
+          "word": "fruit",
+          "meaning": "과일",
+          "pos": "명",
+          "raw": "0203 fruit 명 과일"
+        },
+        {
+          "id": 204,
+          "word": "slowly",
+          "meaning": "느리게, 천천히",
+          "pos": "부",
+          "raw": "0204 slowly 부 느리게, 천천히"
+        },
+        {
+          "id": 205,
+          "word": "date",
+          "meaning": "1. 날짜 2. 만날 약속, 데이트",
+          "pos": "명",
+          "raw": "0205 date 명 1. 날짜 2. 만날 약속, 데이트"
+        },
+        {
+          "id": 206,
+          "word": "cloud",
+          "meaning": "구름",
+          "pos": "명",
+          "raw": "0206 cloud 명 구름"
+        },
+        {
+          "id": 207,
+          "word": "class",
+          "meaning": "1. 학급, 반 2. 수업",
+          "pos": "명",
+          "raw": "0207 class 명 1. 학급, 반 2. 수업"
+        },
+        {
+          "id": 208,
+          "word": "high",
+          "meaning": "",
+          "pos": "",
+          "raw": "0208 high"
+        },
+        {
+          "id": 209,
+          "word": "quick",
+          "meaning": "신속한, 빠른",
+          "pos": "형",
+          "raw": "0209 quick 형 신속한, 빠른"
+        },
+        {
+          "id": 210,
+          "word": "salty",
+          "meaning": "소금이 든, 짠, 짭짤한",
+          "pos": "형",
+          "raw": "0210 salty 형 소금이 든, 짠, 짭짤한"
+        }
+      ]
+    },
+    {
+      "day": 22,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 211,
+          "word": "buy",
+          "meaning": "사다, 구입하다",
+          "pos": "동",
+          "raw": "0211 buy 동 사다, 구입하다"
+        },
+        {
+          "id": 212,
+          "word": "speak",
+          "meaning": "1. 이야기하다, 말하다 2. 연설하다",
+          "pos": "동",
+          "raw": "0212 speak 동 1. 이야기하다, 말하다 2. 연설하다"
+        },
+        {
+          "id": 213,
+          "word": "work",
+          "meaning": "",
+          "pos": "",
+          "raw": "0213 work"
+        },
+        {
+          "id": 214,
+          "word": "before",
+          "meaning": "… 전에 접 …하기 전에",
+          "pos": "전",
+          "raw": "0214 before 전 … 전에 접 …하기 전에"
+        },
+        {
+          "id": 215,
+          "word": "ship",
+          "meaning": "(커다란) 배, 선박",
+          "pos": "명",
+          "raw": "0215 ship 명 (커다란) 배, 선박"
+        },
+        {
+          "id": 216,
+          "word": "birthday",
+          "meaning": "생일",
+          "pos": "명",
+          "raw": "0216 birthday 명 생일"
+        },
+        {
+          "id": 217,
+          "word": "everyone",
+          "meaning": "모든 사람, 모두",
+          "pos": "대",
+          "raw": "0217 everyone 대 모든 사람, 모두"
+        },
+        {
+          "id": 218,
+          "word": "paint",
+          "meaning": "",
+          "pos": "",
+          "raw": "0218 paint"
+        },
+        {
+          "id": 219,
+          "word": "make fun of …",
+          "meaning": "놀리다",
+          "pos": "을",
+          "raw": "0219 make fun of …을 놀리다"
+        },
+        {
+          "id": 220,
+          "word": "put on …",
+          "meaning": "입다[신다, 쓰다]",
+          "pos": "을",
+          "raw": "0220 put on …을 입다[신다, 쓰다]"
+        }
+      ]
+    },
+    {
+      "day": 23,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 221,
+          "word": "tomorrow",
+          "meaning": "내일 명 내일",
+          "pos": "부",
+          "raw": "0221 tomorrow 부 내일 명 내일"
+        },
+        {
+          "id": 222,
+          "word": "country",
+          "meaning": "1. 나라 2. 시골",
+          "pos": "명",
+          "raw": "0222 country 명 1. 나라 2. 시골"
+        },
+        {
+          "id": 223,
+          "word": "set",
+          "meaning": "",
+          "pos": "",
+          "raw": "0223 set"
+        },
+        {
+          "id": 224,
+          "word": "knee",
+          "meaning": "1. 무릎 2. (옷의) 무릎 (부분)",
+          "pos": "명",
+          "raw": "0224 knee 명 1. 무릎 2. (옷의) 무릎 (부분)"
+        },
+        {
+          "id": 225,
+          "word": "each",
+          "meaning": "각자의, 각각의 대 각자, 각각",
+          "pos": "형",
+          "raw": "0225 each 형 각자의, 각각의 대 각자, 각각"
+        },
+        {
+          "id": 226,
+          "word": "alarm",
+          "meaning": "1. 경보(기) 2. 자명종, 알람",
+          "pos": "명",
+          "raw": "0226 alarm 명 1. 경보(기) 2. 자명종, 알람"
+        },
+        {
+          "id": 227,
+          "word": "weather",
+          "meaning": "날씨",
+          "pos": "명",
+          "raw": "0227 weather 명 날씨"
+        },
+        {
+          "id": 228,
+          "word": "some",
+          "meaning": "몇몇의, 약간의 대 몇몇, 약간",
+          "pos": "형",
+          "raw": "0228 some 형 몇몇의, 약간의 대 몇몇, 약간"
+        },
+        {
+          "id": 229,
+          "word": "past",
+          "meaning": "1. 과거의, 지나간 2. (바로) 지난 명 과거",
+          "pos": "형",
+          "raw": "0229 past 형 1. 과거의, 지나간 2. (바로) 지난 명 과거"
+        },
+        {
+          "id": 230,
+          "word": "drawing",
+          "meaning": "(연필 등으로 그린) 그림",
+          "pos": "명",
+          "raw": "0230 drawing 명 (연필 등으로 그린) 그림"
+        }
+      ]
+    },
+    {
+      "day": 24,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 231,
+          "word": "late",
+          "meaning": "늦은, 지각한 부 늦게",
+          "pos": "형",
+          "raw": "0231 late 형 늦은, 지각한 부 늦게"
+        },
+        {
+          "id": 232,
+          "word": "cost",
+          "meaning": "비용, 값 동 (비용이) 들다",
+          "pos": "명",
+          "raw": "0232 cost 명 비용, 값 동 (비용이) 들다"
+        },
+        {
+          "id": 233,
+          "word": "boat",
+          "meaning": "(소형) 배, 보트",
+          "pos": "명",
+          "raw": "0233 boat 명 (소형) 배, 보트"
+        },
+        {
+          "id": 234,
+          "word": "speaker",
+          "meaning": "연설가, 발표자",
+          "pos": "명",
+          "raw": "0234 speaker 명 연설가, 발표자"
+        },
+        {
+          "id": 235,
+          "word": "think",
+          "meaning": "1. 생각하다 2. …라고 생각하다",
+          "pos": "동",
+          "raw": "0235 think 동 1. 생각하다 2. …라고 생각하다"
+        },
+        {
+          "id": 236,
+          "word": "map",
+          "meaning": "지도",
+          "pos": "명",
+          "raw": "0236 map 명 지도"
+        },
+        {
+          "id": 237,
+          "word": "half",
+          "meaning": "반, 2분의 1 형 반의, 2분의 1의",
+          "pos": "명",
+          "raw": "0237 half 명 반, 2분의 1 형 반의, 2분의 1의"
+        },
+        {
+          "id": 238,
+          "word": "idea",
+          "meaning": "1. 생각, 발상, 아이디어 2. 지식, 이해",
+          "pos": "명",
+          "raw": "0238 idea 명 1. 생각, 발상, 아이디어 2. 지식, 이해"
+        },
+        {
+          "id": 239,
+          "word": "take off 1. …",
+          "meaning": "벗다 2. (비행기가) 이륙하다",
+          "pos": "을",
+          "raw": "0239 take off 1. …을 벗다 2. (비행기가) 이륙하다"
+        },
+        {
+          "id": 240,
+          "word": "on one’s way (to) (…",
+          "meaning": "가는) 길[도중]에",
+          "pos": "로",
+          "raw": "0240 on one’s way (to) (…로 가는) 길[도중]에"
+        }
+      ]
+    },
+    {
+      "day": 25,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 241,
+          "word": "holiday",
+          "meaning": "휴일, 공휴일",
+          "pos": "명",
+          "raw": "0241 holiday 명 휴일, 공휴일"
+        },
+        {
+          "id": 242,
+          "word": "use",
+          "meaning": "쓰다, 사용하다 명 사용",
+          "pos": "동",
+          "raw": "0242 use 동 쓰다, 사용하다 명 사용"
+        },
+        {
+          "id": 243,
+          "word": "market",
+          "meaning": "시장",
+          "pos": "명",
+          "raw": "0243 market 명 시장"
+        },
+        {
+          "id": 244,
+          "word": "present",
+          "meaning": "1. 참석[출석]한 2. 현재의 명 선물",
+          "pos": "형",
+          "raw": "0244 present 형 1. 참석[출석]한 2. 현재의 명 선물"
+        },
+        {
+          "id": 245,
+          "word": "pet",
+          "meaning": "반려동물",
+          "pos": "명",
+          "raw": "0245 pet 명 반려동물"
+        },
+        {
+          "id": 246,
+          "word": "much",
+          "meaning": "많은 부 너무, 매우, 대단히",
+          "pos": "형",
+          "raw": "0246 much 형 많은 부 너무, 매우, 대단히"
+        },
+        {
+          "id": 247,
+          "word": "any",
+          "meaning": "",
+          "pos": "",
+          "raw": "0247 any"
+        },
+        {
+          "id": 248,
+          "word": "kick",
+          "meaning": "차다, 걷어차다",
+          "pos": "동",
+          "raw": "0248 kick 동 차다, 걷어차다"
+        },
+        {
+          "id": 249,
+          "word": "life",
+          "meaning": "1. 인생, 삶 2. 목숨, 생명",
+          "pos": "명",
+          "raw": "0249 life 명 1. 인생, 삶 2. 목숨, 생명"
+        },
+        {
+          "id": 250,
+          "word": "board",
+          "meaning": "1. 판자 2. 게시판 동 탑승하다",
+          "pos": "명",
+          "raw": "0250 board 명 1. 판자 2. 게시판 동 탑승하다"
+        }
+      ]
+    },
+    {
+      "day": 26,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 251,
+          "word": "course",
+          "meaning": "1. 강좌, 강의 2.항로, 방향",
+          "pos": "명",
+          "raw": "0251 course 명 1. 강좌, 강의 2.항로, 방향"
+        },
+        {
+          "id": 252,
+          "word": "sell",
+          "meaning": "1. 팔다 2. 팔리다",
+          "pos": "동",
+          "raw": "0252 sell 동 1. 팔다 2. 팔리다"
+        },
+        {
+          "id": 253,
+          "word": "cloudy",
+          "meaning": "흐린, 구름 낀",
+          "pos": "형",
+          "raw": "0253 cloudy 형 흐린, 구름 낀"
+        },
+        {
+          "id": 254,
+          "word": "painting",
+          "meaning": "(물감으로 그린) 그림",
+          "pos": "명",
+          "raw": "0254 painting 명 (물감으로 그린) 그림"
+        },
+        {
+          "id": 255,
+          "word": "strong",
+          "meaning": "힘센, 강한",
+          "pos": "형",
+          "raw": "0255 strong 형 힘센, 강한"
+        },
+        {
+          "id": 256,
+          "word": "fall",
+          "meaning": "",
+          "pos": "",
+          "raw": "0256 fall"
+        },
+        {
+          "id": 257,
+          "word": "under",
+          "meaning": "1. … 아래[밑]에 2. … 미만[아래]인",
+          "pos": "전",
+          "raw": "0257 under 전 1. … 아래[밑]에 2. … 미만[아래]인"
+        },
+        {
+          "id": 258,
+          "word": "brush",
+          "meaning": "붓, 솔, 빗 동 솔[빗]질하다, 닦다",
+          "pos": "명",
+          "raw": "0258 brush 명 붓, 솔, 빗 동 솔[빗]질하다, 닦다"
+        },
+        {
+          "id": 259,
+          "word": "find out …",
+          "meaning": "알아내다",
+          "pos": "을",
+          "raw": "0259 find out …을 알아내다"
+        },
+        {
+          "id": 260,
+          "word": "grow up",
+          "meaning": "성장하다, 자라다",
+          "pos": "",
+          "raw": "0260 grow up 성장하다, 자라다"
+        }
+      ]
+    },
+    {
+      "day": 27,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 261,
+          "word": "tag",
+          "meaning": "꼬리표",
+          "pos": "명",
+          "raw": "0261 tag 명 꼬리표"
+        },
+        {
+          "id": 262,
+          "word": "tooth",
+          "meaning": "이, 치아",
+          "pos": "명",
+          "raw": "0262 tooth 명 이, 치아"
+        },
+        {
+          "id": 263,
+          "word": "little",
+          "meaning": "1. 작은 2. 어린",
+          "pos": "형",
+          "raw": "0263 little 형 1. 작은 2. 어린"
+        },
+        {
+          "id": 264,
+          "word": "call",
+          "meaning": "",
+          "pos": "",
+          "raw": "0264 call"
+        },
+        {
+          "id": 265,
+          "word": "why",
+          "meaning": "[의문문] 왜, 어째서",
+          "pos": "부",
+          "raw": "0265 why 부 [의문문] 왜, 어째서"
+        },
+        {
+          "id": 266,
+          "word": "around",
+          "meaning": "… 주위에, …을 둘러싸고",
+          "pos": "전",
+          "raw": "0266 around 전 … 주위에, …을 둘러싸고"
+        },
+        {
+          "id": 267,
+          "word": "street",
+          "meaning": "거리, 길",
+          "pos": "명",
+          "raw": "0267 street 명 거리, 길"
+        },
+        {
+          "id": 268,
+          "word": "pick",
+          "meaning": "1. 고르다 2. 따다, 꺾다",
+          "pos": "동",
+          "raw": "0268 pick 동 1. 고르다 2. 따다, 꺾다"
+        },
+        {
+          "id": 269,
+          "word": "fine",
+          "meaning": "훌륭한, 좋은",
+          "pos": "형",
+          "raw": "0269 fine 형 훌륭한, 좋은"
+        },
+        {
+          "id": 270,
+          "word": "early",
+          "meaning": "일찍, 빨리 형 이른, 빠른",
+          "pos": "부",
+          "raw": "0270 early 부 일찍, 빨리 형 이른, 빠른"
+        }
+      ]
+    },
+    {
+      "day": 28,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 271,
+          "word": "someday",
+          "meaning": "(미래의) 언젠가",
+          "pos": "부",
+          "raw": "0271 someday 부 (미래의) 언젠가"
+        },
+        {
+          "id": 272,
+          "word": "key",
+          "meaning": "열쇠, 키",
+          "pos": "명",
+          "raw": "0272 key 명 열쇠, 키"
+        },
+        {
+          "id": 273,
+          "word": "bring",
+          "meaning": "가져오다, 데려오다",
+          "pos": "동",
+          "raw": "0273 bring 동 가져오다, 데려오다"
+        },
+        {
+          "id": 274,
+          "word": "weak",
+          "meaning": "약한, 힘이 없는",
+          "pos": "형",
+          "raw": "0274 weak 형 약한, 힘이 없는"
+        },
+        {
+          "id": 275,
+          "word": "cross",
+          "meaning": "가로지르다, 건너다",
+          "pos": "동",
+          "raw": "0275 cross 동 가로지르다, 건너다"
+        },
+        {
+          "id": 276,
+          "word": "over",
+          "meaning": "",
+          "pos": "",
+          "raw": "0276 over"
+        },
+        {
+          "id": 277,
+          "word": "doctor",
+          "meaning": "의사",
+          "pos": "명",
+          "raw": "0277 doctor 명 의사"
+        },
+        {
+          "id": 278,
+          "word": "special",
+          "meaning": "특별한",
+          "pos": "형",
+          "raw": "0278 special 형 특별한"
+        },
+        {
+          "id": 279,
+          "word": "by the way",
+          "meaning": "그나저나, 그런데",
+          "pos": "",
+          "raw": "0279 by the way 그나저나, 그런데"
+        },
+        {
+          "id": 280,
+          "word": "up and down",
+          "meaning": "위아래로",
+          "pos": "",
+          "raw": "0280 up and down 위아래로"
+        }
+      ]
+    },
+    {
+      "day": 29,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 281,
+          "word": "yoga",
+          "meaning": "요가",
+          "pos": "명",
+          "raw": "0281 yoga 명 요가"
+        },
+        {
+          "id": 282,
+          "word": "teacher",
+          "meaning": "교사, 선생",
+          "pos": "명",
+          "raw": "0282 teacher 명 교사, 선생"
+        },
+        {
+          "id": 283,
+          "word": "useful",
+          "meaning": "쓸모 있는, 유용한",
+          "pos": "형",
+          "raw": "0283 useful 형 쓸모 있는, 유용한"
+        },
+        {
+          "id": 284,
+          "word": "clear",
+          "meaning": "1. 분명한 2. 맑은, 투명한",
+          "pos": "형",
+          "raw": "0284 clear 형 1. 분명한 2. 맑은, 투명한"
+        },
+        {
+          "id": 285,
+          "word": "road",
+          "meaning": "길, 도로",
+          "pos": "명",
+          "raw": "0285 road 명 길, 도로"
+        },
+        {
+          "id": 286,
+          "word": "gift",
+          "meaning": "1. 선물 2. 재능, 재주",
+          "pos": "명",
+          "raw": "0286 gift 명 1. 선물 2. 재능, 재주"
+        },
+        {
+          "id": 287,
+          "word": "as",
+          "meaning": "1. …할 때 2. …이기 때문에",
+          "pos": "전",
+          "raw": "0287 as 전 1. …할 때 2. …이기 때문에"
+        },
+        {
+          "id": 288,
+          "word": "future",
+          "meaning": "미래, 장래 형 미래의, 장래의",
+          "pos": "명",
+          "raw": "0288 future 명 미래, 장래 형 미래의, 장래의"
+        },
+        {
+          "id": 289,
+          "word": "train",
+          "meaning": "기차, 열차",
+          "pos": "명",
+          "raw": "0289 train 명 기차, 열차"
+        },
+        {
+          "id": 290,
+          "word": "want",
+          "meaning": "1. 원하다, 바라다 2. …하고 싶다",
+          "pos": "동",
+          "raw": "0290 want 동 1. 원하다, 바라다 2. …하고 싶다"
+        }
+      ]
+    },
+    {
+      "day": 30,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 291,
+          "word": "dream",
+          "meaning": "꿈 동 꿈을 꾸다",
+          "pos": "명",
+          "raw": "0291 dream 명 꿈 동 꿈을 꾸다"
+        },
+        {
+          "id": 292,
+          "word": "water",
+          "meaning": "물 동 물을 주다",
+          "pos": "명",
+          "raw": "0292 water 명 물 동 물을 주다"
+        },
+        {
+          "id": 293,
+          "word": "backpack",
+          "meaning": "배낭 동 배낭여행하다",
+          "pos": "명",
+          "raw": "0293 backpack 명 배낭 동 배낭여행하다"
+        },
+        {
+          "id": 294,
+          "word": "die",
+          "meaning": "죽다",
+          "pos": "동",
+          "raw": "0294 die 동 죽다"
+        },
+        {
+          "id": 295,
+          "word": "store",
+          "meaning": "가게, 상점",
+          "pos": "명",
+          "raw": "0295 store 명 가게, 상점"
+        },
+        {
+          "id": 296,
+          "word": "tonight",
+          "meaning": "오늘 밤에 명 오늘 밤",
+          "pos": "부",
+          "raw": "0296 tonight 부 오늘 밤에 명 오늘 밤"
+        },
+        {
+          "id": 297,
+          "word": "because",
+          "meaning": "… 때문에, 왜냐하면",
+          "pos": "접",
+          "raw": "0297 because 접 … 때문에, 왜냐하면"
+        },
+        {
+          "id": 298,
+          "word": "balloon",
+          "meaning": "풍선 동 부풀다",
+          "pos": "명",
+          "raw": "0298 balloon 명 풍선 동 부풀다"
+        },
+        {
+          "id": 299,
+          "word": "get up 1. (",
+          "meaning": "잠자리에서) 일어나다 2. 일어서다",
+          "pos": "",
+          "raw": "0299 get up 1. (잠자리에서) 일어나다 2. 일어서다"
+        },
+        {
+          "id": 300,
+          "word": "be made of …",
+          "meaning": "만들어지다[구성되다]",
+          "pos": "로",
+          "raw": "0300 be made of …로 만들어지다[구성되다]"
+        }
+      ]
+    },
+    {
+      "day": 31,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 301,
+          "word": "glass",
+          "meaning": "1. 유리 2. 유리잔 3. 안경",
+          "pos": "명",
+          "raw": "0301 glass 명 1. 유리 2. 유리잔 3. 안경"
+        },
+        {
+          "id": 302,
+          "word": "give",
+          "meaning": "주다",
+          "pos": "동",
+          "raw": "0302 give 동 주다"
+        },
+        {
+          "id": 303,
+          "word": "dish",
+          "meaning": "접시, 그릇",
+          "pos": "명",
+          "raw": "0303 dish 명 접시, 그릇"
+        },
+        {
+          "id": 304,
+          "word": "wife",
+          "meaning": "아내",
+          "pos": "명",
+          "raw": "0304 wife 명 아내"
+        },
+        {
+          "id": 305,
+          "word": "when",
+          "meaning": "[의문문 ] 언제 접 …할 때땨",
+          "pos": "부",
+          "raw": "0305 when 부 [의문문 ] 언제 접 …할 때땨"
+        },
+        {
+          "id": 306,
+          "word": "kitchen",
+          "meaning": "부엌, 주방",
+          "pos": "명",
+          "raw": "0306 kitchen 명 부엌, 주방"
+        },
+        {
+          "id": 307,
+          "word": "police",
+          "meaning": "경찰",
+          "pos": "명",
+          "raw": "0307 police 명 경찰"
+        },
+        {
+          "id": 308,
+          "word": "busy",
+          "meaning": "1. 바쁜 2. 혼잡한",
+          "pos": "형",
+          "raw": "0308 busy 형 1. 바쁜 2. 혼잡한"
+        },
+        {
+          "id": 309,
+          "word": "food",
+          "meaning": "음식, 식량",
+          "pos": "명",
+          "raw": "0309 food 명 음식, 식량"
+        },
+        {
+          "id": 310,
+          "word": "almost",
+          "meaning": "거의",
+          "pos": "부",
+          "raw": "0310 almost 부 거의"
+        }
+      ]
+    },
+    {
+      "day": 32,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 311,
+          "word": "stair",
+          "meaning": "계단",
+          "pos": "명",
+          "raw": "0311 stair 명 계단"
+        },
+        {
+          "id": 312,
+          "word": "which",
+          "meaning": "",
+          "pos": "",
+          "raw": "0312 which"
+        },
+        {
+          "id": 313,
+          "word": "subway",
+          "meaning": "지하철",
+          "pos": "명",
+          "raw": "0313 subway 명 지하철"
+        },
+        {
+          "id": 314,
+          "word": "snack",
+          "meaning": "간식, 간단한 식사",
+          "pos": "명",
+          "raw": "0314 snack 명 간식, 간단한 식사"
+        },
+        {
+          "id": 315,
+          "word": "choose",
+          "meaning": "선택하다, 고르다",
+          "pos": "동",
+          "raw": "0315 choose 동 선택하다, 고르다"
+        },
+        {
+          "id": 316,
+          "word": "take",
+          "meaning": "1. 가져가다 2. 잡다 3. (시간이) 걸리다",
+          "pos": "동",
+          "raw": "0316 take 동 1. 가져가다 2. 잡다 3. (시간이) 걸리다"
+        },
+        {
+          "id": 317,
+          "word": "into",
+          "meaning": "1. … 안[속]으로 2. (상태가 변하여) …로",
+          "pos": "전",
+          "raw": "0317 into 전 1. … 안[속]으로 2. (상태가 변하여) …로"
+        },
+        {
+          "id": 318,
+          "word": "bread",
+          "meaning": "빵",
+          "pos": "명",
+          "raw": "0318 bread 명 빵"
+        },
+        {
+          "id": 319,
+          "word": "get well (",
+          "meaning": "병이) 나아지다, 회복하다",
+          "pos": "",
+          "raw": "0319 get well (병이) 나아지다, 회복하다"
+        },
+        {
+          "id": 320,
+          "word": "look around (",
+          "meaning": "주위를) 둘러보다, 구경하다",
+          "pos": "",
+          "raw": "0320 look around (주위를) 둘러보다, 구경하다"
+        }
+      ]
+    },
+    {
+      "day": 33,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 321,
+          "word": "wash",
+          "meaning": "씻다",
+          "pos": "동",
+          "raw": "0321 wash 동 씻다"
+        },
+        {
+          "id": 322,
+          "word": "sure",
+          "meaning": "확신하는",
+          "pos": "형",
+          "raw": "0322 sure 형 확신하는"
+        },
+        {
+          "id": 323,
+          "word": "pair",
+          "meaning": "(한) 쌍[켤레]",
+          "pos": "명",
+          "raw": "0323 pair 명 (한) 쌍[켤레]"
+        },
+        {
+          "id": 324,
+          "word": "bottle",
+          "meaning": "1. 병 2. 한 병(의 양)",
+          "pos": "명",
+          "raw": "0324 bottle 명 1. 병 2. 한 병(의 양)"
+        },
+        {
+          "id": 325,
+          "word": "husband",
+          "meaning": "남편",
+          "pos": "명",
+          "raw": "0325 husband 명 남편"
+        },
+        {
+          "id": 326,
+          "word": "season",
+          "meaning": "1. 계절 2. 시기, 철",
+          "pos": "명",
+          "raw": "0326 season 명 1. 계절 2. 시기, 철"
+        },
+        {
+          "id": 327,
+          "word": "teach",
+          "meaning": "가르치다",
+          "pos": "동",
+          "raw": "0327 teach 동 가르치다"
+        },
+        {
+          "id": 328,
+          "word": "off",
+          "meaning": "",
+          "pos": "",
+          "raw": "0328 off"
+        },
+        {
+          "id": 329,
+          "word": "mouth",
+          "meaning": "입",
+          "pos": "명",
+          "raw": "0329 mouth 명 입"
+        },
+        {
+          "id": 330,
+          "word": "bridge",
+          "meaning": "다리",
+          "pos": "명",
+          "raw": "0330 bridge 명 다리"
+        }
+      ]
+    },
+    {
+      "day": 34,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 331,
+          "word": "glove",
+          "meaning": "장갑",
+          "pos": "명",
+          "raw": "0331 glove 명 장갑"
+        },
+        {
+          "id": 332,
+          "word": "heart",
+          "meaning": "1. 심장 2. 마음",
+          "pos": "명",
+          "raw": "0332 heart 명 1. 심장 2. 마음"
+        },
+        {
+          "id": 333,
+          "word": "leaf",
+          "meaning": "잎, 나뭇잎",
+          "pos": "명",
+          "raw": "0333 leaf 명 잎, 나뭇잎"
+        },
+        {
+          "id": 334,
+          "word": "hospital",
+          "meaning": "병원",
+          "pos": "명",
+          "raw": "0334 hospital 명 병원"
+        },
+        {
+          "id": 335,
+          "word": "chat",
+          "meaning": "수다 떨다, 채팅하다 명 잡담, 수다",
+          "pos": "동",
+          "raw": "0335 chat 동 수다 떨다, 채팅하다 명 잡담, 수다"
+        },
+        {
+          "id": 336,
+          "word": "age",
+          "meaning": "나이",
+          "pos": "명",
+          "raw": "0336 age 명 나이"
+        },
+        {
+          "id": 337,
+          "word": "shop",
+          "meaning": "가게, 상점 동 물건을 사다, 쇼핑하다",
+          "pos": "명",
+          "raw": "0337 shop 명 가게, 상점 동 물건을 사다, 쇼핑하다"
+        },
+        {
+          "id": 338,
+          "word": "helpful",
+          "meaning": "도움이 되는, 유익한",
+          "pos": "형",
+          "raw": "0338 helpful 형 도움이 되는, 유익한"
+        },
+        {
+          "id": 339,
+          "word": "these days",
+          "meaning": "",
+          "pos": "요즘",
+          "raw": "0339 these days 요즘"
+        },
+        {
+          "id": 340,
+          "word": "get it",
+          "meaning": "이해하다",
+          "pos": "",
+          "raw": "0340 get it 이해하다"
+        }
+      ]
+    },
+    {
+      "day": 35,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 341,
+          "word": "title",
+          "meaning": "제목, 표제",
+          "pos": "명",
+          "raw": "0341 title 명 제목, 표제"
+        },
+        {
+          "id": 342,
+          "word": "square",
+          "meaning": "1. 정사각형 2. 광장 형 정사각형의",
+          "pos": "명",
+          "raw": "0342 square 명 1. 정사각형 2. 광장 형 정사각형의"
+        },
+        {
+          "id": 343,
+          "word": "airplane",
+          "meaning": "비행기",
+          "pos": "명",
+          "raw": "0343 airplane 명 비행기"
+        },
+        {
+          "id": 344,
+          "word": "cousin",
+          "meaning": "사촌",
+          "pos": "명",
+          "raw": "0344 cousin 명 사촌"
+        },
+        {
+          "id": 345,
+          "word": "enjoy",
+          "meaning": "즐기다",
+          "pos": "동",
+          "raw": "0345 enjoy 동 즐기다"
+        },
+        {
+          "id": 346,
+          "word": "ask",
+          "meaning": "1. 묻다, 물어보다 2. 부탁하다, 요청하다",
+          "pos": "동",
+          "raw": "0346 ask 동 1. 묻다, 물어보다 2. 부탁하다, 요청하다"
+        },
+        {
+          "id": 347,
+          "word": "only",
+          "meaning": "단지, 오직 형 유일한",
+          "pos": "부",
+          "raw": "0347 only 부 단지, 오직 형 유일한"
+        },
+        {
+          "id": 348,
+          "word": "arrive",
+          "meaning": "도착하다",
+          "pos": "동",
+          "raw": "0348 arrive 동 도착하다"
+        },
+        {
+          "id": 349,
+          "word": "bathroom",
+          "meaning": "욕실, 화장실",
+          "pos": "명",
+          "raw": "0349 bathroom 명 욕실, 화장실"
+        },
+        {
+          "id": 350,
+          "word": "vegetable",
+          "meaning": "채소",
+          "pos": "명",
+          "raw": "0350 vegetable 명 채소"
+        }
+      ]
+    },
+    {
+      "day": 36,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 351,
+          "word": "show",
+          "meaning": "보여주다 명 쇼, 공연물",
+          "pos": "동",
+          "raw": "0351 show 동 보여주다 명 쇼, 공연물"
+        },
+        {
+          "id": 352,
+          "word": "bath",
+          "meaning": "목욕",
+          "pos": "명",
+          "raw": "0352 bath 명 목욕"
+        },
+        {
+          "id": 353,
+          "word": "become",
+          "meaning": "1. …이 되다 2. …해지다",
+          "pos": "동",
+          "raw": "0353 become 동 1. …이 되다 2. …해지다"
+        },
+        {
+          "id": 354,
+          "word": "question",
+          "meaning": "질문",
+          "pos": "명",
+          "raw": "0354 question 명 질문"
+        },
+        {
+          "id": 355,
+          "word": "plate",
+          "meaning": "접시",
+          "pos": "명",
+          "raw": "0355 plate 명 접시"
+        },
+        {
+          "id": 356,
+          "word": "finish",
+          "meaning": "끝나다, 끝마치다",
+          "pos": "동",
+          "raw": "0356 finish 동 끝나다, 끝마치다"
+        },
+        {
+          "id": 357,
+          "word": "both",
+          "meaning": "둘 다의, 양쪽의 대 둘 다, 양쪽",
+          "pos": "형",
+          "raw": "0357 both 형 둘 다의, 양쪽의 대 둘 다, 양쪽"
+        },
+        {
+          "id": 358,
+          "word": "choice",
+          "meaning": "1. 선택권 2. 선택(하는 행동)",
+          "pos": "명",
+          "raw": "0358 choice 명 1. 선택권 2. 선택(하는 행동)"
+        },
+        {
+          "id": 359,
+          "word": "see a doctor",
+          "meaning": "병원에 가다, 진찰을 받다",
+          "pos": "",
+          "raw": "0359 see a doctor 병원에 가다, 진찰을 받다"
+        },
+        {
+          "id": 360,
+          "word": "pick up 1. …",
+          "meaning": "집다 2. …을 (차에) 태우러 가다[오다]",
+          "pos": "을",
+          "raw": "0360 pick up 1. …을 집다 2. …을 (차에) 태우러 가다[오다]"
+        }
+      ]
+    },
+    {
+      "day": 37,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 361,
+          "word": "rich",
+          "meaning": "부유한, 부자인",
+          "pos": "형",
+          "raw": "0361 rich 형 부유한, 부자인"
+        },
+        {
+          "id": 362,
+          "word": "send",
+          "meaning": "보내다, 발송하다",
+          "pos": "동",
+          "raw": "0362 send 동 보내다, 발송하다"
+        },
+        {
+          "id": 363,
+          "word": "learn",
+          "meaning": "배우다, 익히다",
+          "pos": "동",
+          "raw": "0363 learn 동 배우다, 익히다"
+        },
+        {
+          "id": 364,
+          "word": "move",
+          "meaning": "1. 움직이다 2. 이사하다",
+          "pos": "동",
+          "raw": "0364 move 동 1. 움직이다 2. 이사하다"
+        },
+        {
+          "id": 365,
+          "word": "dessert",
+          "meaning": "디저트, 후식",
+          "pos": "명",
+          "raw": "0365 dessert 명 디저트, 후식"
+        },
+        {
+          "id": 366,
+          "word": "world",
+          "meaning": "세계",
+          "pos": "명",
+          "raw": "0366 world 명 세계"
+        },
+        {
+          "id": 367,
+          "word": "restaurant",
+          "meaning": "식당, 음식점",
+          "pos": "명",
+          "raw": "0367 restaurant 명 식당, 음식점"
+        },
+        {
+          "id": 368,
+          "word": "picnic",
+          "meaning": "소풍, 피크닉",
+          "pos": "명",
+          "raw": "0368 picnic 명 소풍, 피크닉"
+        },
+        {
+          "id": 369,
+          "word": "case",
+          "meaning": "1. 상자, 용기 2. 경우",
+          "pos": "명",
+          "raw": "0369 case 명 1. 상자, 용기 2. 경우"
+        },
+        {
+          "id": 370,
+          "word": "library",
+          "meaning": "도서관",
+          "pos": "명",
+          "raw": "0370 library 명 도서관"
+        }
+      ]
+    },
+    {
+      "day": 38,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 371,
+          "word": "online",
+          "meaning": "온라인의 부 온라인으로",
+          "pos": "형",
+          "raw": "0371 online 형 온라인의 부 온라인으로"
+        },
+        {
+          "id": 372,
+          "word": "art",
+          "meaning": "1. 예술 2.미술",
+          "pos": "명",
+          "raw": "0372 art 명 1. 예술 2.미술"
+        },
+        {
+          "id": 373,
+          "word": "hill",
+          "meaning": "언덕, (낮은) 산",
+          "pos": "명",
+          "raw": "0373 hill 명 언덕, (낮은) 산"
+        },
+        {
+          "id": 374,
+          "word": "wind",
+          "meaning": "바람",
+          "pos": "명",
+          "raw": "0374 wind 명 바람"
+        },
+        {
+          "id": 375,
+          "word": "homework",
+          "meaning": "숙제, 과제",
+          "pos": "명",
+          "raw": "0375 homework 명 숙제, 과제"
+        },
+        {
+          "id": 376,
+          "word": "touch",
+          "meaning": "1. 만지다 2. 감동시키다",
+          "pos": "동",
+          "raw": "0376 touch 동 1. 만지다 2. 감동시키다"
+        },
+        {
+          "id": 377,
+          "word": "side",
+          "meaning": "1. 쪽, 측 2. 측면, 옆면",
+          "pos": "명",
+          "raw": "0377 side 명 1. 쪽, 측 2. 측면, 옆면"
+        },
+        {
+          "id": 378,
+          "word": "letter",
+          "meaning": "1. 편지 2. 글자, 문자",
+          "pos": "명",
+          "raw": "0378 letter 명 1. 편지 2. 글자, 문자"
+        },
+        {
+          "id": 379,
+          "word": "do the dishes",
+          "meaning": "설거지를 하다",
+          "pos": "",
+          "raw": "0379 do the dishes 설거지를 하다"
+        },
+        {
+          "id": 380,
+          "word": "be over",
+          "meaning": "끝나다",
+          "pos": "",
+          "raw": "0380 be over 끝나다"
+        }
+      ]
+    },
+    {
+      "day": 39,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 381,
+          "word": "manner",
+          "meaning": "1. 방식, 방법 2. 태도 3. 예의, 예절",
+          "pos": "명",
+          "raw": "0381 manner 명 1. 방식, 방법 2. 태도 3. 예의, 예절"
+        },
+        {
+          "id": 382,
+          "word": "straight",
+          "meaning": "똑바로, 곧장 형 곧은, 일직선의",
+          "pos": "부",
+          "raw": "0382 straight 부 똑바로, 곧장 형 곧은, 일직선의"
+        },
+        {
+          "id": 383,
+          "word": "poor",
+          "meaning": "1. 가난한 2. 불쌍한",
+          "pos": "형",
+          "raw": "0383 poor 형 1. 가난한 2. 불쌍한"
+        },
+        {
+          "id": 384,
+          "word": "try",
+          "meaning": "1. 노력하다 2. 시도하다",
+          "pos": "동",
+          "raw": "0384 try 동 1. 노력하다 2. 시도하다"
+        },
+        {
+          "id": 385,
+          "word": "garden",
+          "meaning": "정원, 뜰",
+          "pos": "명",
+          "raw": "0385 garden 명 정원, 뜰"
+        },
+        {
+          "id": 386,
+          "word": "gate",
+          "meaning": "1. 문, 출입문 2. 탑승구",
+          "pos": "명",
+          "raw": "0386 gate 명 1. 문, 출입문 2. 탑승구"
+        },
+        {
+          "id": 387,
+          "word": "stand",
+          "meaning": "서 있다, 서다",
+          "pos": "동",
+          "raw": "0387 stand 동 서 있다, 서다"
+        },
+        {
+          "id": 388,
+          "word": "complete",
+          "meaning": "완전한, 완벽한 동 완료하다",
+          "pos": "형",
+          "raw": "0388 complete 형 완전한, 완벽한 동 완료하다"
+        },
+        {
+          "id": 389,
+          "word": "clothes",
+          "meaning": "옷, 의복",
+          "pos": "명",
+          "raw": "0389 clothes 명 옷, 의복"
+        },
+        {
+          "id": 390,
+          "word": "strange",
+          "meaning": "1. 이상한 2. 낯선",
+          "pos": "형",
+          "raw": "0390 strange 형 1. 이상한 2. 낯선"
+        }
+      ]
+    },
+    {
+      "day": 40,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 391,
+          "word": "sorry",
+          "meaning": "1. 미안한 2. 유감스러운",
+          "pos": "형",
+          "raw": "0391 sorry 형 1. 미안한 2. 유감스러운"
+        },
+        {
+          "id": 392,
+          "word": "circle",
+          "meaning": "원, 동그라미",
+          "pos": "명",
+          "raw": "0392 circle 명 원, 동그라미"
+        },
+        {
+          "id": 393,
+          "word": "triangle",
+          "meaning": "삼각형",
+          "pos": "명",
+          "raw": "0393 triangle 명 삼각형"
+        },
+        {
+          "id": 394,
+          "word": "artwork",
+          "meaning": "(박물관 등의) 미술품",
+          "pos": "명",
+          "raw": "0394 artwork 명 (박물관 등의) 미술품"
+        },
+        {
+          "id": 395,
+          "word": "lesson",
+          "meaning": "1. 수업 2. (교재의) 과 3. 교훈",
+          "pos": "명",
+          "raw": "0395 lesson 명 1. 수업 2. (교재의) 과 3. 교훈"
+        },
+        {
+          "id": 396,
+          "word": "wake",
+          "meaning": "(잠에서) 깨다, 일어나다",
+          "pos": "동",
+          "raw": "0396 wake 동 (잠에서) 깨다, 일어나다"
+        },
+        {
+          "id": 397,
+          "word": "let",
+          "meaning": "1. …하게 하다, …하도록 허락하다 2. …하자",
+          "pos": "동",
+          "raw": "0397 let 동 1. …하게 하다, …하도록 허락하다 2. …하자"
+        },
+        {
+          "id": 398,
+          "word": "turn",
+          "meaning": "돌다, 돌리다 명 순서, 차례",
+          "pos": "동",
+          "raw": "0398 turn 동 돌다, 돌리다 명 순서, 차례"
+        },
+        {
+          "id": 399,
+          "word": "for sure",
+          "meaning": "분명히, 확실히",
+          "pos": "",
+          "raw": "0399 for sure 분명히, 확실히"
+        },
+        {
+          "id": 400,
+          "word": "show ... around …",
+          "meaning": "구경시켜 주다",
+          "pos": "에게",
+          "raw": "0400 show ... around …에게 구경시켜 주다"
+        }
+      ]
+    },
+    {
+      "day": 41,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 401,
+          "word": "answer",
+          "meaning": "대답하다 명 대답, 답",
+          "pos": "동",
+          "raw": "0401 answer 동 대답하다 명 대답, 답"
+        },
+        {
+          "id": 402,
+          "word": "act",
+          "meaning": "행동하다 명 행동, 행위",
+          "pos": "동",
+          "raw": "0402 act 동 행동하다 명 행동, 행위"
+        },
+        {
+          "id": 403,
+          "word": "money",
+          "meaning": "돈",
+          "pos": "명",
+          "raw": "0403 money 명 돈"
+        },
+        {
+          "id": 404,
+          "word": "fresh",
+          "meaning": "1. 신선한 2. 새로운, 참신한",
+          "pos": "형",
+          "raw": "0404 fresh 형 1. 신선한 2. 새로운, 참신한"
+        },
+        {
+          "id": 405,
+          "word": "team",
+          "meaning": "(경기 등의) 팀",
+          "pos": "명",
+          "raw": "0405 team 명 (경기 등의) 팀"
+        },
+        {
+          "id": 406,
+          "word": "artist",
+          "meaning": "예술가, 화가",
+          "pos": "명",
+          "raw": "0406 artist 명 예술가, 화가"
+        },
+        {
+          "id": 407,
+          "word": "airport",
+          "meaning": "공항",
+          "pos": "명",
+          "raw": "0407 airport 명 공항"
+        },
+        {
+          "id": 408,
+          "word": "catch",
+          "meaning": "1. (붙)잡다 2. (병에) 걸리다",
+          "pos": "동",
+          "raw": "0408 catch 동 1. (붙)잡다 2. (병에) 걸리다"
+        },
+        {
+          "id": 409,
+          "word": "glad",
+          "meaning": "기쁜, 반가운",
+          "pos": "형",
+          "raw": "0409 glad 형 기쁜, 반가운"
+        },
+        {
+          "id": 410,
+          "word": "ahead",
+          "meaning": "앞(쪽)으로, 앞에",
+          "pos": "부",
+          "raw": "0410 ahead 부 앞(쪽)으로, 앞에"
+        }
+      ]
+    },
+    {
+      "day": 42,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 411,
+          "word": "lucky",
+          "meaning": "행운의, 운이 좋은",
+          "pos": "형",
+          "raw": "0411 lucky 형 행운의, 운이 좋은"
+        },
+        {
+          "id": 412,
+          "word": "corner",
+          "meaning": "1. (길)모퉁이 2. 구석, 모서리",
+          "pos": "명",
+          "raw": "0412 corner 명 1. (길)모퉁이 2. 구석, 모서리"
+        },
+        {
+          "id": 413,
+          "word": "restroom",
+          "meaning": "(공공장소의) 화장실",
+          "pos": "명",
+          "raw": "0413 restroom 명 (공공장소의) 화장실"
+        },
+        {
+          "id": 414,
+          "word": "straw",
+          "meaning": "1. 짚, 밀짚 2. 빨대",
+          "pos": "명",
+          "raw": "0414 straw 명 1. 짚, 밀짚 2. 빨대"
+        },
+        {
+          "id": 415,
+          "word": "lie",
+          "meaning": "1. 눕다 2. 놓여 있다 3. 거짓말하다",
+          "pos": "동",
+          "raw": "0415 lie 동 1. 눕다 2. 놓여 있다 3. 거짓말하다"
+        },
+        {
+          "id": 416,
+          "word": "fish",
+          "meaning": "물고기 동 낚시하다",
+          "pos": "명",
+          "raw": "0416 fish 명 물고기 동 낚시하다"
+        },
+        {
+          "id": 417,
+          "word": "skip",
+          "meaning": "1. (일을) 빼다, 거르다 2. 건너뛰다, 생략하다",
+          "pos": "동",
+          "raw": "0417 skip 동 1. (일을) 빼다, 거르다 2. 건너뛰다, 생략하다"
+        },
+        {
+          "id": 418,
+          "word": "middle",
+          "meaning": "가운데, 중앙 형 가운데의, 중간의",
+          "pos": "명",
+          "raw": "0418 middle 명 가운데, 중앙 형 가운데의, 중간의"
+        },
+        {
+          "id": 419,
+          "word": "come true",
+          "meaning": "이루어지다, 실현되다",
+          "pos": "",
+          "raw": "0419 come true 이루어지다, 실현되다"
+        },
+        {
+          "id": 420,
+          "word": "one by one",
+          "meaning": "사람씩, 차례로",
+          "pos": "한",
+          "raw": "0420 one by one 한 사람씩, 차례로"
+        }
+      ]
+    },
+    {
+      "day": 43,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 421,
+          "word": "dress",
+          "meaning": "1. 드레스, 원피스 2. 옷, 복장",
+          "pos": "명",
+          "raw": "0421 dress 명 1. 드레스, 원피스 2. 옷, 복장"
+        },
+        {
+          "id": 422,
+          "word": "number",
+          "meaning": "1. 수, 숫자 2. 번호",
+          "pos": "명",
+          "raw": "0422 number 명 1. 수, 숫자 2. 번호"
+        },
+        {
+          "id": 423,
+          "word": "job",
+          "meaning": "1. 일, 직업, 직장 2. 역할, 책임",
+          "pos": "명",
+          "raw": "0423 job 명 1. 일, 직업, 직장 2. 역할, 책임"
+        },
+        {
+          "id": 424,
+          "word": "right",
+          "meaning": "1. 맞는, 정확한 2. 올바른 3. 오른쪽의",
+          "pos": "형",
+          "raw": "0424 right 형 1. 맞는, 정확한 2. 올바른 3. 오른쪽의"
+        },
+        {
+          "id": 425,
+          "word": "throat",
+          "meaning": "목구멍, 목",
+          "pos": "명",
+          "raw": "0425 throat 명 목구멍, 목"
+        },
+        {
+          "id": 426,
+          "word": "thank",
+          "meaning": "감사하다, 고마워하다 명 감사",
+          "pos": "동",
+          "raw": "0426 thank 동 감사하다, 고마워하다 명 감사"
+        },
+        {
+          "id": 427,
+          "word": "campus",
+          "meaning": "(대학) 교정[구내]",
+          "pos": "명",
+          "raw": "0427 campus 명 (대학) 교정[구내]"
+        },
+        {
+          "id": 428,
+          "word": "bank",
+          "meaning": "은행",
+          "pos": "명",
+          "raw": "0428 bank 명 은행"
+        },
+        {
+          "id": 429,
+          "word": "feed",
+          "meaning": "먹이[모이]를 주다",
+          "pos": "동",
+          "raw": "0429 feed 동 먹이[모이]를 주다"
+        },
+        {
+          "id": 430,
+          "word": "type",
+          "meaning": "종류, 유형",
+          "pos": "명",
+          "raw": "0430 type 명 종류, 유형"
+        }
+      ]
+    },
+    {
+      "day": 44,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 431,
+          "word": "seat",
+          "meaning": "좌석, 자리",
+          "pos": "명",
+          "raw": "0431 seat 명 좌석, 자리"
+        },
+        {
+          "id": 432,
+          "word": "museum",
+          "meaning": "박물관, 미술관",
+          "pos": "명",
+          "raw": "0432 museum 명 박물관, 미술관"
+        },
+        {
+          "id": 433,
+          "word": "style",
+          "meaning": "",
+          "pos": "",
+          "raw": "0433 style"
+        },
+        {
+          "id": 434,
+          "word": "sea",
+          "meaning": "바다",
+          "pos": "명",
+          "raw": "0434 sea 명 바다"
+        },
+        {
+          "id": 435,
+          "word": "center",
+          "meaning": "1. 중심, 중앙 2. 종합시설, 센터",
+          "pos": "명",
+          "raw": "0435 center 명 1. 중심, 중앙 2. 종합시설, 센터"
+        },
+        {
+          "id": 436,
+          "word": "find",
+          "meaning": "찾다, 발견하다",
+          "pos": "동",
+          "raw": "0436 find 동 찾다, 발견하다"
+        },
+        {
+          "id": 437,
+          "word": "laugh",
+          "meaning": "(소리를 내며) 웃다 명 웃음",
+          "pos": "동",
+          "raw": "0437 laugh 동 (소리를 내며) 웃다 명 웃음"
+        },
+        {
+          "id": 438,
+          "word": "windy",
+          "meaning": "바람이 많이 부는",
+          "pos": "형",
+          "raw": "0438 windy 형 바람이 많이 부는"
+        },
+        {
+          "id": 439,
+          "word": "try on …",
+          "meaning": "입어[신어]보다",
+          "pos": "을",
+          "raw": "0439 try on …을 입어[신어]보다"
+        },
+        {
+          "id": 440,
+          "word": "talk on the phone",
+          "meaning": "통화하다",
+          "pos": "",
+          "raw": "0440 talk on the phone 통화하다"
+        }
+      ]
+    },
+    {
+      "day": 45,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 441,
+          "word": "top",
+          "meaning": "꼭대기, 맨 위, 정상 형 맨 위의, 최고인",
+          "pos": "명",
+          "raw": "0441 top 명 꼭대기, 맨 위, 정상 형 맨 위의, 최고인"
+        },
+        {
+          "id": 442,
+          "word": "east",
+          "meaning": "동쪽 형 동쪽의",
+          "pos": "명",
+          "raw": "0442 east 명 동쪽 형 동쪽의"
+        },
+        {
+          "id": 443,
+          "word": "luck",
+          "meaning": "1. 행운 2. 운",
+          "pos": "명",
+          "raw": "0443 luck 명 1. 행운 2. 운"
+        },
+        {
+          "id": 444,
+          "word": "wrong",
+          "meaning": "1. 틀린, 잘못된 2. 옳지 않은",
+          "pos": "형",
+          "raw": "0444 wrong 형 1. 틀린, 잘못된 2. 옳지 않은"
+        },
+        {
+          "id": 445,
+          "word": "excellent",
+          "meaning": "뛰어난, 아주 훌륭한",
+          "pos": "형",
+          "raw": "0445 excellent 형 뛰어난, 아주 훌륭한"
+        },
+        {
+          "id": 446,
+          "word": "tie",
+          "meaning": "묶다, 매다 명 넥타이",
+          "pos": "동",
+          "raw": "0446 tie 동 묶다, 매다 명 넥타이"
+        },
+        {
+          "id": 447,
+          "word": "smell",
+          "meaning": "냄새가 나다, 냄새를 맡다 명 냄새",
+          "pos": "동",
+          "raw": "0447 smell 동 냄새가 나다, 냄새를 맡다 명 냄새"
+        },
+        {
+          "id": 448,
+          "word": "action",
+          "meaning": "1. 행동, 조치 2. 행위, 동작",
+          "pos": "명",
+          "raw": "0448 action 명 1. 행동, 조치 2. 행위, 동작"
+        },
+        {
+          "id": 449,
+          "word": "change",
+          "meaning": "변하다, 변화시키다, 바꾸다",
+          "pos": "동",
+          "raw": "0449 change 동 변하다, 변화시키다, 바꾸다"
+        },
+        {
+          "id": 450,
+          "word": "exit",
+          "meaning": "출구",
+          "pos": "명",
+          "raw": "0450 exit 명 출구"
+        }
+      ]
+    },
+    {
+      "day": 46,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 451,
+          "word": "favorite",
+          "meaning": "가장 좋아하는",
+          "pos": "형",
+          "raw": "0451 favorite 형 가장 좋아하는"
+        },
+        {
+          "id": 452,
+          "word": "back",
+          "meaning": "",
+          "pos": "",
+          "raw": "0452 back"
+        },
+        {
+          "id": 453,
+          "word": "fire",
+          "meaning": "1. 불, 불꽃 2. 화재",
+          "pos": "명",
+          "raw": "0453 fire 명 1. 불, 불꽃 2. 화재"
+        },
+        {
+          "id": 454,
+          "word": "across",
+          "meaning": "",
+          "pos": "",
+          "raw": "0454 across"
+        },
+        {
+          "id": 455,
+          "word": "volunteer",
+          "meaning": "자원봉사자 동 자원하다",
+          "pos": "명",
+          "raw": "0455 volunteer 명 자원봉사자 동 자원하다"
+        },
+        {
+          "id": 456,
+          "word": "rock",
+          "meaning": "바위, 돌",
+          "pos": "명",
+          "raw": "0456 rock 명 바위, 돌"
+        },
+        {
+          "id": 457,
+          "word": "leave",
+          "meaning": "1. 떠나다 2. 남겨두다, 놓고 가다",
+          "pos": "동",
+          "raw": "0457 leave 동 1. 떠나다 2. 남겨두다, 놓고 가다"
+        },
+        {
+          "id": 458,
+          "word": "together",
+          "meaning": "같이, 함께",
+          "pos": "",
+          "raw": "0458 together 같이, 함께"
+        },
+        {
+          "id": 459,
+          "word": "turn on[off] …",
+          "meaning": "켜다[끄다]",
+          "pos": "을",
+          "raw": "0459 turn on[off] …을 켜다[끄다]"
+        },
+        {
+          "id": 460,
+          "word": "show up",
+          "meaning": "나타나다",
+          "pos": "",
+          "raw": "0460 show up 나타나다"
+        }
+      ]
+    },
+    {
+      "day": 47,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 461,
+          "word": "spot",
+          "meaning": "1. 장소, 지점 2. 반점 동 발견하다",
+          "pos": "명",
+          "raw": "0461 spot 명 1. 장소, 지점 2. 반점 동 발견하다"
+        },
+        {
+          "id": 462,
+          "word": "grow",
+          "meaning": "1. 자라다, 성장하다 2. 기르다",
+          "pos": "동",
+          "raw": "0462 grow 동 1. 자라다, 성장하다 2. 기르다"
+        },
+        {
+          "id": 463,
+          "word": "free",
+          "meaning": "1. 자유로운 2. 무료의 3. 한가한",
+          "pos": "형",
+          "raw": "0463 free 형 1. 자유로운 2. 무료의 3. 한가한"
+        },
+        {
+          "id": 464,
+          "word": "smile",
+          "meaning": "웃다, 미소 짓다 명 웃음, 미소",
+          "pos": "동",
+          "raw": "0464 smile 동 웃다, 미소 짓다 명 웃음, 미소"
+        },
+        {
+          "id": 465,
+          "word": "speed",
+          "meaning": "속도, 속력 동 빨리 가다, 질주하다",
+          "pos": "명",
+          "raw": "0465 speed 명 속도, 속력 동 빨리 가다, 질주하다"
+        },
+        {
+          "id": 466,
+          "word": "thing",
+          "meaning": "1. 것, 물건 2. 일",
+          "pos": "명",
+          "raw": "0466 thing 명 1. 것, 물건 2. 일"
+        },
+        {
+          "id": 467,
+          "word": "stage",
+          "meaning": "1. 단계, 시기 2. 무대",
+          "pos": "명",
+          "raw": "0467 stage 명 1. 단계, 시기 2. 무대"
+        },
+        {
+          "id": 468,
+          "word": "hold",
+          "meaning": "1. 들다, 잡다 2. 열다, 개최하다",
+          "pos": "동",
+          "raw": "0468 hold 동 1. 들다, 잡다 2. 열다, 개최하다"
+        },
+        {
+          "id": 469,
+          "word": "poster",
+          "meaning": "포스터, 벽보",
+          "pos": "명",
+          "raw": "0469 poster 명 포스터, 벽보"
+        },
+        {
+          "id": 470,
+          "word": "sun",
+          "meaning": "1. 해, 태양 2. 햇빛, 햇볕",
+          "pos": "명",
+          "raw": "0470 sun 명 1. 해, 태양 2. 햇빛, 햇볕"
+        }
+      ]
+    },
+    {
+      "day": 48,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 471,
+          "word": "wish",
+          "meaning": "바라다, 원하다 명 소원",
+          "pos": "동",
+          "raw": "0471 wish 동 바라다, 원하다 명 소원"
+        },
+        {
+          "id": 472,
+          "word": "away",
+          "meaning": "떨어져, 멀리",
+          "pos": "부",
+          "raw": "0472 away 부 떨어져, 멀리"
+        },
+        {
+          "id": 473,
+          "word": "grandparent",
+          "meaning": "조부모",
+          "pos": "명",
+          "raw": "0473 grandparent 명 조부모"
+        },
+        {
+          "id": 474,
+          "word": "ocean",
+          "meaning": "1. 바다 2. 대양",
+          "pos": "명",
+          "raw": "0474 ocean 명 1. 바다 2. 대양"
+        },
+        {
+          "id": 475,
+          "word": "between",
+          "meaning": "1. [위치] … 사이에 2. [시간] … 사이에",
+          "pos": "전",
+          "raw": "0475 between 전 1. [위치] … 사이에 2. [시간] … 사이에"
+        },
+        {
+          "id": 476,
+          "word": "discover",
+          "meaning": "발견하다",
+          "pos": "동",
+          "raw": "0476 discover 동 발견하다"
+        },
+        {
+          "id": 477,
+          "word": "bottom",
+          "meaning": "맨 아래, 바닥 형 맨 아래의",
+          "pos": "명",
+          "raw": "0477 bottom 명 맨 아래, 바닥 형 맨 아래의"
+        },
+        {
+          "id": 478,
+          "word": "active",
+          "meaning": "1. 활동적인 2. 적극적인",
+          "pos": "형",
+          "raw": "0478 active 형 1. 활동적인 2. 적극적인"
+        },
+        {
+          "id": 479,
+          "word": "laugh at …",
+          "meaning": "비웃다",
+          "pos": "을",
+          "raw": "0479 laugh at …을 비웃다"
+        },
+        {
+          "id": 480,
+          "word": "thanks to …",
+          "meaning": "덕분에, … 때문에",
+          "pos": "의",
+          "raw": "0480 thanks to …의 덕분에, … 때문에"
+        }
+      ]
+    },
+    {
+      "day": 49,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 481,
+          "word": "correct",
+          "meaning": "정확한, 옳은 동 수정하다, 고치다",
+          "pos": "형",
+          "raw": "0481 correct 형 정확한, 옳은 동 수정하다, 고치다"
+        },
+        {
+          "id": 482,
+          "word": "front",
+          "meaning": "앞(부분), 앞면 형 앞부분의",
+          "pos": "명",
+          "raw": "0482 front 명 앞(부분), 앞면 형 앞부분의"
+        },
+        {
+          "id": 483,
+          "word": "careful",
+          "meaning": "주의 깊은, 조심성 있는",
+          "pos": "형",
+          "raw": "0483 careful 형 주의 깊은, 조심성 있는"
+        },
+        {
+          "id": 484,
+          "word": "station",
+          "meaning": "1. 역, 정류장 2. (특정 일을 하는) -소, -서",
+          "pos": "명",
+          "raw": "0484 station 명 1. 역, 정류장 2. (특정 일을 하는) -소, -서"
+        },
+        {
+          "id": 485,
+          "word": "studio",
+          "meaning": "(방송국의) 방송실, 스튜디오",
+          "pos": "명",
+          "raw": "0485 studio 명 (방송국의) 방송실, 스튜디오"
+        },
+        {
+          "id": 486,
+          "word": "west",
+          "meaning": "서쪽 형 서쪽의",
+          "pos": "명",
+          "raw": "0486 west 명 서쪽 형 서쪽의"
+        },
+        {
+          "id": 487,
+          "word": "break",
+          "meaning": "",
+          "pos": "",
+          "raw": "0487 break"
+        },
+        {
+          "id": 488,
+          "word": "piece",
+          "meaning": "조각, (한) 개, (한) 장",
+          "pos": "명",
+          "raw": "0488 piece 명 조각, (한) 개, (한) 장"
+        },
+        {
+          "id": 489,
+          "word": "umbrella",
+          "meaning": "우산",
+          "pos": "명",
+          "raw": "0489 umbrella 명 우산"
+        },
+        {
+          "id": 490,
+          "word": "paper",
+          "meaning": "종이",
+          "pos": "명",
+          "raw": "0490 paper 명 종이"
+        }
+      ]
+    },
+    {
+      "day": 50,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 491,
+          "word": "ticket",
+          "meaning": "표, 입장권",
+          "pos": "명",
+          "raw": "0491 ticket 명 표, 입장권"
+        },
+        {
+          "id": 492,
+          "word": "add",
+          "meaning": "1. 추가[첨가]하다 2. 더하다, 합하다",
+          "pos": "동",
+          "raw": "0492 add 동 1. 추가[첨가]하다 2. 더하다, 합하다"
+        },
+        {
+          "id": 493,
+          "word": "example",
+          "meaning": "예(시), 사례, 보기",
+          "pos": "명",
+          "raw": "0493 example 명 예(시), 사례, 보기"
+        },
+        {
+          "id": 494,
+          "word": "mathematics",
+          "meaning": "수학",
+          "pos": "명",
+          "raw": "0494 mathematics 명 수학"
+        },
+        {
+          "id": 495,
+          "word": "below",
+          "meaning": "",
+          "pos": "",
+          "raw": "0495 below"
+        },
+        {
+          "id": 496,
+          "word": "care",
+          "meaning": "",
+          "pos": "",
+          "raw": "0496 care"
+        },
+        {
+          "id": 497,
+          "word": "manager",
+          "meaning": "경영자, 관리인",
+          "pos": "명",
+          "raw": "0497 manager 명 경영자, 관리인"
+        },
+        {
+          "id": 498,
+          "word": "stone",
+          "meaning": "돌",
+          "pos": "명",
+          "raw": "0498 stone 명 돌"
+        },
+        {
+          "id": 499,
+          "word": "get to …",
+          "meaning": "도착하다, …에 이르다",
+          "pos": "에",
+          "raw": "0499 get to …에 도착하다, …에 이르다"
+        },
+        {
+          "id": 500,
+          "word": "right away",
+          "meaning": "곧바로, 즉시",
+          "pos": "",
+          "raw": "0500 right away 곧바로, 즉시"
+        }
+      ]
+    },
+    {
+      "day": 51,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 501,
+          "word": "raise",
+          "meaning": "1. (들어)올리다 2.키우다, 기르다",
+          "pos": "동",
+          "raw": "0501 raise 동 1. (들어)올리다 2.키우다, 기르다"
+        },
+        {
+          "id": 502,
+          "word": "soon",
+          "meaning": "곧, 머지않아",
+          "pos": "부",
+          "raw": "0502 soon 부 곧, 머지않아"
+        },
+        {
+          "id": 503,
+          "word": "park",
+          "meaning": "공원 동 주차하다",
+          "pos": "명",
+          "raw": "0503 park 명 공원 동 주차하다"
+        },
+        {
+          "id": 504,
+          "word": "once",
+          "meaning": "한 번, 1회",
+          "pos": "부",
+          "raw": "0504 once 부 한 번, 1회"
+        },
+        {
+          "id": 505,
+          "word": "sunny",
+          "meaning": "화창한, 맑은",
+          "pos": "형",
+          "raw": "0505 sunny 형 화창한, 맑은"
+        },
+        {
+          "id": 506,
+          "word": "cheap",
+          "meaning": "(값이) 싼",
+          "pos": "형",
+          "raw": "0506 cheap 형 (값이) 싼"
+        },
+        {
+          "id": 507,
+          "word": "dentist",
+          "meaning": "1. 치과 의사 2. 치과",
+          "pos": "명",
+          "raw": "0507 dentist 명 1. 치과 의사 2. 치과"
+        },
+        {
+          "id": 508,
+          "word": "throw",
+          "meaning": "던지다",
+          "pos": "동",
+          "raw": "0508 throw 동 던지다"
+        },
+        {
+          "id": 509,
+          "word": "activity",
+          "meaning": "(즐기기 위한) 활동",
+          "pos": "명",
+          "raw": "0509 activity 명 (즐기기 위한) 활동"
+        },
+        {
+          "id": 510,
+          "word": "stop",
+          "meaning": "",
+          "pos": "",
+          "raw": "0510 stop"
+        }
+      ]
+    },
+    {
+      "day": 52,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 511,
+          "word": "hope",
+          "meaning": "바라다, 희망하다 명 바람, 희망",
+          "pos": "동",
+          "raw": "0511 hope 동 바라다, 희망하다 명 바람, 희망"
+        },
+        {
+          "id": 512,
+          "word": "science",
+          "meaning": "과학",
+          "pos": "명",
+          "raw": "0512 science 명 과학"
+        },
+        {
+          "id": 513,
+          "word": "cure",
+          "meaning": "치료하다 명 치료(법), 치료제",
+          "pos": "동",
+          "raw": "0513 cure 동 치료하다 명 치료(법), 치료제"
+        },
+        {
+          "id": 514,
+          "word": "living room",
+          "meaning": "거실",
+          "pos": "명",
+          "raw": "0514 living room 명 거실"
+        },
+        {
+          "id": 515,
+          "word": "message",
+          "meaning": "메시지, 전언",
+          "pos": "명",
+          "raw": "0515 message 명 메시지, 전언"
+        },
+        {
+          "id": 516,
+          "word": "need",
+          "meaning": "",
+          "pos": "",
+          "raw": "0516 need"
+        },
+        {
+          "id": 517,
+          "word": "musician",
+          "meaning": "(작곡가 · 연주가 등의) 음악가",
+          "pos": "명",
+          "raw": "0517 musician 명 (작곡가 · 연주가 등의) 음악가"
+        },
+        {
+          "id": 518,
+          "word": "rule",
+          "meaning": "규칙, 규정",
+          "pos": "명",
+          "raw": "0518 rule 명 규칙, 규정"
+        },
+        {
+          "id": 519,
+          "word": "hold on",
+          "meaning": "기다리다",
+          "pos": "",
+          "raw": "0519 hold on 기다리다"
+        },
+        {
+          "id": 520,
+          "word": "take turns",
+          "meaning": "교대로 하다",
+          "pos": "",
+          "raw": "0520 take turns 교대로 하다"
+        }
+      ]
+    },
+    {
+      "day": 53,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 521,
+          "word": "tell",
+          "meaning": "말하다, 이야기하다",
+          "pos": "동",
+          "raw": "0521 tell 동 말하다, 이야기하다"
+        },
+        {
+          "id": 522,
+          "word": "taste",
+          "meaning": "맛 동 맛이 나다",
+          "pos": "명",
+          "raw": "0522 taste 명 맛 동 맛이 나다"
+        },
+        {
+          "id": 523,
+          "word": "concert",
+          "meaning": "음악회, 콘서트",
+          "pos": "명",
+          "raw": "0523 concert 명 음악회, 콘서트"
+        },
+        {
+          "id": 524,
+          "word": "keep",
+          "meaning": "",
+          "pos": "",
+          "raw": "0524 keep"
+        },
+        {
+          "id": 525,
+          "word": "fix",
+          "meaning": "1. 수리하다, 고치다 2. 고정시키다",
+          "pos": "동",
+          "raw": "0525 fix 동 1. 수리하다, 고치다 2. 고정시키다"
+        },
+        {
+          "id": 526,
+          "word": "bone",
+          "meaning": "뼈",
+          "pos": "명",
+          "raw": "0526 bone 명 뼈"
+        },
+        {
+          "id": 527,
+          "word": "wood",
+          "meaning": "1. 나무, 목재 2. 숲",
+          "pos": "명",
+          "raw": "0527 wood 명 1. 나무, 목재 2. 숲"
+        },
+        {
+          "id": 528,
+          "word": "diary",
+          "meaning": "일기(장)",
+          "pos": "명",
+          "raw": "0528 diary 명 일기(장)"
+        },
+        {
+          "id": 529,
+          "word": "moment",
+          "meaning": "1. (특정한) 순간, 시점 2. 잠깐, 잠시",
+          "pos": "명",
+          "raw": "0529 moment 명 1. (특정한) 순간, 시점 2. 잠깐, 잠시"
+        },
+        {
+          "id": 530,
+          "word": "best",
+          "meaning": "가장 좋은, 최고의 부 가장 (잘)",
+          "pos": "형",
+          "raw": "0530 best 형 가장 좋은, 최고의 부 가장 (잘)"
+        }
+      ]
+    },
+    {
+      "day": 54,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 531,
+          "word": "carefully",
+          "meaning": "조심스럽게, 신중하게",
+          "pos": "부",
+          "raw": "0531 carefully 부 조심스럽게, 신중하게"
+        },
+        {
+          "id": 532,
+          "word": "forget",
+          "meaning": "잊다, 잊어버리다",
+          "pos": "동",
+          "raw": "0532 forget 동 잊다, 잊어버리다"
+        },
+        {
+          "id": 533,
+          "word": "review",
+          "meaning": "1. 평론, 비평 2. 복습 동 복습하다",
+          "pos": "명",
+          "raw": "0533 review 명 1. 평론, 비평 2. 복습 동 복습하다"
+        },
+        {
+          "id": 534,
+          "word": "fact",
+          "meaning": "사실",
+          "pos": "명",
+          "raw": "0534 fact 명 사실"
+        },
+        {
+          "id": 535,
+          "word": "picture",
+          "meaning": "1. 그림 2. 사진",
+          "pos": "명",
+          "raw": "0535 picture 명 1. 그림 2. 사진"
+        },
+        {
+          "id": 536,
+          "word": "above",
+          "meaning": "…보다 위에 부 위에, 위로",
+          "pos": "전",
+          "raw": "0536 above 전 …보다 위에 부 위에, 위로"
+        },
+        {
+          "id": 537,
+          "word": "scientist",
+          "meaning": "과학자",
+          "pos": "명",
+          "raw": "0537 scientist 명 과학자"
+        },
+        {
+          "id": 538,
+          "word": "arrow",
+          "meaning": "1. 화살 2. 화살표",
+          "pos": "명",
+          "raw": "0538 arrow 명 1. 화살 2. 화살표"
+        },
+        {
+          "id": 539,
+          "word": "ask for …",
+          "meaning": "요구[요청]하다",
+          "pos": "을",
+          "raw": "0539 ask for …을 요구[요청]하다"
+        },
+        {
+          "id": 540,
+          "word": "millions of",
+          "meaning": "수백만의",
+          "pos": "",
+          "raw": "0540 millions of 수백만의"
+        }
+      ]
+    },
+    {
+      "day": 55,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 541,
+          "word": "waste",
+          "meaning": "1. 낭비 2. 쓰레기, 폐기물 동 낭비하다",
+          "pos": "명",
+          "raw": "0541 waste 명 1. 낭비 2. 쓰레기, 폐기물 동 낭비하다"
+        },
+        {
+          "id": 542,
+          "word": "glue",
+          "meaning": "풀 동 풀을 바르다, 접착하다",
+          "pos": "명",
+          "raw": "0542 glue 명 풀 동 풀을 바르다, 접착하다"
+        },
+        {
+          "id": 543,
+          "word": "teen",
+          "meaning": "십 대 형 십 대의",
+          "pos": "명",
+          "raw": "0543 teen 명 십 대 형 십 대의"
+        },
+        {
+          "id": 544,
+          "word": "lead",
+          "meaning": "1. 안내하다 2. 지도하다, 이끌다",
+          "pos": "동",
+          "raw": "0544 lead 동 1. 안내하다 2. 지도하다, 이끌다"
+        },
+        {
+          "id": 545,
+          "word": "tired",
+          "meaning": "1. 피곤한, 지친 2. 싫증이 난",
+          "pos": "형",
+          "raw": "0545 tired 형 1. 피곤한, 지친 2. 싫증이 난"
+        },
+        {
+          "id": 546,
+          "word": "hurt",
+          "meaning": "1. 다치게 하다 2. 아프다",
+          "pos": "동",
+          "raw": "0546 hurt 동 1. 다치게 하다 2. 아프다"
+        },
+        {
+          "id": 547,
+          "word": "also",
+          "meaning": "또한, …도",
+          "pos": "부",
+          "raw": "0547 also 부 또한, …도"
+        },
+        {
+          "id": 548,
+          "word": "magic",
+          "meaning": "마법, 마술 형 마법[마술]의",
+          "pos": "명",
+          "raw": "0548 magic 명 마법, 마술 형 마법[마술]의"
+        },
+        {
+          "id": 549,
+          "word": "delicious",
+          "meaning": "맛있는",
+          "pos": "형",
+          "raw": "0549 delicious 형 맛있는"
+        },
+        {
+          "id": 550,
+          "word": "along",
+          "meaning": "…을 따라서 부 앞으로",
+          "pos": "전",
+          "raw": "0550 along 전 …을 따라서 부 앞으로"
+        }
+      ]
+    },
+    {
+      "day": 56,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 551,
+          "word": "text",
+          "meaning": "(책 등의) 글, 본문",
+          "pos": "명",
+          "raw": "0551 text 명 (책 등의) 글, 본문"
+        },
+        {
+          "id": 552,
+          "word": "land",
+          "meaning": "토지, 땅 동 착륙하다",
+          "pos": "명",
+          "raw": "0552 land 명 토지, 땅 동 착륙하다"
+        },
+        {
+          "id": 553,
+          "word": "bookstore",
+          "meaning": "서점, 책방",
+          "pos": "명",
+          "raw": "0553 bookstore 명 서점, 책방"
+        },
+        {
+          "id": 554,
+          "word": "mall",
+          "meaning": "쇼핑센터, 쇼핑몰",
+          "pos": "명",
+          "raw": "0554 mall 명 쇼핑센터, 쇼핑몰"
+        },
+        {
+          "id": 555,
+          "word": "expensive",
+          "meaning": "비싼",
+          "pos": "형",
+          "raw": "0555 expensive 형 비싼"
+        },
+        {
+          "id": 556,
+          "word": "point",
+          "meaning": "1. 요점, 핵심 2. 점수 동 가리키다",
+          "pos": "명",
+          "raw": "0556 point 명 1. 요점, 핵심 2. 점수 동 가리키다"
+        },
+        {
+          "id": 557,
+          "word": "build",
+          "meaning": "짓다, 세우다",
+          "pos": "동",
+          "raw": "0557 build 동 짓다, 세우다"
+        },
+        {
+          "id": 558,
+          "word": "role",
+          "meaning": "역할, 임무",
+          "pos": "명",
+          "raw": "0558 role 명 역할, 임무"
+        },
+        {
+          "id": 559,
+          "word": "get on[off] …",
+          "meaning": "타다, …에서 내리다",
+          "pos": "에",
+          "raw": "0559 get on[off] …에 타다, …에서 내리다"
+        },
+        {
+          "id": 560,
+          "word": "for free",
+          "meaning": "무료로",
+          "pos": "",
+          "raw": "0560 for free 무료로"
+        }
+      ]
+    },
+    {
+      "day": 57,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 561,
+          "word": "step",
+          "meaning": "1. (발)걸음 2. 단계",
+          "pos": "명",
+          "raw": "0561 step 명 1. (발)걸음 2. 단계"
+        },
+        {
+          "id": 562,
+          "word": "tasty",
+          "meaning": "맛있는",
+          "pos": "형",
+          "raw": "0562 tasty 형 맛있는"
+        },
+        {
+          "id": 563,
+          "word": "photograph",
+          "meaning": "사진",
+          "pos": "명",
+          "raw": "0563 photograph 명 사진"
+        },
+        {
+          "id": 564,
+          "word": "moon",
+          "meaning": "달",
+          "pos": "명",
+          "raw": "0564 moon 명 달"
+        },
+        {
+          "id": 565,
+          "word": "plan",
+          "meaning": "계획 동 계획하다",
+          "pos": "명",
+          "raw": "0565 plan 명 계획 동 계획하다"
+        },
+        {
+          "id": 566,
+          "word": "agree",
+          "meaning": "동의하다",
+          "pos": "동",
+          "raw": "0566 agree 동 동의하다"
+        },
+        {
+          "id": 567,
+          "word": "just",
+          "meaning": "1. 바로, 딱 2. 방금, 막 3. 단지, 다만",
+          "pos": "부",
+          "raw": "0567 just 부 1. 바로, 딱 2. 방금, 막 3. 단지, 다만"
+        },
+        {
+          "id": 568,
+          "word": "toe",
+          "meaning": "발가락",
+          "pos": "명",
+          "raw": "0568 toe 명 발가락"
+        },
+        {
+          "id": 569,
+          "word": "skill",
+          "meaning": "1. 기량, 솜씨 2.기술",
+          "pos": "명",
+          "raw": "0569 skill 명 1. 기량, 솜씨 2.기술"
+        },
+        {
+          "id": 570,
+          "word": "mix",
+          "meaning": "섞이다, 섞다",
+          "pos": "동",
+          "raw": "0570 mix 동 섞이다, 섞다"
+        }
+      ]
+    },
+    {
+      "day": 58,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 571,
+          "word": "wide",
+          "meaning": "(폭이) 넓은",
+          "pos": "형",
+          "raw": "0571 wide 형 (폭이) 넓은"
+        },
+        {
+          "id": 572,
+          "word": "area",
+          "meaning": "1. 지역 2.(특정 용도의) 구역",
+          "pos": "명",
+          "raw": "0572 area 명 1. 지역 2.(특정 용도의) 구역"
+        },
+        {
+          "id": 573,
+          "word": "band",
+          "meaning": "1. (음악을 연주하는) 밴드 2. 끈, 띠",
+          "pos": "명",
+          "raw": "0573 band 명 1. (음악을 연주하는) 밴드 2. 끈, 띠"
+        },
+        {
+          "id": 574,
+          "word": "danger",
+          "meaning": "위험(성)",
+          "pos": "명",
+          "raw": "0574 danger 명 위험(성)"
+        },
+        {
+          "id": 575,
+          "word": "nail",
+          "meaning": "1. 손톱, 발톱 2. 못 동 못으로 박다",
+          "pos": "명",
+          "raw": "0575 nail 명 1. 손톱, 발톱 2. 못 동 못으로 박다"
+        },
+        {
+          "id": 576,
+          "word": "building",
+          "meaning": "건물",
+          "pos": "명",
+          "raw": "0576 building 명 건물"
+        },
+        {
+          "id": 577,
+          "word": "golden",
+          "meaning": "1. 금으로 만든 2. 금빛의",
+          "pos": "형",
+          "raw": "0577 golden 형 1. 금으로 만든 2. 금빛의"
+        },
+        {
+          "id": 578,
+          "word": "remember",
+          "meaning": "기억하다",
+          "pos": "동",
+          "raw": "0578 remember 동 기억하다"
+        },
+        {
+          "id": 579,
+          "word": "run away",
+          "meaning": "도망가다",
+          "pos": "",
+          "raw": "0579 run away 도망가다"
+        },
+        {
+          "id": 580,
+          "word": "line up",
+          "meaning": "서다",
+          "pos": "줄을",
+          "raw": "0580 line up 줄을 서다"
+        }
+      ]
+    },
+    {
+      "day": 59,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 581,
+          "word": "proud",
+          "meaning": "자랑스러워하는, 자랑스러운",
+          "pos": "형",
+          "raw": "0581 proud 형 자랑스러워하는, 자랑스러운"
+        },
+        {
+          "id": 582,
+          "word": "test",
+          "meaning": "1. 시험 2. 검사",
+          "pos": "명",
+          "raw": "0582 test 명 1. 시험 2. 검사"
+        },
+        {
+          "id": 583,
+          "word": "brain",
+          "meaning": "뇌",
+          "pos": "명",
+          "raw": "0583 brain 명 뇌"
+        },
+        {
+          "id": 584,
+          "word": "teenager",
+          "meaning": "십 대",
+          "pos": "명",
+          "raw": "0584 teenager 명 십 대"
+        },
+        {
+          "id": 585,
+          "word": "trick",
+          "meaning": "속임수 동 속이다",
+          "pos": "명",
+          "raw": "0585 trick 명 속임수 동 속이다"
+        },
+        {
+          "id": 586,
+          "word": "singer",
+          "meaning": "가수",
+          "pos": "명",
+          "raw": "0586 singer 명 가수"
+        },
+        {
+          "id": 587,
+          "word": "someone",
+          "meaning": "어떤 사람, 누구",
+          "pos": "대",
+          "raw": "0587 someone 대 어떤 사람, 누구"
+        },
+        {
+          "id": 588,
+          "word": "bite",
+          "meaning": "(이빨로) 베어 물다 명 한 입 (베어 문 조각)",
+          "pos": "동",
+          "raw": "0588 bite 동 (이빨로) 베어 물다 명 한 입 (베어 문 조각)"
+        },
+        {
+          "id": 589,
+          "word": "musical",
+          "meaning": "음악의, 음악적인 명 뮤지컬",
+          "pos": "형",
+          "raw": "0589 musical 형 음악의, 음악적인 명 뮤지컬"
+        },
+        {
+          "id": 590,
+          "word": "surprising",
+          "meaning": "놀라운",
+          "pos": "형",
+          "raw": "0590 surprising 형 놀라운"
+        }
+      ]
+    },
+    {
+      "day": 60,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 591,
+          "word": "tour",
+          "meaning": "여행 동 여행하다, 관광하다",
+          "pos": "명",
+          "raw": "0591 tour 명 여행 동 여행하다, 관광하다"
+        },
+        {
+          "id": 592,
+          "word": "shake",
+          "meaning": "1. 흔들리다, 흔들다 2. (몸이) 떨리다, 떨다",
+          "pos": "동",
+          "raw": "0592 shake 동 1. 흔들리다, 흔들다 2. (몸이) 떨리다, 떨다"
+        },
+        {
+          "id": 593,
+          "word": "ring",
+          "meaning": "반지 동 (소리가) 울리다",
+          "pos": "명",
+          "raw": "0593 ring 명 반지 동 (소리가) 울리다"
+        },
+        {
+          "id": 594,
+          "word": "shape",
+          "meaning": "형태, 모양",
+          "pos": "명",
+          "raw": "0594 shape 명 형태, 모양"
+        },
+        {
+          "id": 595,
+          "word": "drop",
+          "meaning": "떨어지다, 떨어뜨리다 명 방울",
+          "pos": "동",
+          "raw": "0595 drop 동 떨어지다, 떨어뜨리다 명 방울"
+        },
+        {
+          "id": 596,
+          "word": "sunglasses",
+          "meaning": "선글라스, 색안경",
+          "pos": "명",
+          "raw": "0596 sunglasses 명 선글라스, 색안경"
+        },
+        {
+          "id": 597,
+          "word": "film",
+          "meaning": "영화 동 촬영하다, 찍다",
+          "pos": "명",
+          "raw": "0597 film 명 영화 동 촬영하다, 찍다"
+        },
+        {
+          "id": 598,
+          "word": "office",
+          "meaning": "사무실",
+          "pos": "명",
+          "raw": "0598 office 명 사무실"
+        },
+        {
+          "id": 599,
+          "word": "give up",
+          "meaning": "포기하다",
+          "pos": "",
+          "raw": "0599 give up 포기하다"
+        },
+        {
+          "id": 600,
+          "word": "take care of …",
+          "meaning": "돌보다",
+          "pos": "을",
+          "raw": "0600 take care of …을 돌보다"
+        }
+      ]
+    },
+    {
+      "day": 61,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 601,
+          "word": "few",
+          "meaning": "(수량이) 거의 없는",
+          "pos": "형",
+          "raw": "0601 few 형 (수량이) 거의 없는"
+        },
+        {
+          "id": 602,
+          "word": "false",
+          "meaning": "1. 틀린, 거짓의 2. 가짜의, 인조의",
+          "pos": "형",
+          "raw": "0602 false 형 1. 틀린, 거짓의 2. 가짜의, 인조의"
+        },
+        {
+          "id": 603,
+          "word": "gas",
+          "meaning": "1. 기체 2.(난방 · 조리용) 가스 3. 휘발유",
+          "pos": "명",
+          "raw": "0603 gas 명 1. 기체 2.(난방 · 조리용) 가스 3. 휘발유"
+        },
+        {
+          "id": 604,
+          "word": "lose",
+          "meaning": "1. 잃어버리다 2. (시합 등에서) 지다",
+          "pos": "동",
+          "raw": "0604 lose 동 1. 잃어버리다 2. (시합 등에서) 지다"
+        },
+        {
+          "id": 605,
+          "word": "dangerous",
+          "meaning": "위험한",
+          "pos": "형",
+          "raw": "0605 dangerous 형 위험한"
+        },
+        {
+          "id": 606,
+          "word": "exam",
+          "meaning": "1. 시험 2. 검사",
+          "pos": "명",
+          "raw": "0606 exam 명 1. 시험 2. 검사"
+        },
+        {
+          "id": 607,
+          "word": "trip",
+          "meaning": "여행",
+          "pos": "명",
+          "raw": "0607 trip 명 여행"
+        },
+        {
+          "id": 608,
+          "word": "visit",
+          "meaning": "방문하다 명 방문",
+          "pos": "동",
+          "raw": "0608 visit 동 방문하다 명 방문"
+        },
+        {
+          "id": 609,
+          "word": "camp",
+          "meaning": "야영지, 캠프 동 야영[캠핑]하다",
+          "pos": "명",
+          "raw": "0609 camp 명 야영지, 캠프 동 야영[캠핑]하다"
+        },
+        {
+          "id": 610,
+          "word": "basket",
+          "meaning": "바구니",
+          "pos": "명",
+          "raw": "0610 basket 명 바구니"
+        }
+      ]
+    },
+    {
+      "day": 62,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 611,
+          "word": "note",
+          "meaning": "1. 쪽지, 메모 2. (수업 등의) 필기, 노트",
+          "pos": "명",
+          "raw": "0611 note 명 1. 쪽지, 메모 2. (수업 등의) 필기, 노트"
+        },
+        {
+          "id": 612,
+          "word": "grass",
+          "meaning": "1. 풀 2. 잔디(밭)",
+          "pos": "명",
+          "raw": "0612 grass 명 1. 풀 2. 잔디(밭)"
+        },
+        {
+          "id": 613,
+          "word": "pass",
+          "meaning": "1. 지나가다, 통과하다 2. 합격하다",
+          "pos": "동",
+          "raw": "0613 pass 동 1. 지나가다, 통과하다 2. 합격하다"
+        },
+        {
+          "id": 614,
+          "word": "until",
+          "meaning": "…까지 접 …할 때까지",
+          "pos": "전",
+          "raw": "0614 until 전 …까지 접 …할 때까지"
+        },
+        {
+          "id": 615,
+          "word": "pot",
+          "meaning": "냄비, 솥",
+          "pos": "명",
+          "raw": "0615 pot 명 냄비, 솥"
+        },
+        {
+          "id": 616,
+          "word": "same",
+          "meaning": "같은, 동일한",
+          "pos": "형",
+          "raw": "0616 same 형 같은, 동일한"
+        },
+        {
+          "id": 617,
+          "word": "seafood",
+          "meaning": "해산물",
+          "pos": "명",
+          "raw": "0617 seafood 명 해산물"
+        },
+        {
+          "id": 618,
+          "word": "plant",
+          "meaning": "식물 동 (나무 등을) 심다",
+          "pos": "명",
+          "raw": "0618 plant 명 식물 동 (나무 등을) 심다"
+        },
+        {
+          "id": 619,
+          "word": "each other",
+          "meaning": "",
+          "pos": "서로",
+          "raw": "0619 each other 서로"
+        },
+        {
+          "id": 620,
+          "word": "do one’s best",
+          "meaning": "최선을 다하다",
+          "pos": "",
+          "raw": "0620 do one’s best 최선을 다하다"
+        }
+      ]
+    },
+    {
+      "day": 63,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 621,
+          "word": "island",
+          "meaning": "섬",
+          "pos": "명",
+          "raw": "0621 island 명 섬"
+        },
+        {
+          "id": 622,
+          "word": "oil",
+          "meaning": "1. (요리용) 기름 2. (연료용) 기름, 석유",
+          "pos": "명",
+          "raw": "0622 oil 명 1. (요리용) 기름 2. (연료용) 기름, 석유"
+        },
+        {
+          "id": 623,
+          "word": "write",
+          "meaning": "1. (글자를) 쓰다 2. (책 등을) 쓰다, 집필하다",
+          "pos": "동",
+          "raw": "0623 write 동 1. (글자를) 쓰다 2. (책 등을) 쓰다, 집필하다"
+        },
+        {
+          "id": 624,
+          "word": "surprised",
+          "meaning": "놀란, 놀라는",
+          "pos": "형",
+          "raw": "0624 surprised 형 놀란, 놀라는"
+        },
+        {
+          "id": 625,
+          "word": "safe",
+          "meaning": "안전한",
+          "pos": "형",
+          "raw": "0625 safe 형 안전한"
+        },
+        {
+          "id": 626,
+          "word": "blow",
+          "meaning": "1. (바람이) 불다 2. (입으로) 불다",
+          "pos": "동",
+          "raw": "0626 blow 동 1. (바람이) 불다 2. (입으로) 불다"
+        },
+        {
+          "id": 627,
+          "word": "boring",
+          "meaning": "지루한, 따분한",
+          "pos": "형",
+          "raw": "0627 boring 형 지루한, 따분한"
+        },
+        {
+          "id": 628,
+          "word": "examination",
+          "meaning": "1. 시험 2. 조사 3. 검사",
+          "pos": "명",
+          "raw": "0628 examination 명 1. 시험 2. 조사 3. 검사"
+        },
+        {
+          "id": 629,
+          "word": "cheer",
+          "meaning": "",
+          "pos": "",
+          "raw": "0629 cheer"
+        },
+        {
+          "id": 630,
+          "word": "fee",
+          "meaning": "수수료, 요금",
+          "pos": "명",
+          "raw": "0630 fee 명 수수료, 요금"
+        }
+      ]
+    },
+    {
+      "day": 64,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 631,
+          "word": "different",
+          "meaning": "1. 다른, 차이가 있는 2. 여러 가지의",
+          "pos": "형",
+          "raw": "0631 different 형 1. 다른, 차이가 있는 2. 여러 가지의"
+        },
+        {
+          "id": 632,
+          "word": "host",
+          "meaning": "",
+          "pos": "",
+          "raw": "0632 host"
+        },
+        {
+          "id": 633,
+          "word": "hall",
+          "meaning": "1. 복도 2. 홀, 강당",
+          "pos": "명",
+          "raw": "0633 hall 명 1. 복도 2. 홀, 강당"
+        },
+        {
+          "id": 634,
+          "word": "textbook",
+          "meaning": "교과서",
+          "pos": "명",
+          "raw": "0634 textbook 명 교과서"
+        },
+        {
+          "id": 635,
+          "word": "through",
+          "meaning": "(입구 · 통로 등을) 통(과)하여, 지나서",
+          "pos": "전",
+          "raw": "0635 through 전 (입구 · 통로 등을) 통(과)하여, 지나서"
+        },
+        {
+          "id": 636,
+          "word": "count",
+          "meaning": "",
+          "pos": "",
+          "raw": "0636 count"
+        },
+        {
+          "id": 637,
+          "word": "forest",
+          "meaning": "숲, 삼림",
+          "pos": "명",
+          "raw": "0637 forest 명 숲, 삼림"
+        },
+        {
+          "id": 638,
+          "word": "history",
+          "meaning": "역사",
+          "pos": "명",
+          "raw": "0638 history 명 역사"
+        },
+        {
+          "id": 639,
+          "word": "stop by",
+          "meaning": "들르다",
+          "pos": "잠시",
+          "raw": "0639 stop by 잠시 들르다"
+        },
+        {
+          "id": 640,
+          "word": "be proud of …",
+          "meaning": "자랑스러워하다",
+          "pos": "을",
+          "raw": "0640 be proud of …을 자랑스러워하다"
+        }
+      ]
+    },
+    {
+      "day": 65,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 641,
+          "word": "travel",
+          "meaning": "여행하다 명 여행",
+          "pos": "동",
+          "raw": "0641 travel 동 여행하다 명 여행"
+        },
+        {
+          "id": 642,
+          "word": "chef",
+          "meaning": "요리사, 주방장",
+          "pos": "명",
+          "raw": "0642 chef 명 요리사, 주방장"
+        },
+        {
+          "id": 643,
+          "word": "crowd",
+          "meaning": "군중, 사람들 동 (사람이) 모여들다",
+          "pos": "명",
+          "raw": "0643 crowd 명 군중, 사람들 동 (사람이) 모여들다"
+        },
+        {
+          "id": 644,
+          "word": "exciting",
+          "meaning": "흥미진진한, 재미있는",
+          "pos": "형",
+          "raw": "0644 exciting 형 흥미진진한, 재미있는"
+        },
+        {
+          "id": 645,
+          "word": "shadow",
+          "meaning": "그림자",
+          "pos": "명",
+          "raw": "0645 shadow 명 그림자"
+        },
+        {
+          "id": 646,
+          "word": "miss",
+          "meaning": "",
+          "pos": "",
+          "raw": "0646 miss"
+        },
+        {
+          "id": 647,
+          "word": "tail",
+          "meaning": "꼬리",
+          "pos": "명",
+          "raw": "0647 tail 명 꼬리"
+        },
+        {
+          "id": 648,
+          "word": "inside",
+          "meaning": "안에, 안으로 전 … 안에 명 안, 내부",
+          "pos": "부",
+          "raw": "0648 inside 부 안에, 안으로 전 … 안에 명 안, 내부"
+        },
+        {
+          "id": 649,
+          "word": "anything",
+          "meaning": "",
+          "pos": "",
+          "raw": "0649 anything"
+        },
+        {
+          "id": 650,
+          "word": "sometimes",
+          "meaning": "때때로, 가끔",
+          "pos": "부",
+          "raw": "0650 sometimes 부 때때로, 가끔"
+        }
+      ]
+    },
+    {
+      "day": 66,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 651,
+          "word": "fail",
+          "meaning": "1. 실패하다 2. (시험에) 떨어지다",
+          "pos": "동",
+          "raw": "0651 fail 동 1. 실패하다 2. (시험에) 떨어지다"
+        },
+        {
+          "id": 652,
+          "word": "farm",
+          "meaning": "농장",
+          "pos": "명",
+          "raw": "0652 farm 명 농장"
+        },
+        {
+          "id": 653,
+          "word": "other",
+          "meaning": "",
+          "pos": "",
+          "raw": "0653 other"
+        },
+        {
+          "id": 654,
+          "word": "interest",
+          "meaning": "흥미, 관심",
+          "pos": "명",
+          "raw": "0654 interest 명 흥미, 관심"
+        },
+        {
+          "id": 655,
+          "word": "win",
+          "meaning": "1. 이기다 2. 따다, 획득하다",
+          "pos": "동",
+          "raw": "0655 win 동 1. 이기다 2. 따다, 획득하다"
+        },
+        {
+          "id": 656,
+          "word": "visitor",
+          "meaning": "방문객, 손님",
+          "pos": "명",
+          "raw": "0656 visitor 명 방문객, 손님"
+        },
+        {
+          "id": 657,
+          "word": "river",
+          "meaning": "강",
+          "pos": "명",
+          "raw": "0657 river 명 강"
+        },
+        {
+          "id": 658,
+          "word": "part",
+          "meaning": "1. 부분 2. 일부, 약간",
+          "pos": "명",
+          "raw": "0658 part 명 1. 부분 2. 일부, 약간"
+        },
+        {
+          "id": 659,
+          "word": "a little[few]",
+          "meaning": "조금의, 약간의",
+          "pos": "",
+          "raw": "0659 a little[few] 조금의, 약간의"
+        },
+        {
+          "id": 660,
+          "word": "fall in love (with) (…",
+          "meaning": "에게) 반하다, (…와) 사랑에 빠지다",
+          "pos": "",
+          "raw": "0660 fall in love (with) (…에게) 반하다, (…와) 사랑에 빠지다"
+        }
+      ]
+    },
+    {
+      "day": 67,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 661,
+          "word": "mirror",
+          "meaning": "거울",
+          "pos": "명",
+          "raw": "0661 mirror 명 거울"
+        },
+        {
+          "id": 662,
+          "word": "bored",
+          "meaning": "지루해하는",
+          "pos": "형",
+          "raw": "0662 bored 형 지루해하는"
+        },
+        {
+          "id": 663,
+          "word": "check",
+          "meaning": "확인하다, 점검하다 명 확인, 점검",
+          "pos": "동",
+          "raw": "0663 check 동 확인하다, 점검하다 명 확인, 점검"
+        },
+        {
+          "id": 664,
+          "word": "traveler",
+          "meaning": "여행자",
+          "pos": "명",
+          "raw": "0664 traveler 명 여행자"
+        },
+        {
+          "id": 665,
+          "word": "farmer",
+          "meaning": "농부",
+          "pos": "명",
+          "raw": "0665 farmer 명 농부"
+        },
+        {
+          "id": 666,
+          "word": "receive",
+          "meaning": "받다",
+          "pos": "동",
+          "raw": "0666 receive 동 받다"
+        },
+        {
+          "id": 667,
+          "word": "alone",
+          "meaning": "1. 혼자인 2. 외로운 부 혼자",
+          "pos": "형",
+          "raw": "0667 alone 형 1. 혼자인 2. 외로운 부 혼자"
+        },
+        {
+          "id": 668,
+          "word": "something",
+          "meaning": "무엇, 어떤 것",
+          "pos": "대",
+          "raw": "0668 something 대 무엇, 어떤 것"
+        },
+        {
+          "id": 669,
+          "word": "enough",
+          "meaning": "충분한 부 충분히",
+          "pos": "형",
+          "raw": "0669 enough 형 충분한 부 충분히"
+        },
+        {
+          "id": 670,
+          "word": "worry",
+          "meaning": "걱정하다 명 걱정, 고민거리",
+          "pos": "동",
+          "raw": "0670 worry 동 걱정하다 명 걱정, 고민거리"
+        }
+      ]
+    },
+    {
+      "day": 68,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 671,
+          "word": "still",
+          "meaning": "아직도, 여전히",
+          "pos": "부",
+          "raw": "0671 still 부 아직도, 여전히"
+        },
+        {
+          "id": 672,
+          "word": "gym",
+          "meaning": "체육관, 헬스장",
+          "pos": "명",
+          "raw": "0672 gym 명 체육관, 헬스장"
+        },
+        {
+          "id": 673,
+          "word": "honest",
+          "meaning": "1. 정직한 2. 솔직한",
+          "pos": "형",
+          "raw": "0673 honest 형 1. 정직한 2. 솔직한"
+        },
+        {
+          "id": 674,
+          "word": "understand",
+          "meaning": "이해하다, 알아듣다",
+          "pos": "동",
+          "raw": "0674 understand 동 이해하다, 알아듣다"
+        },
+        {
+          "id": 675,
+          "word": "interesting",
+          "meaning": "재미있는, 흥미로운",
+          "pos": "형",
+          "raw": "0675 interesting 형 재미있는, 흥미로운"
+        },
+        {
+          "id": 676,
+          "word": "spend",
+          "meaning": "1. (돈을) 쓰다, 소비하다 2. (시간을) 보내다",
+          "pos": "동",
+          "raw": "0676 spend 동 1. (돈을) 쓰다, 소비하다 2. (시간을) 보내다"
+        },
+        {
+          "id": 677,
+          "word": "rest",
+          "meaning": "휴식 동 쉬다, 휴식하다",
+          "pos": "명",
+          "raw": "0677 rest 명 휴식 동 쉬다, 휴식하다"
+        },
+        {
+          "id": 678,
+          "word": "climb",
+          "meaning": "오르다, 등반하다",
+          "pos": "동",
+          "raw": "0678 climb 동 오르다, 등반하다"
+        },
+        {
+          "id": 679,
+          "word": "cheer up",
+          "meaning": "격려하다",
+          "pos": "",
+          "raw": "0679 cheer up 격려하다"
+        },
+        {
+          "id": 680,
+          "word": "write down …",
+          "meaning": "적다",
+          "pos": "을",
+          "raw": "0680 write down …을 적다"
+        }
+      ]
+    },
+    {
+      "day": 69,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 681,
+          "word": "writer",
+          "meaning": "작가, 필자",
+          "pos": "명",
+          "raw": "0681 writer 명 작가, 필자"
+        },
+        {
+          "id": 682,
+          "word": "guess",
+          "meaning": "추측하다, 짐작하다 명 추측, 짐작",
+          "pos": "동",
+          "raw": "0682 guess 동 추측하다, 짐작하다 명 추측, 짐작"
+        },
+        {
+          "id": 683,
+          "word": "boil",
+          "meaning": "끓다, 끓이다",
+          "pos": "동",
+          "raw": "0683 boil 동 끓다, 끓이다"
+        },
+        {
+          "id": 684,
+          "word": "already",
+          "meaning": "이미, 벌써",
+          "pos": "부",
+          "raw": "0684 already 부 이미, 벌써"
+        },
+        {
+          "id": 685,
+          "word": "speech",
+          "meaning": "연설",
+          "pos": "명",
+          "raw": "0685 speech 명 연설"
+        },
+        {
+          "id": 686,
+          "word": "lazy",
+          "meaning": "게으른, 나태한",
+          "pos": "형",
+          "raw": "0686 lazy 형 게으른, 나태한"
+        },
+        {
+          "id": 687,
+          "word": "excited",
+          "meaning": "신이 난, 흥분한",
+          "pos": "형",
+          "raw": "0687 excited 형 신이 난, 흥분한"
+        },
+        {
+          "id": 688,
+          "word": "most",
+          "meaning": "1. 최대[최고]의 2. 대부분의 대 대부분",
+          "pos": "형",
+          "raw": "0688 most 형 1. 최대[최고]의 2. 대부분의 대 대부분"
+        },
+        {
+          "id": 689,
+          "word": "place",
+          "meaning": "1. 장소, 곳 2. 집",
+          "pos": "명",
+          "raw": "0689 place 명 1. 장소, 곳 2. 집"
+        },
+        {
+          "id": 690,
+          "word": "company",
+          "meaning": "1. 회사 2. 동료, 일행",
+          "pos": "명",
+          "raw": "0690 company 명 1. 회사 2. 동료, 일행"
+        }
+      ]
+    },
+    {
+      "day": 70,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 691,
+          "word": "space",
+          "meaning": "1. 공간 2. 우주",
+          "pos": "명",
+          "raw": "0691 space 명 1. 공간 2. 우주"
+        },
+        {
+          "id": 692,
+          "word": "exercise",
+          "meaning": "운동 동 운동하다",
+          "pos": "명",
+          "raw": "0692 exercise 명 운동 동 운동하다"
+        },
+        {
+          "id": 693,
+          "word": "outside",
+          "meaning": "밖에, 밖으로 전 … 밖에 명 외부, 겉면",
+          "pos": "부",
+          "raw": "0693 outside 부 밖에, 밖으로 전 … 밖에 명 외부, 겉면"
+        },
+        {
+          "id": 694,
+          "word": "weight",
+          "meaning": "무게, 체중",
+          "pos": "명",
+          "raw": "0694 weight 명 무게, 체중"
+        },
+        {
+          "id": 695,
+          "word": "goal",
+          "meaning": "1. 골, 득점 2. 목표",
+          "pos": "명",
+          "raw": "0695 goal 명 1. 골, 득점 2. 목표"
+        },
+        {
+          "id": 696,
+          "word": "interested",
+          "meaning": "흥미 있는, 관심 있는",
+          "pos": "형",
+          "raw": "0696 interested 형 흥미 있는, 관심 있는"
+        },
+        {
+          "id": 697,
+          "word": "club",
+          "meaning": "클럽, 동아리",
+          "pos": "명",
+          "raw": "0697 club 명 클럽, 동아리"
+        },
+        {
+          "id": 698,
+          "word": "stomach",
+          "meaning": "위, 배",
+          "pos": "명",
+          "raw": "0698 stomach 명 위, 배"
+        },
+        {
+          "id": 699,
+          "word": "hand in …",
+          "meaning": "제출하다",
+          "pos": "을",
+          "raw": "0699 hand in …을 제출하다"
+        },
+        {
+          "id": 700,
+          "word": "take out …",
+          "meaning": "꺼내다",
+          "pos": "을",
+          "raw": "0700 take out …을 꺼내다"
+        }
+      ]
+    },
+    {
+      "day": 71,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 701,
+          "word": "while",
+          "meaning": "1. …하는 동안 2. …에 반하여",
+          "pos": "접",
+          "raw": "0701 while 접 1. …하는 동안 2. …에 반하여"
+        },
+        {
+          "id": 702,
+          "word": "beat",
+          "meaning": "1. 때리다, 두드리다 2. 이기다",
+          "pos": "동",
+          "raw": "0702 beat 동 1. 때리다, 두드리다 2. 이기다"
+        },
+        {
+          "id": 703,
+          "word": "calm",
+          "meaning": "침착한, 차분한 동 진정하다, 진정시키다",
+          "pos": "형",
+          "raw": "0703 calm 형 침착한, 차분한 동 진정하다, 진정시키다"
+        },
+        {
+          "id": 704,
+          "word": "surprise",
+          "meaning": "놀라운 일 동 놀라게 하다",
+          "pos": "명",
+          "raw": "0704 surprise 명 놀라운 일 동 놀라게 하다"
+        },
+        {
+          "id": 705,
+          "word": "hang",
+          "meaning": "걸(리)다, 매달(리)다",
+          "pos": "동",
+          "raw": "0705 hang 동 걸(리)다, 매달(리)다"
+        },
+        {
+          "id": 706,
+          "word": "believe",
+          "meaning": "믿다",
+          "pos": "동",
+          "raw": "0706 believe 동 믿다"
+        },
+        {
+          "id": 707,
+          "word": "lonely",
+          "meaning": "외로운, 쓸쓸한",
+          "pos": "형",
+          "raw": "0707 lonely 형 외로운, 쓸쓸한"
+        },
+        {
+          "id": 708,
+          "word": "lovely",
+          "meaning": "사랑스러운, 예쁜",
+          "pos": "형",
+          "raw": "0708 lovely 형 사랑스러운, 예쁜"
+        },
+        {
+          "id": 709,
+          "word": "wonder",
+          "meaning": "궁금하다 명 경탄, 놀라움",
+          "pos": "동",
+          "raw": "0709 wonder 동 궁금하다 명 경탄, 놀라움"
+        },
+        {
+          "id": 710,
+          "word": "rope",
+          "meaning": "밧줄, 로프",
+          "pos": "명",
+          "raw": "0710 rope 명 밧줄, 로프"
+        }
+      ]
+    },
+    {
+      "day": 72,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 711,
+          "word": "pour",
+          "meaning": "1. 따르다, 붓다 2. (비가) 쏟아지다, 퍼붓다",
+          "pos": "동",
+          "raw": "0711 pour 동 1. 따르다, 붓다 2. (비가) 쏟아지다, 퍼붓다"
+        },
+        {
+          "id": 712,
+          "word": "famous",
+          "meaning": "유명한",
+          "pos": "형",
+          "raw": "0712 famous 형 유명한"
+        },
+        {
+          "id": 713,
+          "word": "list",
+          "meaning": "명단, 목록",
+          "pos": "명",
+          "raw": "0713 list 명 명단, 목록"
+        },
+        {
+          "id": 714,
+          "word": "project",
+          "meaning": "",
+          "pos": "",
+          "raw": "0714 project"
+        },
+        {
+          "id": 715,
+          "word": "carry",
+          "meaning": "1. 나르다, 운반하다 2. 가지고 다니다",
+          "pos": "동",
+          "raw": "0715 carry 동 1. 나르다, 운반하다 2. 가지고 다니다"
+        },
+        {
+          "id": 716,
+          "word": "sweet",
+          "meaning": "단, 달콤한",
+          "pos": "형",
+          "raw": "0716 sweet 형 단, 달콤한"
+        },
+        {
+          "id": 717,
+          "word": "pay",
+          "meaning": "(돈을) 지불하다, 내다",
+          "pos": "동",
+          "raw": "0717 pay 동 (돈을) 지불하다, 내다"
+        },
+        {
+          "id": 718,
+          "word": "drink",
+          "meaning": "마시다 명 마실 것, 음료",
+          "pos": "동",
+          "raw": "0718 drink 동 마시다 명 마실 것, 음료"
+        },
+        {
+          "id": 719,
+          "word": "on time",
+          "meaning": "시간을 어기지 않고, 제 시간에",
+          "pos": "",
+          "raw": "0719 on time 시간을 어기지 않고, 제 시간에"
+        },
+        {
+          "id": 720,
+          "word": "be worried about …",
+          "meaning": "대해 걱정하다",
+          "pos": "에",
+          "raw": "0720 be worried about …에 대해 걱정하다"
+        }
+      ]
+    },
+    {
+      "day": 73,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 721,
+          "word": "festival",
+          "meaning": "축제",
+          "pos": "명",
+          "raw": "0721 festival 명 축제"
+        },
+        {
+          "id": 722,
+          "word": "sleep",
+          "meaning": "자다 명 잠, 수면",
+          "pos": "동",
+          "raw": "0722 sleep 동 자다 명 잠, 수면"
+        },
+        {
+          "id": 723,
+          "word": "shy",
+          "meaning": "부끄럼을 타는, 수줍어하는",
+          "pos": "형",
+          "raw": "0723 shy 형 부끄럼을 타는, 수줍어하는"
+        },
+        {
+          "id": 724,
+          "word": "neighbor",
+          "meaning": "이웃",
+          "pos": "명",
+          "raw": "0724 neighbor 명 이웃"
+        },
+        {
+          "id": 725,
+          "word": "ground",
+          "meaning": "지면, 땅",
+          "pos": "명",
+          "raw": "0725 ground 명 지면, 땅"
+        },
+        {
+          "id": 726,
+          "word": "important",
+          "meaning": "중요한",
+          "pos": "형",
+          "raw": "0726 important 형 중요한"
+        },
+        {
+          "id": 727,
+          "word": "pond",
+          "meaning": "연못",
+          "pos": "명",
+          "raw": "0727 pond 명 연못"
+        },
+        {
+          "id": 728,
+          "word": "roll",
+          "meaning": "구르다, 굴리다",
+          "pos": "동",
+          "raw": "0728 roll 동 구르다, 굴리다"
+        },
+        {
+          "id": 729,
+          "word": "practice",
+          "meaning": "연습하다 명 연습",
+          "pos": "동",
+          "raw": "0729 practice 동 연습하다 명 연습"
+        },
+        {
+          "id": 730,
+          "word": "bill",
+          "meaning": "1. 고지서, 청구서 2. 지폐",
+          "pos": "명",
+          "raw": "0730 bill 명 1. 고지서, 청구서 2. 지폐"
+        }
+      ]
+    },
+    {
+      "day": 74,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 731,
+          "word": "beef",
+          "meaning": "소[쇠]고기",
+          "pos": "명",
+          "raw": "0731 beef 명 소[쇠]고기"
+        },
+        {
+          "id": 732,
+          "word": "excuse",
+          "meaning": "용서하다, 봐주다 명 변명",
+          "pos": "동",
+          "raw": "0732 excuse 동 용서하다, 봐주다 명 변명"
+        },
+        {
+          "id": 733,
+          "word": "stick",
+          "meaning": "1. 나뭇가지 2. 지팡이 동 붙다, 붙이다",
+          "pos": "명",
+          "raw": "0733 stick 명 1. 나뭇가지 2. 지팡이 동 붙다, 붙이다"
+        },
+        {
+          "id": 734,
+          "word": "vacation",
+          "meaning": "방학, 휴가",
+          "pos": "명",
+          "raw": "0734 vacation 명 방학, 휴가"
+        },
+        {
+          "id": 735,
+          "word": "wonderful",
+          "meaning": "멋진, 훌륭한",
+          "pos": "형",
+          "raw": "0735 wonderful 형 멋진, 훌륭한"
+        },
+        {
+          "id": 736,
+          "word": "behind",
+          "meaning": "",
+          "pos": "",
+          "raw": "0736 behind"
+        },
+        {
+          "id": 737,
+          "word": "stay",
+          "meaning": "머무르다 명 머무름, 방문",
+          "pos": "동",
+          "raw": "0737 stay 동 머무르다 명 머무름, 방문"
+        },
+        {
+          "id": 738,
+          "word": "another",
+          "meaning": "또 하나의 대 또 하나의 것[사람]",
+          "pos": "형",
+          "raw": "0738 another 형 또 하나의 대 또 하나의 것[사람]"
+        },
+        {
+          "id": 739,
+          "word": "work out",
+          "meaning": "운동하다",
+          "pos": "",
+          "raw": "0739 work out 운동하다"
+        },
+        {
+          "id": 740,
+          "word": "hang out",
+          "meaning": "시간을 보내다, 어울려 놀다",
+          "pos": "",
+          "raw": "0740 hang out 시간을 보내다, 어울려 놀다"
+        }
+      ]
+    },
+    {
+      "day": 75,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 741,
+          "word": "join",
+          "meaning": "1. 가입하다 2. 함께 하다, 합류하다",
+          "pos": "동",
+          "raw": "0741 join 동 1. 가입하다 2. 함께 하다, 합류하다"
+        },
+        {
+          "id": 742,
+          "word": "dialogue",
+          "meaning": "(소설·영화 등의) 대화, 회화",
+          "pos": "명",
+          "raw": "0742 dialogue 명 (소설·영화 등의) 대화, 회화"
+        },
+        {
+          "id": 743,
+          "word": "blank",
+          "meaning": "공백의, 빈 명 빈칸",
+          "pos": "형",
+          "raw": "0743 blank 형 공백의, 빈 명 빈칸"
+        },
+        {
+          "id": 744,
+          "word": "problem",
+          "meaning": "문제, 어려움",
+          "pos": "명",
+          "raw": "0744 problem 명 문제, 어려움"
+        },
+        {
+          "id": 745,
+          "word": "crash",
+          "meaning": "",
+          "pos": "",
+          "raw": "0745 crash"
+        },
+        {
+          "id": 746,
+          "word": "however",
+          "meaning": "그러나, 그렇지만",
+          "pos": "부",
+          "raw": "0746 however 부 그러나, 그렇지만"
+        },
+        {
+          "id": 747,
+          "word": "secret",
+          "meaning": "비밀",
+          "pos": "명",
+          "raw": "0747 secret 명 비밀"
+        },
+        {
+          "id": 748,
+          "word": "record",
+          "meaning": "",
+          "pos": "",
+          "raw": "0748 record"
+        },
+        {
+          "id": 749,
+          "word": "hometown",
+          "meaning": "고향",
+          "pos": "명",
+          "raw": "0749 hometown 명 고향"
+        },
+        {
+          "id": 750,
+          "word": "race",
+          "meaning": "경주, 경기",
+          "pos": "명",
+          "raw": "0750 race 명 경주, 경기"
+        }
+      ]
+    },
+    {
+      "day": 76,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 751,
+          "word": "daily",
+          "meaning": "매일, 날마다 형 매일의, 일상의",
+          "pos": "부",
+          "raw": "0751 daily 부 매일, 날마다 형 매일의, 일상의"
+        },
+        {
+          "id": 752,
+          "word": "welcome",
+          "meaning": "환영하다, (기쁘게) 맞이하다",
+          "pos": "동",
+          "raw": "0752 welcome 동 환영하다, (기쁘게) 맞이하다"
+        },
+        {
+          "id": 753,
+          "word": "sleepy",
+          "meaning": "졸리는",
+          "pos": "형",
+          "raw": "0753 sleepy 형 졸리는"
+        },
+        {
+          "id": 754,
+          "word": "newspaper",
+          "meaning": "신문",
+          "pos": "명",
+          "raw": "0754 newspaper 명 신문"
+        },
+        {
+          "id": 755,
+          "word": "collect",
+          "meaning": "모으다, 수집하다",
+          "pos": "동",
+          "raw": "0755 collect 동 모으다, 수집하다"
+        },
+        {
+          "id": 756,
+          "word": "solve",
+          "meaning": "(문제를) 풀다, 해결하다",
+          "pos": "동",
+          "raw": "0756 solve 동 (문제를) 풀다, 해결하다"
+        },
+        {
+          "id": 757,
+          "word": "tap",
+          "meaning": "(가볍게) 톡톡 두드리다",
+          "pos": "동",
+          "raw": "0757 tap 동 (가볍게) 톡톡 두드리다"
+        },
+        {
+          "id": 758,
+          "word": "forever",
+          "meaning": "영원히",
+          "pos": "부",
+          "raw": "0758 forever 부 영원히"
+        },
+        {
+          "id": 759,
+          "word": "get out of …",
+          "meaning": "나가다",
+          "pos": "에서",
+          "raw": "0759 get out of …에서 나가다"
+        },
+        {
+          "id": 760,
+          "word": "give it a try",
+          "meaning": "시도하다",
+          "pos": "",
+          "raw": "0760 give it a try 시도하다"
+        }
+      ]
+    },
+    {
+      "day": 77,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 761,
+          "word": "fry",
+          "meaning": "(기름에) 튀기다, 볶다",
+          "pos": "동",
+          "raw": "0761 fry 동 (기름에) 튀기다, 볶다"
+        },
+        {
+          "id": 762,
+          "word": "advice",
+          "meaning": "충고, 조언",
+          "pos": "명",
+          "raw": "0762 advice 명 충고, 조언"
+        },
+        {
+          "id": 763,
+          "word": "always",
+          "meaning": "항상, 언제나",
+          "pos": "부",
+          "raw": "0763 always 부 항상, 언제나"
+        },
+        {
+          "id": 764,
+          "word": "lend",
+          "meaning": "빌려주다",
+          "pos": "동",
+          "raw": "0764 lend 동 빌려주다"
+        },
+        {
+          "id": 765,
+          "word": "colorful",
+          "meaning": "알록달록한, 다채로운",
+          "pos": "형",
+          "raw": "0765 colorful 형 알록달록한, 다채로운"
+        },
+        {
+          "id": 766,
+          "word": "tip",
+          "meaning": "1. (뾰족한) 끝 2. 팁, 봉사료 3. 조언",
+          "pos": "명",
+          "raw": "0766 tip 명 1. (뾰족한) 끝 2. 팁, 봉사료 3. 조언"
+        },
+        {
+          "id": 767,
+          "word": "lift",
+          "meaning": "(들어) 올리다",
+          "pos": "동",
+          "raw": "0767 lift 동 (들어) 올리다"
+        },
+        {
+          "id": 768,
+          "word": "hole",
+          "meaning": "1. 구멍 2. (지면 등의) 구덩이",
+          "pos": "명",
+          "raw": "0768 hole 명 1. 구멍 2. (지면 등의) 구덩이"
+        },
+        {
+          "id": 769,
+          "word": "contest",
+          "meaning": "대회, 콘테스트",
+          "pos": "명",
+          "raw": "0769 contest 명 대회, 콘테스트"
+        },
+        {
+          "id": 770,
+          "word": "jungle",
+          "meaning": "밀림, 정글",
+          "pos": "명",
+          "raw": "0770 jungle 명 밀림, 정글"
+        }
+      ]
+    },
+    {
+      "day": 78,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 771,
+          "word": "form",
+          "meaning": "",
+          "pos": "",
+          "raw": "0771 form"
+        },
+        {
+          "id": 772,
+          "word": "sunlight",
+          "meaning": "햇빛, 햇살",
+          "pos": "명",
+          "raw": "0772 sunlight 명 햇빛, 햇살"
+        },
+        {
+          "id": 773,
+          "word": "news",
+          "meaning": "1. 소식 2. (신문·방송 등의) 뉴스",
+          "pos": "명",
+          "raw": "0773 news 명 1. 소식 2. (신문·방송 등의) 뉴스"
+        },
+        {
+          "id": 774,
+          "word": "brave",
+          "meaning": "용감한, 용기 있는",
+          "pos": "형",
+          "raw": "0774 brave 형 용감한, 용기 있는"
+        },
+        {
+          "id": 775,
+          "word": "hurry",
+          "meaning": "서두르다 명 서두름",
+          "pos": "동",
+          "raw": "0775 hurry 동 서두르다 명 서두름"
+        },
+        {
+          "id": 776,
+          "word": "magazine",
+          "meaning": "잡지",
+          "pos": "명",
+          "raw": "0776 magazine 명 잡지"
+        },
+        {
+          "id": 777,
+          "word": "protect",
+          "meaning": "보호하다, 지키다",
+          "pos": "동",
+          "raw": "0777 protect 동 보호하다, 지키다"
+        },
+        {
+          "id": 778,
+          "word": "matter",
+          "meaning": "문제, 일 동 문제가 되다, 중요하다",
+          "pos": "명",
+          "raw": "0778 matter 명 문제, 일 동 문제가 되다, 중요하다"
+        },
+        {
+          "id": 779,
+          "word": "be interested in ···",
+          "meaning": "관심이[흥미가] 있다",
+          "pos": "에",
+          "raw": "0779 be interested in ···에 관심이[흥미가] 있다"
+        },
+        {
+          "id": 780,
+          "word": "believe in (···",
+          "meaning": "존재 등)을 믿다",
+          "pos": "의",
+          "raw": "0780 believe in (···의 존재 등)을 믿다"
+        }
+      ]
+    },
+    {
+      "day": 79,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 781,
+          "word": "field",
+          "meaning": "1. 들판, 밭 2. 분야, 영역",
+          "pos": "명",
+          "raw": "0781 field 명 1. 들판, 밭 2. 분야, 영역"
+        },
+        {
+          "id": 782,
+          "word": "blind",
+          "meaning": "눈 먼, 맹인의",
+          "pos": "형",
+          "raw": "0782 blind 형 눈 먼, 맹인의"
+        },
+        {
+          "id": 783,
+          "word": "sign",
+          "meaning": "표지판 동 서명하다",
+          "pos": "명",
+          "raw": "0783 sign 명 표지판 동 서명하다"
+        },
+        {
+          "id": 784,
+          "word": "headache",
+          "meaning": "두통",
+          "pos": "명",
+          "raw": "0784 headache 명 두통"
+        },
+        {
+          "id": 785,
+          "word": "score",
+          "meaning": "득점, 점수 동 득점하다",
+          "pos": "명",
+          "raw": "0785 score 명 득점, 점수 동 득점하다"
+        },
+        {
+          "id": 786,
+          "word": "pilot",
+          "meaning": "조종사, 파일럿",
+          "pos": "명",
+          "raw": "0786 pilot 명 조종사, 파일럿"
+        },
+        {
+          "id": 787,
+          "word": "everything",
+          "meaning": "모든 것, 모두",
+          "pos": "대",
+          "raw": "0787 everything 대 모든 것, 모두"
+        },
+        {
+          "id": 788,
+          "word": "during",
+          "meaning": "…동안 (내내)",
+          "pos": "전",
+          "raw": "0788 during 전 …동안 (내내)"
+        },
+        {
+          "id": 789,
+          "word": "tea",
+          "meaning": "1. 홍차 2. 차",
+          "pos": "명",
+          "raw": "0789 tea 명 1. 홍차 2. 차"
+        },
+        {
+          "id": 790,
+          "word": "trouble",
+          "meaning": "어려움, 문제",
+          "pos": "명",
+          "raw": "0790 trouble 명 어려움, 문제"
+        }
+      ]
+    },
+    {
+      "day": 80,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 791,
+          "word": "honey",
+          "meaning": "(벌)꿀",
+          "pos": "명",
+          "raw": "0791 honey 명 (벌)꿀"
+        },
+        {
+          "id": 792,
+          "word": "greet",
+          "meaning": "맞이하다, 환영하다",
+          "pos": "동",
+          "raw": "0792 greet 동 맞이하다, 환영하다"
+        },
+        {
+          "id": 793,
+          "word": "never",
+          "meaning": "결코[절대] …하지 않다",
+          "pos": "부",
+          "raw": "0793 never 부 결코[절대] …하지 않다"
+        },
+        {
+          "id": 794,
+          "word": "usual",
+          "meaning": "평소의, 보통의",
+          "pos": "형",
+          "raw": "0794 usual 형 평소의, 보통의"
+        },
+        {
+          "id": 795,
+          "word": "habit",
+          "meaning": "습관, 버릇",
+          "pos": "명",
+          "raw": "0795 habit 명 습관, 버릇"
+        },
+        {
+          "id": 796,
+          "word": "friendly",
+          "meaning": "친절한, 다정한",
+          "pos": "형",
+          "raw": "0796 friendly 형 친절한, 다정한"
+        },
+        {
+          "id": 797,
+          "word": "perfect",
+          "meaning": "",
+          "pos": "",
+          "raw": "0797 perfect"
+        },
+        {
+          "id": 798,
+          "word": "heat",
+          "meaning": "1. 열 2. 더위 동 가열하다, 데우다",
+          "pos": "명",
+          "raw": "0798 heat 명 1. 열 2. 더위 동 가열하다, 데우다"
+        },
+        {
+          "id": 799,
+          "word": "take place (",
+          "meaning": "사건이) 일어나다, (행사가) 열리다",
+          "pos": "",
+          "raw": "0799 take place (사건이) 일어나다, (행사가) 열리다"
+        },
+        {
+          "id": 800,
+          "word": "not ... anymore",
+          "meaning": "이상 …않다",
+          "pos": "더",
+          "raw": "0800 not ... anymore 더 이상 …않다"
+        }
+      ]
+    },
+    {
+      "day": 81,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 801,
+          "word": "meal",
+          "meaning": "식사, 끼니",
+          "pos": "명",
+          "raw": "0801 meal 명 식사, 끼니"
+        },
+        {
+          "id": 802,
+          "word": "steal",
+          "meaning": "훔치다",
+          "pos": "동",
+          "raw": "0802 steal 동 훔치다"
+        },
+        {
+          "id": 803,
+          "word": "cough",
+          "meaning": "기침하다 명 기침",
+          "pos": "동",
+          "raw": "0803 cough 동 기침하다 명 기침"
+        },
+        {
+          "id": 804,
+          "word": "fashion",
+          "meaning": "1. 유행 2. 패션, 의류업계",
+          "pos": "명",
+          "raw": "0804 fashion 명 1. 유행 2. 패션, 의류업계"
+        },
+        {
+          "id": 805,
+          "word": "amazing",
+          "meaning": "놀라운, 굉장한",
+          "pos": "형",
+          "raw": "0805 amazing 형 놀라운, 굉장한"
+        },
+        {
+          "id": 806,
+          "word": "borrow",
+          "meaning": "빌리다",
+          "pos": "동",
+          "raw": "0806 borrow 동 빌리다"
+        },
+        {
+          "id": 807,
+          "word": "bark",
+          "meaning": "(개가) 짖다 명 나무껍질",
+          "pos": "동",
+          "raw": "0807 bark 동 (개가) 짖다 명 나무껍질"
+        },
+        {
+          "id": 808,
+          "word": "garbage",
+          "meaning": "쓰레기",
+          "pos": "명",
+          "raw": "0808 garbage 명 쓰레기"
+        },
+        {
+          "id": 809,
+          "word": "mind",
+          "meaning": "마음, 정신 동 꺼리다, 싫어하다",
+          "pos": "명",
+          "raw": "0809 mind 명 마음, 정신 동 꺼리다, 싫어하다"
+        },
+        {
+          "id": 810,
+          "word": "quit",
+          "meaning": "(직장 · 학교 · 하던 일 등을) 그만두다",
+          "pos": "동",
+          "raw": "0810 quit 동 (직장 · 학교 · 하던 일 등을) 그만두다"
+        }
+      ]
+    },
+    {
+      "day": 82,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 811,
+          "word": "director",
+          "meaning": "1. (회사의) 이사, 임원 2. (영화 등의) 감독",
+          "pos": "명",
+          "raw": "0811 director 명 1. (회사의) 이사, 임원 2. (영화 등의) 감독"
+        },
+        {
+          "id": 812,
+          "word": "sale",
+          "meaning": "1. 판매 2. 할인 판매, 세일",
+          "pos": "명",
+          "raw": "0812 sale 명 1. 판매 2. 할인 판매, 세일"
+        },
+        {
+          "id": 813,
+          "word": "mistake",
+          "meaning": "실수, 잘못",
+          "pos": "명",
+          "raw": "0813 mistake 명 실수, 잘못"
+        },
+        {
+          "id": 814,
+          "word": "sharp",
+          "meaning": "날카로운, 뾰족한",
+          "pos": "형",
+          "raw": "0814 sharp 형 날카로운, 뾰족한"
+        },
+        {
+          "id": 815,
+          "word": "serve",
+          "meaning": "",
+          "pos": "",
+          "raw": "0815 serve"
+        },
+        {
+          "id": 816,
+          "word": "uniform",
+          "meaning": "제복, 교복, 유니폼",
+          "pos": "명",
+          "raw": "0816 uniform 명 제복, 교복, 유니폼"
+        },
+        {
+          "id": 817,
+          "word": "nickname",
+          "meaning": "별명",
+          "pos": "명",
+          "raw": "0817 nickname 명 별명"
+        },
+        {
+          "id": 818,
+          "word": "success",
+          "meaning": "성공",
+          "pos": "명",
+          "raw": "0818 success 명 성공"
+        },
+        {
+          "id": 819,
+          "word": "all the time",
+          "meaning": "항상, 늘",
+          "pos": "",
+          "raw": "0819 all the time 항상, 늘"
+        },
+        {
+          "id": 820,
+          "word": "for a while",
+          "meaning": "동안",
+          "pos": "잠시",
+          "raw": "0820 for a while 잠시 동안"
+        }
+      ]
+    },
+    {
+      "day": 83,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 821,
+          "word": "energy",
+          "meaning": "1. 힘, 기운 2. (석유 · 가스 등의) 에너지",
+          "pos": "명",
+          "raw": "0821 energy 명 1. 힘, 기운 2. (석유 · 가스 등의) 에너지"
+        },
+        {
+          "id": 822,
+          "word": "gather",
+          "meaning": "",
+          "pos": "",
+          "raw": "0822 gather"
+        },
+        {
+          "id": 823,
+          "word": "happen",
+          "meaning": "(사건 등이) 일어나다, 발생하다",
+          "pos": "동",
+          "raw": "0823 happen 동 (사건 등이) 일어나다, 발생하다"
+        },
+        {
+          "id": 824,
+          "word": "prize",
+          "meaning": "상, 상품",
+          "pos": "명",
+          "raw": "0824 prize 명 상, 상품"
+        },
+        {
+          "id": 825,
+          "word": "usually",
+          "meaning": "보통, 대개",
+          "pos": "부",
+          "raw": "0825 usually 부 보통, 대개"
+        },
+        {
+          "id": 826,
+          "word": "joy",
+          "meaning": "즐거움, 기쁨",
+          "pos": "명",
+          "raw": "0826 joy 명 즐거움, 기쁨"
+        },
+        {
+          "id": 827,
+          "word": "grade",
+          "meaning": "1. 학년 2. 성적",
+          "pos": "명",
+          "raw": "0827 grade 명 1. 학년 2. 성적"
+        },
+        {
+          "id": 828,
+          "word": "nurse",
+          "meaning": "간호사",
+          "pos": "명",
+          "raw": "0828 nurse 명 간호사"
+        },
+        {
+          "id": 829,
+          "word": "quiet",
+          "meaning": "조용한, 고요한",
+          "pos": "형",
+          "raw": "0829 quiet 형 조용한, 고요한"
+        },
+        {
+          "id": 830,
+          "word": "cartoon",
+          "meaning": "만화 (영화)",
+          "pos": "명",
+          "raw": "0830 cartoon 명 만화 (영화)"
+        }
+      ]
+    },
+    {
+      "day": 84,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 831,
+          "word": "share",
+          "meaning": "1. 함께 쓰다, 공유하다 2. 나누다",
+          "pos": "동",
+          "raw": "0831 share 동 1. 함께 쓰다, 공유하다 2. 나누다"
+        },
+        {
+          "id": 832,
+          "word": "wrap",
+          "meaning": "1. 싸다, 포장하다 2. 두르다",
+          "pos": "동",
+          "raw": "0832 wrap 동 1. 싸다, 포장하다 2. 두르다"
+        },
+        {
+          "id": 833,
+          "word": "dot",
+          "meaning": "점",
+          "pos": "명",
+          "raw": "0833 dot 명 점"
+        },
+        {
+          "id": 834,
+          "word": "fever",
+          "meaning": "열, 열병",
+          "pos": "명",
+          "raw": "0834 fever 명 열, 열병"
+        },
+        {
+          "id": 835,
+          "word": "soldier",
+          "meaning": "군인, 병사",
+          "pos": "명",
+          "raw": "0835 soldier 명 군인, 병사"
+        },
+        {
+          "id": 836,
+          "word": "cell phone",
+          "meaning": "휴대 전화",
+          "pos": "명",
+          "raw": "0836 cell phone 명 휴대 전화"
+        },
+        {
+          "id": 837,
+          "word": "unit",
+          "meaning": "단원",
+          "pos": "명",
+          "raw": "0837 unit 명 단원"
+        },
+        {
+          "id": 838,
+          "word": "cycle",
+          "meaning": "1. 순환 2. 주기",
+          "pos": "명",
+          "raw": "0838 cycle 명 1. 순환 2. 주기"
+        },
+        {
+          "id": 839,
+          "word": "of course",
+          "meaning": "물론, 당연히",
+          "pos": "",
+          "raw": "0839 of course 물론, 당연히"
+        },
+        {
+          "id": 840,
+          "word": "on one’s own",
+          "meaning": "스스로, 혼자 힘으로",
+          "pos": "",
+          "raw": "0840 on one’s own 스스로, 혼자 힘으로"
+        }
+      ]
+    },
+    {
+      "day": 85,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 841,
+          "word": "post",
+          "meaning": "",
+          "pos": "",
+          "raw": "0841 post"
+        },
+        {
+          "id": 842,
+          "word": "sentence",
+          "meaning": "문장",
+          "pos": "명",
+          "raw": "0842 sentence 명 문장"
+        },
+        {
+          "id": 843,
+          "word": "trash",
+          "meaning": "쓰레기",
+          "pos": "명",
+          "raw": "0843 trash 명 쓰레기"
+        },
+        {
+          "id": 844,
+          "word": "design",
+          "meaning": "디자인 동 디자인하다, 설계하다",
+          "pos": "명",
+          "raw": "0844 design 명 디자인 동 디자인하다, 설계하다"
+        },
+        {
+          "id": 845,
+          "word": "comic",
+          "meaning": "코미디의, 희극의 명 만화책",
+          "pos": "형",
+          "raw": "0845 comic 형 코미디의, 희극의 명 만화책"
+        },
+        {
+          "id": 846,
+          "word": "sink",
+          "meaning": "가라앉다 명 (부엌의) 싱크대, 개수대",
+          "pos": "동",
+          "raw": "0846 sink 동 가라앉다 명 (부엌의) 싱크대, 개수대"
+        },
+        {
+          "id": 847,
+          "word": "afraid",
+          "meaning": "1. 두려워하는 2. 걱정하는",
+          "pos": "형",
+          "raw": "0847 afraid 형 1. 두려워하는 2. 걱정하는"
+        },
+        {
+          "id": 848,
+          "word": "level",
+          "meaning": "1. 수준 2. 단계",
+          "pos": "명",
+          "raw": "0848 level 명 1. 수준 2. 단계"
+        },
+        {
+          "id": 849,
+          "word": "possible",
+          "meaning": "가능한",
+          "pos": "형",
+          "raw": "0849 possible 형 가능한"
+        },
+        {
+          "id": 850,
+          "word": "event",
+          "meaning": "1. 사건 2. 행사",
+          "pos": "명",
+          "raw": "0850 event 명 1. 사건 2. 행사"
+        }
+      ]
+    },
+    {
+      "day": 86,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 851,
+          "word": "nature",
+          "meaning": "1. 자연 2. 천성, 본성",
+          "pos": "명",
+          "raw": "0851 nature 명 1. 자연 2. 천성, 본성"
+        },
+        {
+          "id": 852,
+          "word": "insect",
+          "meaning": "곤충",
+          "pos": "명",
+          "raw": "0852 insect 명 곤충"
+        },
+        {
+          "id": 853,
+          "word": "create",
+          "meaning": "창조하다, 만들다",
+          "pos": "동",
+          "raw": "0853 create 동 창조하다, 만들다"
+        },
+        {
+          "id": 854,
+          "word": "shout",
+          "meaning": "소리치다, 외치다",
+          "pos": "동",
+          "raw": "0854 shout 동 소리치다, 외치다"
+        },
+        {
+          "id": 855,
+          "word": "able",
+          "meaning": "…할 수 있는",
+          "pos": "형",
+          "raw": "0855 able 형 …할 수 있는"
+        },
+        {
+          "id": 856,
+          "word": "pain",
+          "meaning": "통증, 고통",
+          "pos": "명",
+          "raw": "0856 pain 명 통증, 고통"
+        },
+        {
+          "id": 857,
+          "word": "copy",
+          "meaning": "복사(본) 동 복사하다",
+          "pos": "명",
+          "raw": "0857 copy 명 복사(본) 동 복사하다"
+        },
+        {
+          "id": 858,
+          "word": "twin",
+          "meaning": "쌍둥이",
+          "pos": "명",
+          "raw": "0858 twin 명 쌍둥이"
+        },
+        {
+          "id": 859,
+          "word": "cut down 1.",
+          "meaning": "쓰러뜨리다 2. (양 등을) 줄이다",
+          "pos": "베어",
+          "raw": "0859 cut down 1. 베어 쓰러뜨리다 2. (양 등을) 줄이다"
+        },
+        {
+          "id": 860,
+          "word": "would like to-v …",
+          "meaning": "싶다",
+          "pos": "하고",
+          "raw": "0860 would like to-v …하고 싶다"
+        }
+      ]
+    },
+    {
+      "day": 87,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 861,
+          "word": "animation",
+          "meaning": "만화 (영화), 애니메이션",
+          "pos": "명",
+          "raw": "0861 animation 명 만화 (영화), 애니메이션"
+        },
+        {
+          "id": 862,
+          "word": "cause",
+          "meaning": "원인 동 …의 원인이 되다, 일으키다",
+          "pos": "명",
+          "raw": "0862 cause 명 원인 동 …의 원인이 되다, 일으키다"
+        },
+        {
+          "id": 863,
+          "word": "quiz",
+          "meaning": "1. (간단한) 시험 2. 퀴즈",
+          "pos": "명",
+          "raw": "0863 quiz 명 1. (간단한) 시험 2. 퀴즈"
+        },
+        {
+          "id": 864,
+          "word": "designer",
+          "meaning": "디자이너",
+          "pos": "명",
+          "raw": "0864 designer 명 디자이너"
+        },
+        {
+          "id": 865,
+          "word": "pack",
+          "meaning": "1. (짐을) 싸다 2. 포장하다",
+          "pos": "동",
+          "raw": "0865 pack 동 1. (짐을) 싸다 2. 포장하다"
+        },
+        {
+          "id": 866,
+          "word": "meeting",
+          "meaning": "회의",
+          "pos": "명",
+          "raw": "0866 meeting 명 회의"
+        },
+        {
+          "id": 867,
+          "word": "information",
+          "meaning": "정보, 자료",
+          "pos": "명",
+          "raw": "0867 information 명 정보, 자료"
+        },
+        {
+          "id": 868,
+          "word": "wise",
+          "meaning": "현명한, 지혜로운",
+          "pos": "형",
+          "raw": "0868 wise 형 현명한, 지혜로운"
+        },
+        {
+          "id": 869,
+          "word": "award",
+          "meaning": "상 동 (상 등을) 수여하다, 주다",
+          "pos": "명",
+          "raw": "0869 award 명 상 동 (상 등을) 수여하다, 주다"
+        },
+        {
+          "id": 870,
+          "word": "peace",
+          "meaning": "평화",
+          "pos": "명",
+          "raw": "0870 peace 명 평화"
+        }
+      ]
+    },
+    {
+      "day": 88,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 871,
+          "word": "subject",
+          "meaning": "1. 주제 2. 과목",
+          "pos": "명",
+          "raw": "0871 subject 명 1. 주제 2. 과목"
+        },
+        {
+          "id": 872,
+          "word": "label",
+          "meaning": "라벨, 상표",
+          "pos": "명",
+          "raw": "0872 label 명 라벨, 상표"
+        },
+        {
+          "id": 873,
+          "word": "flat",
+          "meaning": "평평한",
+          "pos": "형",
+          "raw": "0873 flat 형 평평한"
+        },
+        {
+          "id": 874,
+          "word": "hero",
+          "meaning": "영웅",
+          "pos": "명",
+          "raw": "0874 hero 명 영웅"
+        },
+        {
+          "id": 875,
+          "word": "match",
+          "meaning": "1. 경기, 시합 2. 성냥 동 어울리다",
+          "pos": "명",
+          "raw": "0875 match 명 1. 경기, 시합 2. 성냥 동 어울리다"
+        },
+        {
+          "id": 876,
+          "word": "coin",
+          "meaning": "동전",
+          "pos": "명",
+          "raw": "0876 coin 명 동전"
+        },
+        {
+          "id": 877,
+          "word": "pattern",
+          "meaning": "패턴",
+          "pos": "명",
+          "raw": "0877 pattern 명 패턴"
+        },
+        {
+          "id": 878,
+          "word": "relax",
+          "meaning": "1. 쉬다 2. (몸의) 긴장을 풀다, 이완시키다",
+          "pos": "동",
+          "raw": "0878 relax 동 1. 쉬다 2. (몸의) 긴장을 풀다, 이완시키다"
+        },
+        {
+          "id": 879,
+          "word": "count on …",
+          "meaning": "믿다[의지하다]",
+          "pos": "을",
+          "raw": "0879 count on …을 믿다[의지하다]"
+        },
+        {
+          "id": 880,
+          "word": "at the same time",
+          "meaning": "동시에",
+          "pos": "",
+          "raw": "0880 at the same time 동시에"
+        }
+      ]
+    },
+    {
+      "day": 89,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 881,
+          "word": "save",
+          "meaning": "1. (위험으로부터) 구하다 2. (돈을) 저축하다",
+          "pos": "동",
+          "raw": "0881 save 동 1. (위험으로부터) 구하다 2. (돈을) 저축하다"
+        },
+        {
+          "id": 882,
+          "word": "main",
+          "meaning": "주된, 주요한",
+          "pos": "형",
+          "raw": "0882 main 형 주된, 주요한"
+        },
+        {
+          "id": 883,
+          "word": "fantastic",
+          "meaning": "환상적인, 멋진",
+          "pos": "형",
+          "raw": "0883 fantastic 형 환상적인, 멋진"
+        },
+        {
+          "id": 884,
+          "word": "even",
+          "meaning": "…조차, …까지, …도",
+          "pos": "부",
+          "raw": "0884 even 부 …조차, …까지, …도"
+        },
+        {
+          "id": 885,
+          "word": "human",
+          "meaning": "인간, 사람 형 인간[사람]의",
+          "pos": "명",
+          "raw": "0885 human 명 인간, 사람 형 인간[사람]의"
+        },
+        {
+          "id": 886,
+          "word": "scared",
+          "meaning": "겁먹은, 두려워하는",
+          "pos": "형",
+          "raw": "0886 scared 형 겁먹은, 두려워하는"
+        },
+        {
+          "id": 887,
+          "word": "nothing",
+          "meaning": "아무것도 … 아니다[없다]",
+          "pos": "대",
+          "raw": "0887 nothing 대 아무것도 … 아니다[없다]"
+        },
+        {
+          "id": 888,
+          "word": "opinion",
+          "meaning": "의견, 생각",
+          "pos": "명",
+          "raw": "0888 opinion 명 의견, 생각"
+        },
+        {
+          "id": 889,
+          "word": "block",
+          "meaning": "",
+          "pos": "",
+          "raw": "0889 block"
+        },
+        {
+          "id": 890,
+          "word": "float",
+          "meaning": "",
+          "pos": "",
+          "raw": "0890 float"
+        }
+      ]
+    },
+    {
+      "day": 90,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 891,
+          "word": "decide",
+          "meaning": "결정[결심]하다",
+          "pos": "동",
+          "raw": "0891 decide 동 결정[결심]하다"
+        },
+        {
+          "id": 892,
+          "word": "order",
+          "meaning": "순서 동 1. 명령하다 2. (음식을) 주문하다",
+          "pos": "명",
+          "raw": "0892 order 명 순서 동 1. 명령하다 2. (음식을) 주문하다"
+        },
+        {
+          "id": 893,
+          "word": "creative",
+          "meaning": "창의적인, 창조적인",
+          "pos": "형",
+          "raw": "0893 creative 형 창의적인, 창조적인"
+        },
+        {
+          "id": 894,
+          "word": "result",
+          "meaning": "결과",
+          "pos": "명",
+          "raw": "0894 result 명 결과"
+        },
+        {
+          "id": 895,
+          "word": "wave",
+          "meaning": "파도, 물결 동 흔들리다, 흔들다",
+          "pos": "명",
+          "raw": "0895 wave 명 파도, 물결 동 흔들리다, 흔들다"
+        },
+        {
+          "id": 896,
+          "word": "fair",
+          "meaning": "공정한, 공평한",
+          "pos": "형",
+          "raw": "0896 fair 형 공정한, 공평한"
+        },
+        {
+          "id": 897,
+          "word": "puzzle",
+          "meaning": "퍼즐, 수수께끼",
+          "pos": "명",
+          "raw": "0897 puzzle 명 퍼즐, 수수께끼"
+        },
+        {
+          "id": 898,
+          "word": "fault",
+          "meaning": "잘못, 책임",
+          "pos": "명",
+          "raw": "0898 fault 명 잘못, 책임"
+        },
+        {
+          "id": 899,
+          "word": "throw away …",
+          "meaning": "버리다",
+          "pos": "을",
+          "raw": "0899 throw away …을 버리다"
+        },
+        {
+          "id": 900,
+          "word": "live next door",
+          "meaning": "옆집에 살다",
+          "pos": "",
+          "raw": "0900 live next door 옆집에 살다"
+        }
+      ]
+    },
+    {
+      "day": 91,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 901,
+          "word": "member",
+          "meaning": "회원, 일원",
+          "pos": "명",
+          "raw": "0901 member 명 회원, 일원"
+        },
+        {
+          "id": 902,
+          "word": "promise",
+          "meaning": "약속하다 명 약속",
+          "pos": "동",
+          "raw": "0902 promise 동 약속하다 명 약속"
+        },
+        {
+          "id": 903,
+          "word": "character",
+          "meaning": "1. 성격, 성질 2. 등장인물",
+          "pos": "명",
+          "raw": "0903 character 명 1. 성격, 성질 2. 등장인물"
+        },
+        {
+          "id": 904,
+          "word": "popular",
+          "meaning": "인기 있는",
+          "pos": "형",
+          "raw": "0904 popular 형 인기 있는"
+        },
+        {
+          "id": 905,
+          "word": "scene",
+          "meaning": "(연극 · 영화 등의) 장면",
+          "pos": "명",
+          "raw": "0905 scene 명 (연극 · 영화 등의) 장면"
+        },
+        {
+          "id": 906,
+          "word": "topic",
+          "meaning": "주제, 화제",
+          "pos": "명",
+          "raw": "0906 topic 명 주제, 화제"
+        },
+        {
+          "id": 907,
+          "word": "hunt",
+          "meaning": "사냥하다 명 사냥",
+          "pos": "동",
+          "raw": "0907 hunt 동 사냥하다 명 사냥"
+        },
+        {
+          "id": 908,
+          "word": "own",
+          "meaning": "자기 자신의 동 소유하다",
+          "pos": "형",
+          "raw": "0908 own 형 자기 자신의 동 소유하다"
+        },
+        {
+          "id": 909,
+          "word": "item",
+          "meaning": "1. 물품, 품목 2. (목록의) 항목, 사항",
+          "pos": "명",
+          "raw": "0909 item 명 1. 물품, 품목 2. (목록의) 항목, 사항"
+        },
+        {
+          "id": 910,
+          "word": "court",
+          "meaning": "1. 법정, 법원 2. (테니스 등의) 경기장, 코트",
+          "pos": "명",
+          "raw": "0910 court 명 1. 법정, 법원 2. (테니스 등의) 경기장, 코트"
+        }
+      ]
+    },
+    {
+      "day": 92,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 911,
+          "word": "follow",
+          "meaning": "",
+          "pos": "",
+          "raw": "0911 follow"
+        },
+        {
+          "id": 912,
+          "word": "language",
+          "meaning": "언어, 말",
+          "pos": "명",
+          "raw": "0912 language 명 언어, 말"
+        },
+        {
+          "id": 913,
+          "word": "hiking",
+          "meaning": "하이킹, 도보 여행",
+          "pos": "명",
+          "raw": "0913 hiking 명 하이킹, 도보 여행"
+        },
+        {
+          "id": 914,
+          "word": "recipe",
+          "meaning": "요리법, 레시피",
+          "pos": "명",
+          "raw": "0914 recipe 명 요리법, 레시피"
+        },
+        {
+          "id": 915,
+          "word": "simple",
+          "meaning": "1. 간단한, 단순한 2. 소박한, 수수한",
+          "pos": "형",
+          "raw": "0915 simple 형 1. 간단한, 단순한 2. 소박한, 수수한"
+        },
+        {
+          "id": 916,
+          "word": "interview",
+          "meaning": "1. 면접 2. 인터뷰, 회견",
+          "pos": "명",
+          "raw": "0916 interview 명 1. 면접 2. 인터뷰, 회견"
+        },
+        {
+          "id": 917,
+          "word": "bore",
+          "meaning": "지루하게 만들다",
+          "pos": "동",
+          "raw": "0917 bore 동 지루하게 만들다"
+        },
+        {
+          "id": 918,
+          "word": "sauce",
+          "meaning": "소스",
+          "pos": "명",
+          "raw": "0918 sauce 명 소스"
+        },
+        {
+          "id": 919,
+          "word": "upside down",
+          "meaning": "거꾸로",
+          "pos": "",
+          "raw": "0919 upside down 거꾸로"
+        },
+        {
+          "id": 920,
+          "word": "turn over …",
+          "meaning": "뒤집다",
+          "pos": "을",
+          "raw": "0920 turn over …을 뒤집다"
+        }
+      ]
+    },
+    {
+      "day": 93,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 921,
+          "word": "yet",
+          "meaning": "1. [부정문] 아직 2. [의문문] 벌써, 이미",
+          "pos": "부",
+          "raw": "0921 yet 부 1. [부정문] 아직 2. [의문문] 벌써, 이미"
+        },
+        {
+          "id": 922,
+          "word": "introduce",
+          "meaning": "소개하다",
+          "pos": "동",
+          "raw": "0922 introduce 동 소개하다"
+        },
+        {
+          "id": 923,
+          "word": "zone",
+          "meaning": "구역, 지대",
+          "pos": "명",
+          "raw": "0923 zone 명 구역, 지대"
+        },
+        {
+          "id": 924,
+          "word": "poem",
+          "meaning": "시(詩)",
+          "pos": "명",
+          "raw": "0924 poem 명 시(詩)"
+        },
+        {
+          "id": 925,
+          "word": "view",
+          "meaning": "1. 경치, 전망 2. 견해, 의견",
+          "pos": "명",
+          "raw": "0925 view 명 1. 경치, 전망 2. 견해, 의견"
+        },
+        {
+          "id": 926,
+          "word": "champion",
+          "meaning": "챔피언, 우승자",
+          "pos": "명",
+          "raw": "0926 champion 명 챔피언, 우승자"
+        },
+        {
+          "id": 927,
+          "word": "everywhere",
+          "meaning": "모든 곳에, 어디든지",
+          "pos": "부",
+          "raw": "0927 everywhere 부 모든 곳에, 어디든지"
+        },
+        {
+          "id": 928,
+          "word": "focus",
+          "meaning": "집중하다 명 초점, 중점",
+          "pos": "동",
+          "raw": "0928 focus 동 집중하다 명 초점, 중점"
+        },
+        {
+          "id": 929,
+          "word": "huge",
+          "meaning": "(크기가) 거대한",
+          "pos": "형",
+          "raw": "0929 huge 형 (크기가) 거대한"
+        },
+        {
+          "id": 930,
+          "word": "marry",
+          "meaning": "결혼하다",
+          "pos": "동",
+          "raw": "0930 marry 동 결혼하다"
+        }
+      ]
+    },
+    {
+      "day": 94,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 931,
+          "word": "reach",
+          "meaning": "1. 도착[도달]하다 2. (손이) 닿다",
+          "pos": "동",
+          "raw": "0931 reach 동 1. 도착[도달]하다 2. (손이) 닿다"
+        },
+        {
+          "id": 932,
+          "word": "tradition",
+          "meaning": "전통, 관습",
+          "pos": "명",
+          "raw": "0932 tradition 명 전통, 관습"
+        },
+        {
+          "id": 933,
+          "word": "script",
+          "meaning": "대본, 각본",
+          "pos": "명",
+          "raw": "0933 script 명 대본, 각본"
+        },
+        {
+          "id": 934,
+          "word": "president",
+          "meaning": "1. 대통령 2. 회장, 사장",
+          "pos": "명",
+          "raw": "0934 president 명 1. 대통령 2. 회장, 사장"
+        },
+        {
+          "id": 935,
+          "word": "nobody",
+          "meaning": "아무도 … 않다, 아무도 없다",
+          "pos": "대",
+          "raw": "0935 nobody 대 아무도 … 않다, 아무도 없다"
+        },
+        {
+          "id": 936,
+          "word": "chew",
+          "meaning": "(음식을) 씹다",
+          "pos": "동",
+          "raw": "0936 chew 동 (음식을) 씹다"
+        },
+        {
+          "id": 937,
+          "word": "upset",
+          "meaning": "속상한 동 속상하게 하다[만들다]",
+          "pos": "형",
+          "raw": "0937 upset 형 속상한 동 속상하게 하다[만들다]"
+        },
+        {
+          "id": 938,
+          "word": "sticky",
+          "meaning": "끈적거리는, 달라붙는",
+          "pos": "형",
+          "raw": "0938 sticky 형 끈적거리는, 달라붙는"
+        },
+        {
+          "id": 939,
+          "word": "make it 1.",
+          "meaning": "성공하다, 해내다 2. 시간 맞춰 가다",
+          "pos": "",
+          "raw": "0939 make it 1. 성공하다, 해내다 2. 시간 맞춰 가다"
+        },
+        {
+          "id": 940,
+          "word": "over and over",
+          "meaning": "반복해서",
+          "pos": "",
+          "raw": "0940 over and over 반복해서"
+        }
+      ]
+    },
+    {
+      "day": 95,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 941,
+          "word": "hunter",
+          "meaning": "사냥꾼",
+          "pos": "명",
+          "raw": "0941 hunter 명 사냥꾼"
+        },
+        {
+          "id": 942,
+          "word": "melt",
+          "meaning": "녹다, 녹이다",
+          "pos": "동",
+          "raw": "0942 melt 동 녹다, 녹이다"
+        },
+        {
+          "id": 943,
+          "word": "tower",
+          "meaning": "탑",
+          "pos": "명",
+          "raw": "0943 tower 명 탑"
+        },
+        {
+          "id": 944,
+          "word": "owner",
+          "meaning": "주인, 소유자",
+          "pos": "명",
+          "raw": "0944 owner 명 주인, 소유자"
+        },
+        {
+          "id": 945,
+          "word": "factory",
+          "meaning": "공장",
+          "pos": "명",
+          "raw": "0945 factory 명 공장"
+        },
+        {
+          "id": 946,
+          "word": "machine",
+          "meaning": "기계",
+          "pos": "명",
+          "raw": "0946 machine 명 기계"
+        },
+        {
+          "id": 947,
+          "word": "common",
+          "meaning": "1. 흔한 2. 공통의, 공동의",
+          "pos": "형",
+          "raw": "0947 common 형 1. 흔한 2. 공통의, 공동의"
+        },
+        {
+          "id": 948,
+          "word": "enemy",
+          "meaning": "1. 적 2. (전쟁 시의) 적국, 적군",
+          "pos": "명",
+          "raw": "0948 enemy 명 1. 적 2. (전쟁 시의) 적국, 적군"
+        },
+        {
+          "id": 949,
+          "word": "guide",
+          "meaning": "안내자, 가이드 동 안내하다",
+          "pos": "명",
+          "raw": "0949 guide 명 안내자, 가이드 동 안내하다"
+        },
+        {
+          "id": 950,
+          "word": "lock",
+          "meaning": "잠기다, 잠그다 명 자물쇠",
+          "pos": "동",
+          "raw": "0950 lock 동 잠기다, 잠그다 명 자물쇠"
+        }
+      ]
+    },
+    {
+      "day": 96,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 951,
+          "word": "memory",
+          "meaning": "1. 기억(력) 2. 추억, 기억",
+          "pos": "명",
+          "raw": "0951 memory 명 1. 기억(력) 2. 추억, 기억"
+        },
+        {
+          "id": 952,
+          "word": "slice",
+          "meaning": "(음식을 얇게 썬) 조각",
+          "pos": "명",
+          "raw": "0952 slice 명 (음식을 얇게 썬) 조각"
+        },
+        {
+          "id": 953,
+          "word": "emotion",
+          "meaning": "감정, 정서",
+          "pos": "명",
+          "raw": "0953 emotion 명 감정, 정서"
+        },
+        {
+          "id": 954,
+          "word": "power",
+          "meaning": "1. 힘, 능력 2. 동력, 에너지",
+          "pos": "명",
+          "raw": "0954 power 명 1. 힘, 능력 2. 동력, 에너지"
+        },
+        {
+          "id": 955,
+          "word": "final",
+          "meaning": "마지막의, 최후의 명 결승(전)",
+          "pos": "형",
+          "raw": "0955 final 형 마지막의, 최후의 명 결승(전)"
+        },
+        {
+          "id": 956,
+          "word": "program",
+          "meaning": "(TV 등의) 프로그램",
+          "pos": "명",
+          "raw": "0956 program 명 (TV 등의) 프로그램"
+        },
+        {
+          "id": 957,
+          "word": "ankle",
+          "meaning": "발목",
+          "pos": "명",
+          "raw": "0957 ankle 명 발목"
+        },
+        {
+          "id": 958,
+          "word": "maybe",
+          "meaning": "어쩌면, 아마",
+          "pos": "부",
+          "raw": "0958 maybe 부 어쩌면, 아마"
+        },
+        {
+          "id": 959,
+          "word": "turn down 1. (",
+          "meaning": "등을) 낮추다, 줄이다 2. 거절하다",
+          "pos": "소리",
+          "raw": "0959 turn down 1. (소리 등을) 낮추다, 줄이다 2. 거절하다"
+        },
+        {
+          "id": 960,
+          "word": "such as …",
+          "meaning": "같은",
+          "pos": "와",
+          "raw": "0960 such as …와 같은"
+        }
+      ]
+    },
+    {
+      "day": 97,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 961,
+          "word": "wild",
+          "meaning": "야생의",
+          "pos": "형",
+          "raw": "0961 wild 형 야생의"
+        },
+        {
+          "id": 962,
+          "word": "slide",
+          "meaning": "미끄러지다 명 미끄럼틀",
+          "pos": "동",
+          "raw": "0962 slide 동 미끄러지다 명 미끄럼틀"
+        },
+        {
+          "id": 963,
+          "word": "culture",
+          "meaning": "문화",
+          "pos": "명",
+          "raw": "0963 culture 명 문화"
+        },
+        {
+          "id": 964,
+          "word": "outdoor",
+          "meaning": "야외의",
+          "pos": "형",
+          "raw": "0964 outdoor 형 야외의"
+        },
+        {
+          "id": 965,
+          "word": "plastic",
+          "meaning": "플라스틱",
+          "pos": "명",
+          "raw": "0965 plastic 명 플라스틱"
+        },
+        {
+          "id": 966,
+          "word": "report",
+          "meaning": "보고(서) 동 보고하다, 발표하다",
+          "pos": "명",
+          "raw": "0966 report 명 보고(서) 동 보고하다, 발표하다"
+        },
+        {
+          "id": 967,
+          "word": "national",
+          "meaning": "국가의, 국가적인",
+          "pos": "형",
+          "raw": "0967 national 형 국가의, 국가적인"
+        },
+        {
+          "id": 968,
+          "word": "recycle",
+          "meaning": "재활용하다, 재생하여 이용하다",
+          "pos": "동",
+          "raw": "0968 recycle 동 재활용하다, 재생하여 이용하다"
+        },
+        {
+          "id": 969,
+          "word": "traditional",
+          "meaning": "전통의, 전통적인",
+          "pos": "형",
+          "raw": "0969 traditional 형 전통의, 전통적인"
+        },
+        {
+          "id": 970,
+          "word": "invite",
+          "meaning": "초대하다",
+          "pos": "동",
+          "raw": "0970 invite 동 초대하다"
+        }
+      ]
+    },
+    {
+      "day": 98,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 971,
+          "word": "mean",
+          "meaning": "의미하다",
+          "pos": "동",
+          "raw": "0971 mean 동 의미하다"
+        },
+        {
+          "id": 972,
+          "word": "total",
+          "meaning": "총, 전체의 명 합계, 총액",
+          "pos": "형",
+          "raw": "0972 total 형 총, 전체의 명 합계, 총액"
+        },
+        {
+          "id": 973,
+          "word": "coupon",
+          "meaning": "쿠폰, 할인권",
+          "pos": "명",
+          "raw": "0973 coupon 명 쿠폰, 할인권"
+        },
+        {
+          "id": 974,
+          "word": "curious",
+          "meaning": "궁금한, 호기심이 강한",
+          "pos": "형",
+          "raw": "0974 curious 형 궁금한, 호기심이 강한"
+        },
+        {
+          "id": 975,
+          "word": "journey",
+          "meaning": "여행, 여정, 이동",
+          "pos": "명",
+          "raw": "0975 journey 명 여행, 여정, 이동"
+        },
+        {
+          "id": 976,
+          "word": "please",
+          "meaning": "부디, 제발 동 기쁘게[즐겁게] 하다",
+          "pos": "부",
+          "raw": "0976 please 부 부디, 제발 동 기쁘게[즐겁게] 하다"
+        },
+        {
+          "id": 977,
+          "word": "royal",
+          "meaning": "왕실의, 왕족의",
+          "pos": "형",
+          "raw": "0977 royal 형 왕실의, 왕족의"
+        },
+        {
+          "id": 978,
+          "word": "explain",
+          "meaning": "설명하다",
+          "pos": "동",
+          "raw": "0978 explain 동 설명하다"
+        },
+        {
+          "id": 979,
+          "word": "because of …",
+          "meaning": "때문에",
+          "pos": "",
+          "raw": "0979 because of … 때문에"
+        },
+        {
+          "id": 980,
+          "word": "at last",
+          "meaning": "마침내",
+          "pos": "",
+          "raw": "0980 at last 마침내"
+        }
+      ]
+    },
+    {
+      "day": 99,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 981,
+          "word": "finally",
+          "meaning": "마침내, 결국",
+          "pos": "부",
+          "raw": "0981 finally 부 마침내, 결국"
+        },
+        {
+          "id": 982,
+          "word": "powerful",
+          "meaning": "강력한",
+          "pos": "형",
+          "raw": "0982 powerful 형 강력한"
+        },
+        {
+          "id": 983,
+          "word": "desert",
+          "meaning": "사막",
+          "pos": "명",
+          "raw": "0983 desert 명 사막"
+        },
+        {
+          "id": 984,
+          "word": "degree",
+          "meaning": "1. [각도 · 온도의 단위] 도(度) 2. 정도",
+          "pos": "명",
+          "raw": "0984 degree 명 1. [각도 · 온도의 단위] 도(度) 2. 정도"
+        },
+        {
+          "id": 985,
+          "word": "return",
+          "meaning": "",
+          "pos": "",
+          "raw": "0985 return"
+        },
+        {
+          "id": 986,
+          "word": "refrigerator",
+          "meaning": "냉장고",
+          "pos": "명",
+          "raw": "0986 refrigerator 명 냉장고"
+        },
+        {
+          "id": 987,
+          "word": "shower",
+          "meaning": "1. 샤워 2. 소나기",
+          "pos": "명",
+          "raw": "0987 shower 명 1. 샤워 2. 소나기"
+        },
+        {
+          "id": 988,
+          "word": "freeze",
+          "meaning": "(얼음이) 얼다, 얼리다",
+          "pos": "동",
+          "raw": "0988 freeze 동 (얼음이) 얼다, 얼리다"
+        },
+        {
+          "id": 989,
+          "word": "partner",
+          "meaning": "",
+          "pos": "",
+          "raw": "0989 partner"
+        },
+        {
+          "id": 990,
+          "word": "tongue",
+          "meaning": "1. 혀 2. 언어",
+          "pos": "명",
+          "raw": "0990 tongue 명 1. 혀 2. 언어"
+        }
+      ]
+    },
+    {
+      "day": 100,
+      "word_count": 10,
+      "words": [
+        {
+          "id": 991,
+          "word": "spread",
+          "meaning": "1. 펴다, 펼치다 2. (소문 · 정보 등이) 퍼지다",
+          "pos": "동",
+          "raw": "0991 spread 동 1. 펴다, 펼치다 2. (소문 · 정보 등이) 퍼지다"
+        },
+        {
+          "id": 992,
+          "word": "editor",
+          "meaning": "편집자",
+          "pos": "명",
+          "raw": "0992 editor 명 편집자"
+        },
+        {
+          "id": 993,
+          "word": "reporter",
+          "meaning": "(보도) 기자, 리포터",
+          "pos": "명",
+          "raw": "0993 reporter 명 (보도) 기자, 리포터"
+        },
+        {
+          "id": 994,
+          "word": "else",
+          "meaning": "그 밖의, 다른",
+          "pos": "부",
+          "raw": "0994 else 부 그 밖의, 다른"
+        },
+        {
+          "id": 995,
+          "word": "chip",
+          "meaning": "1. (과자류의) 얇은 조각, 칩 2. 감자튀김",
+          "pos": "명",
+          "raw": "0995 chip 명 1. (과자류의) 얇은 조각, 칩 2. 감자튀김"
+        },
+        {
+          "id": 996,
+          "word": "opera",
+          "meaning": "오페라",
+          "pos": "명",
+          "raw": "0996 opera 명 오페라"
+        },
+        {
+          "id": 997,
+          "word": "slip",
+          "meaning": "미끄러지다, 미끄러져 넘어지다",
+          "pos": "동",
+          "raw": "0997 slip 동 미끄러지다, 미끄러져 넘어지다"
+        },
+        {
+          "id": 998,
+          "word": "prepare",
+          "meaning": "준비하다, 마련하다",
+          "pos": "동",
+          "raw": "0998 prepare 동 준비하다, 마련하다"
+        },
+        {
+          "id": 999,
+          "word": "once upon a time",
+          "meaning": "옛적에",
+          "pos": "옛날",
+          "raw": "0999 once upon a time 옛날 옛적에"
+        },
+        {
+          "id": 1000,
+          "word": "have ... in common",
+          "meaning": "공통적으로 …을 가지다",
+          "pos": "",
+          "raw": "1000 have ... in common 공통적으로 …을 가지다"
+        }
+      ]
+    }
+  ]
+};
