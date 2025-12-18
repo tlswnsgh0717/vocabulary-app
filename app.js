@@ -1,11 +1,17 @@
 // 전역 변수
 let vocabularyData = null;
+let currentUserName = 'default'; // 현재 사용자 이름
 let studyProgress = {
     completedDays: 0,
     studiedWords: 0,
     masteredWords: 0,
     daysProgress: {},
-    wordStatus: {} // wordId -> 'correct' | 'wrong' | 'mastered'
+    wordStatus: {}, // wordId -> 'correct' | 'wrong' | 'mastered'
+    lastDayNumber: 1, // 마지막 학습 일차
+    lastTypingDayStart: 1, // 타이핑 모드 마지막 시작 일차
+    lastTypingDayEnd: 100, // 타이핑 모드 마지막 끝 일차
+    lastMatchingDayStart: 1, // 매칭 모드 마지막 시작 일차
+    lastMatchingDayEnd: 100 // 매칭 모드 마지막 끝 일차
 };
 
 // 타이핑 모드 변수
@@ -55,19 +61,43 @@ async function loadData() {
         console.log('총 일차:', vocabularyData.days.length);
         console.log('총 단어:', vocabularyData.metadata.total_words);
         
+        // 사용자 이름 로드
+        loadUserName();
+        
         loadProgress();
         initializeApp();
         
-        // 일일 단어 모드에서 현재 진행 중인 일차 찾기
-        if (studyProgress.daysProgress) {
-            for (let i = 1; i <= 100; i++) {
-                const dayKey = `day-${i}`;
-                const status = studyProgress.daysProgress[dayKey];
-                if (status !== 'completed') {
-                    currentDayNumber = i;
-                    break;
+        // 저장된 마지막 일차 불러오기
+        if (studyProgress.lastDayNumber) {
+            currentDayNumber = studyProgress.lastDayNumber;
+        } else {
+            // 완료되지 않은 첫 일차 찾기
+            if (studyProgress.daysProgress) {
+                for (let i = 1; i <= 100; i++) {
+                    const dayKey = `day-${i}`;
+                    const status = studyProgress.daysProgress[dayKey];
+                    if (status !== 'completed') {
+                        currentDayNumber = i;
+                        break;
+                    }
                 }
             }
+        }
+        
+        // 타이핑 모드 일차 범위 불러오기
+        if (studyProgress.lastTypingDayStart) {
+            typingDayStart = studyProgress.lastTypingDayStart;
+        }
+        if (studyProgress.lastTypingDayEnd) {
+            typingDayEnd = studyProgress.lastTypingDayEnd;
+        }
+        
+        // 매칭 모드 일차 범위 불러오기
+        if (studyProgress.lastMatchingDayStart) {
+            matchingDayStart = studyProgress.lastMatchingDayStart;
+        }
+        if (studyProgress.lastMatchingDayEnd) {
+            matchingDayEnd = studyProgress.lastMatchingDayEnd;
         }
     } catch (error) {
         console.error('데이터 로드 실패:', error);
@@ -91,17 +121,197 @@ async function loadData() {
     }
 }
 
-// 진행 상황 로드
-function loadProgress() {
-    const saved = localStorage.getItem('studyProgress');
+// 사용자 이름 로드
+function loadUserName() {
+    const saved = localStorage.getItem('currentUserName');
     if (saved) {
-        studyProgress = { ...studyProgress, ...JSON.parse(saved) };
+        currentUserName = saved;
+    } else {
+        // 기본 사용자 이름 설정
+        currentUserName = 'default';
+        localStorage.setItem('currentUserName', currentUserName);
+    }
+    updateUserNameDisplay();
+    loadUserList();
+}
+
+// 사용자 이름 표시 업데이트
+function updateUserNameDisplay() {
+    const userNameDisplay = document.getElementById('userNameDisplay');
+    if (userNameDisplay) {
+        userNameDisplay.textContent = currentUserName === 'default' ? '사용자' : currentUserName;
     }
 }
 
-// 진행 상황 저장
+// 사용자 목록 로드
+function loadUserList() {
+    const userList = document.getElementById('userList');
+    if (!userList) return;
+    
+    const users = JSON.parse(localStorage.getItem('userList') || '[]');
+    if (users.length === 0) {
+        userList.innerHTML = '<p class="no-users">저장된 사용자가 없습니다.</p>';
+        return;
+    }
+    
+    userList.innerHTML = users.map(user => `
+        <div class="user-item ${user === currentUserName ? 'active' : ''}" onclick="switchUser('${user}')">
+            <span>${user === 'default' ? '사용자' : user}</span>
+            ${user !== currentUserName ? `<button class="user-delete-btn" onclick="deleteUser('${user}', event)">삭제</button>` : ''}
+        </div>
+    `).join('');
+}
+
+// 사용자 전환
+function switchUser(userName) {
+    if (userName === currentUserName) {
+        closeUserModal();
+        return;
+    }
+    
+    // 현재 사용자 데이터 저장
+    saveProgress();
+    
+    // 새 사용자로 전환
+    currentUserName = userName;
+    localStorage.setItem('currentUserName', currentUserName);
+    
+    // 새 사용자 데이터 로드
+    loadProgress();
+    updateUserNameDisplay();
+    loadUserList();
+    
+    // UI 업데이트
+    updateOverallProgress();
+    updateStats();
+    
+    // 현재 모드 다시 초기화
+    const activeMode = document.querySelector('.mode-content.active')?.id;
+    if (activeMode) {
+        const mode = activeMode.replace('-mode', '');
+        showMode(mode);
+    }
+    
+    closeUserModal();
+}
+
+// 사용자 삭제
+function deleteUser(userName, event) {
+    event.stopPropagation();
+    
+    if (!confirm(`"${userName === 'default' ? '사용자' : userName}"의 모든 학습 데이터를 삭제하시겠습니까?`)) {
+        return;
+    }
+    
+    // 사용자 데이터 삭제
+    localStorage.removeItem(`studyProgress_${userName}`);
+    
+    // 사용자 목록에서 제거
+    const users = JSON.parse(localStorage.getItem('userList') || '[]');
+    const filteredUsers = users.filter(u => u !== userName);
+    localStorage.setItem('userList', JSON.stringify(filteredUsers));
+    
+    // 현재 사용자면 기본 사용자로 전환
+    if (userName === currentUserName) {
+        switchUser('default');
+    } else {
+        loadUserList();
+    }
+}
+
+// 사용자 이름 설정
+function setUserName() {
+    const input = document.getElementById('userNameInput');
+    if (!input) return;
+    
+    const userName = input.value.trim();
+    if (!userName) {
+        alert('이름을 입력해주세요.');
+        return;
+    }
+    
+    if (userName === 'default') {
+        alert('사용할 수 없는 이름입니다.');
+        return;
+    }
+    
+    // 사용자 목록에 추가
+    const users = JSON.parse(localStorage.getItem('userList') || '[]');
+    if (!users.includes(userName)) {
+        users.push(userName);
+        localStorage.setItem('userList', JSON.stringify(users));
+    }
+    
+    // 사용자 전환
+    switchUser(userName);
+    input.value = '';
+}
+
+// 사용자 모달 표시
+function showUserModal() {
+    const modal = document.getElementById('userModal');
+    if (modal) {
+        modal.style.display = 'flex';
+        loadUserList();
+        const input = document.getElementById('userNameInput');
+        if (input) {
+            input.focus();
+        }
+    }
+}
+
+// 사용자 모달 닫기
+function closeUserModal() {
+    const modal = document.getElementById('userModal');
+    if (modal) {
+        modal.style.display = 'none';
+    }
+    const input = document.getElementById('userNameInput');
+    if (input) {
+        input.value = '';
+    }
+}
+
+// 진행 상황 로드 (사용자별)
+function loadProgress() {
+    const key = `studyProgress_${currentUserName}`;
+    const saved = localStorage.getItem(key);
+    if (saved) {
+        const loaded = JSON.parse(saved);
+        // 기본 구조 유지하면서 로드된 데이터 병합
+        studyProgress = {
+            completedDays: loaded.completedDays || 0,
+            studiedWords: loaded.studiedWords || 0,
+            masteredWords: loaded.masteredWords || 0,
+            daysProgress: loaded.daysProgress || {},
+            wordStatus: loaded.wordStatus || {},
+            lastDayNumber: loaded.lastDayNumber || 1,
+            lastTypingDayStart: loaded.lastTypingDayStart || 1,
+            lastTypingDayEnd: loaded.lastTypingDayEnd || 100,
+            lastMatchingDayStart: loaded.lastMatchingDayStart || 1,
+            lastMatchingDayEnd: loaded.lastMatchingDayEnd || 100
+        };
+    } else {
+        // 기본값으로 초기화
+        studyProgress = {
+            completedDays: 0,
+            studiedWords: 0,
+            masteredWords: 0,
+            daysProgress: {},
+            wordStatus: {},
+            lastDayNumber: 1,
+            lastTypingDayStart: 1,
+            lastTypingDayEnd: 100,
+            lastMatchingDayStart: 1,
+            lastMatchingDayEnd: 100
+        };
+    }
+}
+
+// 진행 상황 저장 (사용자별)
 function saveProgress() {
-    localStorage.setItem('studyProgress', JSON.stringify(studyProgress));
+    const key = `studyProgress_${currentUserName}`;
+    localStorage.setItem(key, JSON.stringify(studyProgress));
     updateOverallProgress();
 }
 
@@ -640,6 +850,15 @@ let typingDayEnd = 100;
 function initTypingMode() {
     // 일차 선택기 초기화
     setupTypingDaySelectors();
+    
+    // 저장된 일차 범위 적용
+    const startSelect = document.getElementById('typing-day-start');
+    const endSelect = document.getElementById('typing-day-end');
+    if (startSelect && endSelect) {
+        startSelect.value = typingDayStart;
+        endSelect.value = typingDayEnd;
+    }
+    
     applyTypingRange();
     
     const input = document.getElementById('typing-input');
@@ -695,6 +914,11 @@ function applyTypingRange() {
     
     typingDayStart = parseInt(startSelect.value);
     typingDayEnd = parseInt(endSelect.value);
+    
+    // 마지막 사용한 일차 범위 저장
+    studyProgress.lastTypingDayStart = typingDayStart;
+    studyProgress.lastTypingDayEnd = typingDayEnd;
+    saveProgress();
     
     // 선택된 일차 범위의 단어만 가져오기
     typingWords = [];
@@ -924,6 +1148,10 @@ function setupMatchingDaySelectors() {
     const startSelect = document.getElementById('matching-day-start');
     const endSelect = document.getElementById('matching-day-end');
     
+    // 저장된 일차 범위 적용
+    if (startSelect) startSelect.value = matchingDayStart;
+    if (endSelect) endSelect.value = matchingDayEnd;
+    
     if (!startSelect || !endSelect || !vocabularyData) return;
     
     startSelect.innerHTML = '';
@@ -953,6 +1181,11 @@ function applyMatchingRange() {
     
     matchingDayStart = parseInt(startSelect.value);
     matchingDayEnd = parseInt(endSelect.value);
+    
+    // 마지막 사용한 일차 범위 저장
+    studyProgress.lastMatchingDayStart = matchingDayStart;
+    studyProgress.lastMatchingDayEnd = matchingDayEnd;
+    saveProgress();
     
     startMatchingGame();
 }
@@ -993,20 +1226,37 @@ function displayMatchingBoard() {
     const board = document.getElementById('matching-board');
     board.innerHTML = '';
     
-    // 단어와 뜻을 섞어서 배열 생성
-    const items = [];
-    matchingWords.forEach(word => {
-        items.push({ type: 'word', content: word.word, id: word.id });
-        items.push({ type: 'meaning', content: word.meaning, id: word.id });
-    });
+    // 왼쪽 컬럼 (영어단어)과 오른쪽 컬럼 (뜻) 생성
+    const leftColumn = document.createElement('div');
+    leftColumn.className = 'matching-column matching-column-left';
     
-    // 랜덤 셔플
-    for (let i = items.length - 1; i > 0; i--) {
+    const rightColumn = document.createElement('div');
+    rightColumn.className = 'matching-column matching-column-right';
+    
+    // 영어단어 배열 생성 및 셔플
+    const words = matchingWords.map(word => ({
+        type: 'word',
+        content: word.word,
+        id: word.id
+    }));
+    for (let i = words.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [items[i], items[j]] = [items[j], items[i]];
+        [words[i], words[j]] = [words[j], words[i]];
     }
     
-    items.forEach((item, index) => {
+    // 뜻 배열 생성 및 셔플
+    const meanings = matchingWords.map(word => ({
+        type: 'meaning',
+        content: word.meaning,
+        id: word.id
+    }));
+    for (let i = meanings.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [meanings[i], meanings[j]] = [meanings[j], meanings[i]];
+    }
+    
+    // 왼쪽 컬럼에 영어단어 카드 추가
+    words.forEach((item, index) => {
         const card = document.createElement('div');
         card.className = 'matching-card';
         card.textContent = item.content;
@@ -1015,8 +1265,24 @@ function displayMatchingBoard() {
         card.dataset.index = index;
         
         card.addEventListener('click', () => selectMatchingCard(card));
-        board.appendChild(card);
+        leftColumn.appendChild(card);
     });
+    
+    // 오른쪽 컬럼에 뜻 카드 추가
+    meanings.forEach((item, index) => {
+        const card = document.createElement('div');
+        card.className = 'matching-card';
+        card.textContent = item.content;
+        card.dataset.type = item.type;
+        card.dataset.id = item.id;
+        card.dataset.index = index;
+        
+        card.addEventListener('click', () => selectMatchingCard(card));
+        rightColumn.appendChild(card);
+    });
+    
+    board.appendChild(leftColumn);
+    board.appendChild(rightColumn);
     
     document.getElementById('matching-score').textContent = '0';
     document.getElementById('matching-count').textContent = '0';
@@ -1074,10 +1340,13 @@ function initSpeedMode() {
     // 일차 선택기 설정
     setupSpeedDaySelector();
     
-    // 현재 일차의 단어 가져오기
-    if (!currentDayNumber || currentDayNumber < 1) {
+    // 저장된 마지막 일차 사용
+    if (studyProgress.lastDayNumber && studyProgress.lastDayNumber >= 1 && studyProgress.lastDayNumber <= 100) {
+        currentDayNumber = studyProgress.lastDayNumber;
+    } else if (!currentDayNumber || currentDayNumber < 1) {
         currentDayNumber = 1;
     }
+    
     loadDayWords(currentDayNumber);
 }
 
@@ -1095,7 +1364,12 @@ function setupSpeedDaySelector() {
         daySelect.appendChild(option);
     });
     
-    daySelect.value = currentDayNumber || 1;
+    // 저장된 마지막 일차 또는 현재 일차 사용
+    const savedDay = studyProgress.lastDayNumber || currentDayNumber || 1;
+    daySelect.value = savedDay;
+    if (!currentDayNumber || currentDayNumber < 1) {
+        currentDayNumber = savedDay;
+    }
 }
 
 // 일일 단어 일차 적용
@@ -1106,6 +1380,8 @@ function applySpeedDay() {
     const selectedDay = parseInt(daySelect.value);
     if (selectedDay >= 1 && selectedDay <= 100) {
         currentDayNumber = selectedDay;
+        studyProgress.lastDayNumber = currentDayNumber;
+        saveProgress();
         loadDayWords(currentDayNumber);
     }
 }
@@ -1149,16 +1425,20 @@ function showSpeedWord() {
         const dayKey = `day-${currentDayNumber}`;
         studyProgress.daysProgress[dayKey] = 'completed';
         studyProgress.completedDays = Object.values(studyProgress.daysProgress).filter(s => s === 'completed').length;
-        saveProgress();
         
-        // 완료 메시지
-        alert(`DAY ${currentDayNumber} 완료! 🎉\n다음 일차를 선택하거나 계속 학습하세요.`);
-        
-        // 다음 일차로 자동 이동 (선택 가능)
+        // 다음 일차로 자동 이동
         currentDayNumber++;
         if (currentDayNumber > 100) {
             currentDayNumber = 1;
         }
+        
+        // 마지막 일차 저장
+        studyProgress.lastDayNumber = currentDayNumber;
+        saveProgress();
+        
+        // 완료 메시지
+        alert(`DAY ${currentDayNumber - 1} 완료! 🎉\n다음 일차(DAY ${currentDayNumber})로 이동합니다.`);
+        
         loadDayWords(currentDayNumber);
         return;
     }
@@ -1370,6 +1650,11 @@ window.goToTypingPractice = goToTypingPractice;
 window.revealCardMeaning = revealCardMeaning;
 window.speedAnswer = speedAnswer;
 window.revealSpeedMeaning = revealSpeedMeaning;
+window.showUserModal = showUserModal;
+window.closeUserModal = closeUserModal;
+window.setUserName = setUserName;
+window.switchUser = switchUser;
+window.deleteUser = deleteUser;
 
 // 모바일 메뉴 토글
 function toggleMobileMenu() {

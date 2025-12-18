@@ -86,6 +86,180 @@ body::before {
     color: var(--text-secondary);
 }
 
+.user-info {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border-color);
+}
+
+.current-user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.current-user span {
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.user-change-btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    padding: 0;
+}
+
+.user-change-btn:hover {
+    background: var(--secondary-color);
+    transform: scale(1.1);
+}
+
+/* 사용자 모달 */
+.user-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.user-modal-content {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    max-width: 400px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.user-modal-content h3 {
+    margin-bottom: 20px;
+    color: var(--text-primary);
+    font-size: 20px;
+}
+
+#userNameInput {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+#userNameInput:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.user-modal-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.user-save-btn,
+.user-cancel-btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.user-save-btn {
+    background: var(--primary-color);
+    color: white;
+}
+
+.user-save-btn:hover {
+    background: var(--secondary-color);
+}
+
+.user-cancel-btn {
+    background: #e5e7eb;
+    color: var(--text-primary);
+}
+
+.user-cancel-btn:hover {
+    background: #d1d5db;
+}
+
+.user-list {
+    margin-top: 20px;
+}
+
+.user-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    margin-bottom: 8px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.user-item:hover {
+    border-color: var(--primary-color);
+    background: #f9fafb;
+}
+
+.user-item.active {
+    border-color: var(--primary-color);
+    background: #eff6ff;
+    font-weight: 500;
+}
+
+.user-item span {
+    flex: 1;
+}
+
+.user-delete-btn {
+    background: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.user-delete-btn:hover {
+    background: #dc2626;
+}
+
+.no-users {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 14px;
+    padding: 20px;
+}
+
 .sidebar-nav {
     flex: 1;
     padding: 16px 0;
@@ -946,10 +1120,26 @@ body::before {
 }
 
 .matching-board {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    display: flex;
+    gap: 32px;
     margin-bottom: 32px;
+    justify-content: center;
+}
+
+.matching-column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+    max-width: 400px;
+}
+
+.matching-column-left {
+    /* 왼쪽 컬럼 - 영어단어 */
+}
+
+.matching-column-right {
+    /* 오른쪽 컬럼 - 뜻 */
 }
 
 .matching-card {
@@ -1330,7 +1520,13 @@ body::before {
     }
 
     .matching-board {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .matching-column {
+        max-width: 100%;
+        width: 100%;
     }
 
     .speed-options {
@@ -1669,135 +1865,41 @@ body::before {
     justify-content: center;
     align-items: center;
     position: relative;
-    overflow: auto;
+    overflow: hidden;
     width: 100%;
     height: 100%;
 }
 
-.pdf-page-wrapper {
-    position: relative;
+.pdf-frame {
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-#pdfCanvas {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
-    background: white;
-    object-fit: contain;
-}
-
-.pdf-nav-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(74, 144, 226, 0.9);
     border: none;
-    color: white;
-    padding: 20px 15px;
-    cursor: pointer;
-    font-size: 32px;
-    transition: all 0.3s;
-    z-index: 10;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    font-weight: bold;
-    line-height: 1;
+    background: white;
 }
 
-.pdf-prev-btn {
-    left: 30px;
-    border-radius: 0 10px 10px 0;
-}
-
-.pdf-prev-btn:hover:not(:disabled) {
-    background: rgba(74, 144, 226, 1);
-    padding-left: 25px;
-}
-
-.pdf-next-btn {
-    right: 30px;
-    border-radius: 10px 0 0 10px;
-}
-
-.pdf-next-btn:hover:not(:disabled) {
-    background: rgba(74, 144, 226, 1);
-    padding-right: 25px;
-}
-
-.pdf-nav-btn:disabled {
-    opacity: 0.3;
-    cursor: not-allowed;
-}
-
-.pdf-viewer-controls {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.7);
-    padding: 15px 25px;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    color: white;
-}
-
-.pdf-control-btn {
-    background: rgba(255, 255, 255, 0.2);
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    color: white;
-    padding: 10px 20px;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: all 0.3s;
-}
-
-.pdf-control-btn:hover:not(:disabled) {
-    background: rgba(255, 255, 255, 0.3);
-    border-color: rgba(255, 255, 255, 0.5);
-}
-
-.pdf-control-btn:disabled {
-    opacity: 0.3;
-    cursor: not-allowed;
-}
-
-.pdf-page-info {
-    font-size: 14px;
-    min-width: 100px;
-    text-align: center;
-}
 
 @media (max-width: 768px) {
     .pdf-book-list {
         grid-template-columns: 1fr;
     }
-
-    .pdf-nav-btn {
-        padding: 15px 10px;
-        font-size: 24px;
+    
+    .user-modal-content {
+        padding: 20px;
+        max-width: 90%;
     }
-
-    .pdf-prev-btn {
-        left: 10px;
+    
+    .user-info {
+        margin-top: 10px;
+        padding-top: 10px;
     }
-
-    .pdf-next-btn {
-        right: 10px;
+    
+    .current-user {
+        font-size: 12px;
     }
-
-    .pdf-page-wrapper {
-        max-width: 95%;
-        max-height: 85%;
+    
+    .user-change-btn {
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
     }
 }
