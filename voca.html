@@ -27,6 +27,27 @@
             <div class="sidebar-header">
                 <h1>중등보카필수</h1>
                 <p class="subtitle">단어 학습</p>
+                <div class="user-info" id="userInfo">
+                    <div class="current-user" id="currentUser">
+                        <span id="userNameDisplay">사용자</span>
+                        <button class="user-change-btn" onclick="showUserModal()" title="사용자 변경">👤</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 사용자 선택 모달 -->
+            <div class="user-modal" id="userModal" style="display: none;" onclick="if(event.target.id === 'userModal') closeUserModal()">
+                <div class="user-modal-content" onclick="event.stopPropagation()">
+                    <h3>사용자 선택</h3>
+                    <input type="text" id="userNameInput" placeholder="이름을 입력하세요" maxlength="20" onkeypress="if(event.key === 'Enter') setUserName()">
+                    <div class="user-modal-buttons">
+                        <button onclick="setUserName()" class="user-save-btn">저장</button>
+                        <button onclick="closeUserModal()" class="user-cancel-btn">취소</button>
+                    </div>
+                    <div class="user-list" id="userList">
+                        <!-- 저장된 사용자 목록 -->
+                    </div>
+                </div>
             </div>
             
             <nav class="sidebar-nav">
@@ -230,18 +251,7 @@
                             <button class="pdf-close-btn" onclick="closePDFViewer()">닫기</button>
                         </div>
                         <div class="pdf-viewer-content">
-                            <button class="pdf-nav-btn pdf-prev-btn" id="pdfPrevBtn" onclick="pdfPrevPage()" disabled>‹</button>
-                            <div class="pdf-page-wrapper">
-                                <canvas id="pdfCanvas"></canvas>
-                            </div>
-                            <button class="pdf-nav-btn pdf-next-btn" id="pdfNextBtn" onclick="pdfNextPage()">›</button>
-                        </div>
-                        <div class="pdf-viewer-controls">
-                            <button class="pdf-control-btn" onclick="pdfPrevPage()" id="pdfPrevBtnBottom">이전</button>
-                            <div class="pdf-page-info">
-                                <span id="pdfCurrentPage">1</span> / <span id="pdfTotalPages">1</span>
-                            </div>
-                            <button class="pdf-control-btn" onclick="pdfNextPage()" id="pdfNextBtnBottom">다음</button>
+                            <iframe id="pdfFrame" class="pdf-frame" frameborder="0"></iframe>
                         </div>
                     </div>
                 </div>
@@ -269,8 +279,6 @@
     </button>
 
     <script src="https://unpkg.com/qrcode@1.5.3/build/qrcode.min.js"></script>
-    <!-- PDF.js 라이브러리 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
     <script src="data.js"></script>
     <script src="app.js"></script>
     <script src="pdf-viewer.js"></script>

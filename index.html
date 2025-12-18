@@ -251,34 +251,24 @@
                             <button class="pdf-close-btn" onclick="closePDFViewer()">닫기</button>
                         </div>
                         <div class="pdf-viewer-content">
-                            <iframe id="pdfFrame" class="pdf-frame" frameborder="0"></iframe>
+                            <button class="pdf-nav-btn pdf-prev-btn" id="pdfPrevBtn" onclick="pdfPrevPage()" disabled>‹</button>
+                            <div class="pdf-page-wrapper">
+                                <canvas id="pdfCanvas"></canvas>
+                            </div>
+                            <button class="pdf-nav-btn pdf-next-btn" id="pdfNextBtn" onclick="pdfNextPage()">›</button>
+                        </div>
+                        <div class="pdf-viewer-controls">
+                            <button class="pdf-control-btn" onclick="pdfPrevPage()" id="pdfPrevBtnBottom">이전</button>
+                            <div class="pdf-page-info">
+                                <span id="pdfCurrentPage">1</span> / <span id="pdfTotalPages">1</span>
+                            </div>
+                            <button class="pdf-control-btn" onclick="pdfNextPage()" id="pdfNextBtnBottom">다음</button>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
     </div>
-
-    <!-- QR 코드 표시 버튼 -->
-    <div class="qr-code-container" id="qr-code-container" style="display: none;">
-        <div class="qr-code-modal">
-            <div class="qr-code-header">
-                <h3>QR 코드로 접속하기</h3>
-                <button class="qr-close-btn" onclick="closeQRCode()">×</button>
-            </div>
-            <div class="qr-code-content">
-                <div id="qr-code-canvas"></div>
-                <p class="qr-url" id="qr-url"></p>
-                <p class="qr-instruction">모바일 카메라로 QR 코드를 스캔하세요</p>
-            </div>
-        </div>
-    </div>
-
-    <button class="qr-code-btn" onclick="showQRCode()" title="QR 코드 표시">
-        <span>QR</span>
-    </button>
-
-    <script src="https://unpkg.com/qrcode@1.5.3/build/qrcode.min.js"></script>
     <!-- PDF.js 라이브러리 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
     <script src="data.js"></script>

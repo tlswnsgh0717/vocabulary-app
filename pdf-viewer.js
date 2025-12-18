@@ -13,7 +13,7 @@ const pdfBooks = [
     {
         id: 1,
         title: "능률보카 중등 1권 (기본)",
-        pdfPath: "25_능률보카중등1권(기본)(001-368)-보카북[본책].pdf",
+        pdfPath: "voca.pdf",
         description: "보카북 본책"
     }
     // 여기에 더 많은 책을 추가할 수 있습니다
