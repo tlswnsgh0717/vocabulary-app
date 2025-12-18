@@ -140,7 +140,8 @@ function showMode(mode) {
         'typing': 'typing-mode',
         'matching': 'matching-mode',
         'speed': 'speed-mode',
-        'stats': 'stats-mode'
+        'stats': 'stats-mode',
+        'pdf': 'pdf-mode'
     };
     
     const modeElement = document.getElementById(modeMap[mode]);
@@ -166,6 +167,19 @@ function showMode(mode) {
         case 'matching':
             setupMatchingDaySelectors();
             startMatchingGame();
+            break;
+        case 'pdf':
+            // PDF 모드 초기화
+            console.log('PDF 모드 활성화');
+            setTimeout(() => {
+                if (typeof initPDFMode === 'function') {
+                    initPDFMode();
+                } else if (typeof renderPDFBookList === 'function') {
+                    renderPDFBookList();
+                } else {
+                    console.error('PDF 뷰어 함수를 찾을 수 없습니다.');
+                }
+            }, 200);
             break;
         case 'stats':
             updateStats();

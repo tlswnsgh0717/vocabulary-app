@@ -2,7 +2,7 @@
   "name": "중등보카필수",
   "short_name": "보카학습",
   "description": "중등보카필수 단어 학습 앱",
-  "start_url": "./index.html",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#fef9e7",
   "theme_color": "#fee500",
